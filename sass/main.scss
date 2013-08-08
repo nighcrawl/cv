@@ -126,11 +126,12 @@ html {
     padding: 2em;
 }
 
-#header, 
-#infos, 
-#competences, 
-#formations, 
-#divers {
+#competences,
+#divers,
+#experiences, 
+#formations,
+#header
+#infos {
 	@include clearfix;
 }
 
@@ -163,6 +164,35 @@ html {
 	margin-left: 18.5%;
 	text-transform: uppercase;
 	font-weight: 900;
+    margin-top: 0;
+}
+
+#competences,
+#divers,
+#experiences, 
+#formations,
+#infos {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1.5em;
+}
+
+#experiences ol,
+#formations ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dates {
+    float: left;
+    width: 15%;
+    margin-right: 2em;
+    text-align: right;
+
+    span {
+        @extend .infos-type;
+        display: block;
+        font-size: 9pt;
+    }
 }
 
 
@@ -278,31 +308,8 @@ html {
 /* =================
    $EXPERIENCES
    ============== */
-#experiences {
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 1.5em;
-}
-
-#experiences ol {
-	list-style-type: none;
-	padding: 0;
-}
-
 #experiences li {
 	@include clearfix;
-
-	.dates {
-		float: left;
-		width: 15%;
-		margin-right: 2em;
-		text-align: right;
-
-		span {
-			@extend .infos-type;
-			display: block;
-			font-size: 9pt;
-		}
-	}
 
 	.job {
         @include calc(width,"100% - (15% + 2em)");
@@ -352,31 +359,8 @@ html {
 /* =================
    $FORMATIONS
    ============== */
-#formations {
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 1.5em;
-}
-
-#formations ol {
-    list-style-type: none;
-    padding: 0;
-}
-
 #formations li {
     @include clearfix;
-
-    .dates {
-        float: left;
-        width: 15%;
-        margin-right: 2em;
-        text-align: right;
-
-        span {
-            @extend .infos-type;
-            display: block;
-            font-size: 9pt;
-        }
-    }
 
     .formation {
         @include calc(width,"100% - (15% + 2em)");
