@@ -2,6 +2,13 @@
 @import "compass/utilities";
 @import "normalize";
 
+@mixin calc($property, $expression) { 
+  #{$property}: -moz-calc(#{$expression}); 
+  #{$property}: -o-calc(#{$expression}); 
+  #{$property}: -webkit-calc(#{$expression}); 
+  #{$property}: calc(#{$expression}); 
+}
+
 /*
  * HTML5 Boilerplate
  *
@@ -271,6 +278,11 @@ html {
 /* =================
    $EXPERIENCES
    ============== */
+#experiences {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1.5em;
+}
+
 #experiences ol {
 	list-style-type: none;
 	padding: 0;
@@ -293,13 +305,14 @@ html {
 	}
 
 	.job {
+        @include calc(width,"100% - (15% + 2em)");
 		float: left;
-		width: 81.55%;
 	}
 }
 
 .job {
 	margin-bottom: 1.5em;
+
 	.jobtitle {
 		font-weight: bold;
 		margin-right: .5em;
@@ -320,6 +333,78 @@ html {
 		line-height: 1.5;
 		margin-top: .25em;
 	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =================
+   $FORMATIONS
+   ============== */
+#formations {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1.5em;
+}
+
+#formations ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+#formations li {
+    @include clearfix;
+
+    .dates {
+        float: left;
+        width: 15%;
+        margin-right: 2em;
+        text-align: right;
+
+        span {
+            @extend .infos-type;
+            display: block;
+            font-size: 9pt;
+        }
+    }
+
+    .formation {
+        @include calc(width,"100% - (15% + 2em)");
+        float: left;
+    }
+}
+
+.formation {
+    margin-bottom: 1.5em;
+
+    .diplome {
+        font-weight: bold;
+        margin-right: .5em;
+        font-size: 12pt;
+        line-height: 1;
+    }
+
+    .ecole {
+        font-size: 11pt;
+        line-height: 1;
+    }
+
+    .matieres {
+        font-weight: 300;
+        font-size: 11pt;
+        line-height: 1.5;
+        margin-top: .25em;
+    }
 }
 
 
