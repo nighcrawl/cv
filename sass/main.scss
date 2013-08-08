@@ -116,12 +116,25 @@ html {
 	font-size: 12pt;
 	color: #222;
 }
+
+a {
+    color: #0000b5;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: #b50055;
+    }
+}
+
+
+
 /* =================
    $COMMUN
    ============== */
 .wrapper {
 	margin: 0 auto;
-	max-width: 900px;
+	max-width: 728px;
 	border: 0;
     padding: 2em;
 }
@@ -161,9 +174,10 @@ html {
 }
 
 .section-title {
-	margin-left: 18.5%;
+    @include calc(margin-left,"15% + 4.395604396%");
 	text-transform: uppercase;
 	font-weight: 900;
+    font-size: 18pt;
     margin-top: 0;
 }
 
@@ -176,17 +190,25 @@ html {
     margin-bottom: 1.5em;
 }
 
+#competences ol,
+#divers ol,
 #experiences ol,
-#formations ol {
+#formations ol, {
     list-style-type: none;
     padding: 0;
+
+    li {
+        margin-bottom: 1.5em;
+
+    }
 }
 
 .dates {
     float: left;
     width: 15%;
-    margin-right: 2em;
+    margin-right: 4.395604396%;
     text-align: right;
+    margin-top: .31em;
 
     span {
         @extend .infos-type;
@@ -194,6 +216,38 @@ html {
         font-size: 9pt;
     }
 }
+
+.item {
+    @include calc(width,"100% - (15% + 4.395604396%)");
+    float: left;
+    margin-bottom: 1.5em;
+
+    .item-nom {
+        font-weight: bold;
+        margin-right: .5em;
+        font-size: 12pt;
+        line-height: 1;
+    }
+
+    .item-lieu {
+        font-size: 11pt;
+        line-height: 1;
+        display: block;
+    }
+
+    .item-description {
+        font-weight: 300;
+        font-size: 11pt;
+        line-height: 1.5;
+        margin: 0;
+    }
+
+}
+
+* .item:last-of-type {
+        margin-bottom: 0;
+    }
+
 
 
 
@@ -257,7 +311,7 @@ html {
 }
 #infos ul {
 	@include clearfix;
-	width: 43.2%;
+	width: 53.3%;
 	margin-left: auto;
 	margin-right: auto;
 	list-style-type: none;
@@ -290,6 +344,9 @@ html {
 /* =================
    $COMPETENCES
    ============== */
+#competences li {
+    @include clearfix;
+}
 
 
 
@@ -310,36 +367,6 @@ html {
    ============== */
 #experiences li {
 	@include clearfix;
-
-	.job {
-        @include calc(width,"100% - (15% + 2em)");
-		float: left;
-	}
-}
-
-.job {
-	margin-bottom: 1.5em;
-
-	.jobtitle {
-		font-weight: bold;
-		margin-right: .5em;
-		text-transform: uppercase;
-		font-size: 12pt;
-		line-height: 1;
-	}
-
-	.company {
-		
-		font-size: 11pt;
-		line-height: 1;
-	}
-
-	.jobdescription {
-		font-weight: 300;
-		font-size: 11pt;
-		line-height: 1.5;
-		margin-top: .25em;
-	}
 }
 
 
@@ -361,35 +388,8 @@ html {
    ============== */
 #formations li {
     @include clearfix;
-
-    .formation {
-        @include calc(width,"100% - (15% + 2em)");
-        float: left;
-    }
 }
 
-.formation {
-    margin-bottom: 1.5em;
-
-    .diplome {
-        font-weight: bold;
-        margin-right: .5em;
-        font-size: 12pt;
-        line-height: 1;
-    }
-
-    .ecole {
-        font-size: 11pt;
-        line-height: 1;
-    }
-
-    .matieres {
-        font-weight: 300;
-        font-size: 11pt;
-        line-height: 1.5;
-        margin-top: .25em;
-    }
-}
 
 
 
@@ -407,6 +407,9 @@ html {
 /* =================
    $DIVERS
    ============== */
+#divers li {
+    @include clearfix;
+}
 
 
 
@@ -536,7 +539,11 @@ html {
         text-shadow: none !important;
     }
 
-    a,
+    .wrapper { padding: 0; }
+
+    .personne { margin-top: 0; }
+
+    /*a,
     a:visited {
         text-decoration: underline;
     }
@@ -547,7 +554,7 @@ html {
 
     abbr[title]:after {
         content: " (" attr(title) ")";
-    }
+    }*/
 
     /*
      * Don't show links for images, or javascript/internal links
@@ -579,7 +586,7 @@ html {
     }
 
     @page {
-        margin: 0.5cm;
+        margin: 1.5cm 5cm;
     }
 
     p,
