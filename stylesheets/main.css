@@ -755,10 +755,12 @@ a:hover, a:focus {
 #divers ol li,
 #experiences ol li,
 #formations ol li {
+  overflow: hidden;
+  *zoom: 1;
   margin-bottom: 1.5em;
 }
 
-/* line 206, ../sass/main.scss */
+/* line 207, ../sass/main.scss */
 .dates {
   float: left;
   width: 15%;
@@ -766,13 +768,13 @@ a:hover, a:focus {
   text-align: right;
   margin-top: .31em;
 }
-/* line 213, ../sass/main.scss */
+/* line 214, ../sass/main.scss */
 .dates span {
   display: block;
   font-size: 9pt;
 }
 
-/* line 220, ../sass/main.scss */
+/* line 221, ../sass/main.scss */
 .item {
   width: -moz-calc(100% - (15% + 4.395604396%));
   width: -o-calc(100% - (15% + 4.395604396%));
@@ -781,20 +783,20 @@ a:hover, a:focus {
   float: left;
   margin-bottom: 1.5em;
 }
-/* line 225, ../sass/main.scss */
+/* line 226, ../sass/main.scss */
 .item .item-nom {
   font-weight: bold;
   margin-right: .5em;
   font-size: 12pt;
   line-height: 1;
 }
-/* line 232, ../sass/main.scss */
+/* line 233, ../sass/main.scss */
 .item .item-lieu {
   font-size: 11pt;
   line-height: 1;
   display: block;
 }
-/* line 238, ../sass/main.scss */
+/* line 239, ../sass/main.scss */
 .item .item-description {
   font-weight: 300;
   font-size: 11pt;
@@ -802,7 +804,7 @@ a:hover, a:focus {
   margin: 0;
 }
 
-/* line 247, ../sass/main.scss */
+/* line 248, ../sass/main.scss */
 * .item:last-of-type {
   margin-bottom: 0;
 }
@@ -810,11 +812,11 @@ a:hover, a:focus {
 /* =================
    $HEADER
    ============== */
-/* line 269, ../sass/main.scss */
+/* line 270, ../sass/main.scss */
 #header {
   text-align: center;
 }
-/* line 272, ../sass/main.scss */
+/* line 273, ../sass/main.scss */
 #header .avatar {
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
@@ -824,13 +826,13 @@ a:hover, a:focus {
   max-width: 128px;
   height: auto;
 }
-/* line 279, ../sass/main.scss */
+/* line 280, ../sass/main.scss */
 #header .personne {
   font-size: 24pt;
   font-weight: 900;
   margin-bottom: 0;
 }
-/* line 285, ../sass/main.scss */
+/* line 286, ../sass/main.scss */
 #header .jobtitle {
   font-size: 10pt;
   margin-top: 0;
@@ -839,13 +841,13 @@ a:hover, a:focus {
 /* =================
    $INFOS
    ============== */
-/* line 308, ../sass/main.scss */
+/* line 309, ../sass/main.scss */
 #infos {
   border-bottom: 1px solid #ddd;
   margin-bottom: 1.5em;
 }
 
-/* line 312, ../sass/main.scss */
+/* line 313, ../sass/main.scss */
 #infos ul {
   overflow: hidden;
   *zoom: 1;
@@ -855,52 +857,16 @@ a:hover, a:focus {
   list-style-type: none;
   padding: 0;
 }
-/* line 320, ../sass/main.scss */
+/* line 321, ../sass/main.scss */
 #infos ul li {
   display: block;
   float: left;
   margin-right: 1.5em;
   margin-bottom: .5em;
 }
-/* line 326, ../sass/main.scss */
+/* line 327, ../sass/main.scss */
 #infos ul li:last-child {
   margin-right: 0;
-}
-
-/* =================
-   $COMPETENCES
-   ============== */
-/* line 347, ../sass/main.scss */
-#competences li {
-  overflow: hidden;
-  *zoom: 1;
-}
-
-/* =================
-   $EXPERIENCES
-   ============== */
-/* line 368, ../sass/main.scss */
-#experiences li {
-  overflow: hidden;
-  *zoom: 1;
-}
-
-/* =================
-   $FORMATIONS
-   ============== */
-/* line 389, ../sass/main.scss */
-#formations li {
-  overflow: hidden;
-  *zoom: 1;
-}
-
-/* =================
-   $DIVERS
-   ============== */
-/* line 410, ../sass/main.scss */
-#divers li {
-  overflow: hidden;
-  *zoom: 1;
 }
 
 /* ==========================================================================
@@ -909,7 +875,7 @@ a:hover, a:focus {
 /*
  * Image replacement
  */
-/* line 436, ../sass/main.scss */
+/* line 354, ../sass/main.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -918,7 +884,7 @@ a:hover, a:focus {
   *text-indent: -9999px;
 }
 
-/* line 444, ../sass/main.scss */
+/* line 362, ../sass/main.scss */
 .ir:before {
   content: "";
   display: block;
@@ -929,7 +895,7 @@ a:hover, a:focus {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 455, ../sass/main.scss */
+/* line 373, ../sass/main.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -938,7 +904,7 @@ a:hover, a:focus {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 464, ../sass/main.scss */
+/* line 382, ../sass/main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -954,7 +920,7 @@ a:hover, a:focus {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 481, ../sass/main.scss */
+/* line 399, ../sass/main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -968,7 +934,7 @@ a:hover, a:focus {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 494, ../sass/main.scss */
+/* line 412, ../sass/main.scss */
 .invisible {
   visibility: hidden;
 }
@@ -984,7 +950,7 @@ a:hover, a:focus {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 511, ../sass/main.scss */
+/* line 429, ../sass/main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -993,7 +959,7 @@ a:hover, a:focus {
   /* 2 */
 }
 
-/* line 516, ../sass/main.scss */
+/* line 434, ../sass/main.scss */
 .clearfix:after {
   clear: both;
 }
@@ -1002,7 +968,7 @@ a:hover, a:focus {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 525, ../sass/main.scss */
+/* line 443, ../sass/main.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -1012,7 +978,7 @@ a:hover, a:focus {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 535, ../sass/main.scss */
+  /* line 453, ../sass/main.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -1021,12 +987,12 @@ a:hover, a:focus {
     text-shadow: none !important;
   }
 
-  /* line 542, ../sass/main.scss */
+  /* line 460, ../sass/main.scss */
   .wrapper {
     padding: 0;
   }
 
-  /* line 544, ../sass/main.scss */
+  /* line 462, ../sass/main.scss */
   .personne {
     margin-top: 0;
   }
@@ -1046,33 +1012,33 @@ a:hover, a:focus {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 565, ../sass/main.scss */
+  /* line 483, ../sass/main.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 570, ../sass/main.scss */
+  /* line 488, ../sass/main.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 575, ../sass/main.scss */
+  /* line 493, ../sass/main.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 580, ../sass/main.scss */
+  /* line 498, ../sass/main.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 584, ../sass/main.scss */
+  /* line 502, ../sass/main.scss */
   img {
     max-width: 100% !important;
   }
@@ -1081,7 +1047,7 @@ a:hover, a:focus {
     margin: 1.5cm 5cm;
 }
 
-  /* line 594, ../sass/main.scss */
+  /* line 512, ../sass/main.scss */
   p,
   h2,
   h3 {
@@ -1089,7 +1055,7 @@ a:hover, a:focus {
     widows: 3;
   }
 
-  /* line 600, ../sass/main.scss */
+  /* line 518, ../sass/main.scss */
   h2,
   h3 {
     page-break-after: avoid;

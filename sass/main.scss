@@ -193,11 +193,12 @@ a {
 #competences ol,
 #divers ol,
 #experiences ol,
-#formations ol, {
+#formations ol {
     list-style-type: none;
     padding: 0;
 
     li {
+        @include clearfix;
         margin-bottom: 1.5em;
 
     }
@@ -327,89 +328,6 @@ a {
 	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* =================
-   $COMPETENCES
-   ============== */
-#competences li {
-    @include clearfix;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* =================
-   $EXPERIENCES
-   ============== */
-#experiences li {
-	@include clearfix;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* =================
-   $FORMATIONS
-   ============== */
-#formations li {
-    @include clearfix;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* =================
-   $DIVERS
-   ============== */
-#divers li {
-    @include clearfix;
-}
 
 
 
