@@ -182,6 +182,7 @@ a:hover, a:focus { color: #b50055; }
 
 #competences, #divers, #experiences, #formations, #header #infos { overflow: hidden; *zoom: 1; }
 
+<<<<<<< HEAD
 #header .personne, #header .jobtitle, .infos-type, .aside span { text-transform: uppercase; }
 
 #header .jobtitle, .infos-type, .aside span { font-weight: 700; }
@@ -191,6 +192,17 @@ a:hover, a:focus { color: #b50055; }
 .infos-type, .aside span, #infos .infos-value { font-size: 9pt; }
 
 .infos-type, .aside span { color: #ccc; }
+=======
+#header .personne, #header .jobtitle, .infos-type, .dates span { text-transform: uppercase; }
+
+#header .jobtitle, .infos-type, .dates span { font-weight: 700; }
+
+.infos-type, .dates span, .infos-value { display: block; }
+
+.infos-type, .dates span, #infos .infos-value { font-size: 9pt; }
+
+.infos-type, .dates span { color: #ccc; }
+>>>>>>> a37e8da1e5d86e217c0b0e662d6c7ae00c93602b
 
 .section-title { margin-left: -moz-calc(15% + 4.395604396%); margin-left: -o-calc(15% + 4.395604396%); margin-left: -webkit-calc(15% + 4.395604396%); margin-left: calc(15% + 4.395604396%); text-transform: uppercase; font-weight: 900; font-size: 18pt; margin-top: 0; }
 
@@ -199,8 +211,13 @@ a:hover, a:focus { color: #b50055; }
 #competences ol, #divers ol, #experiences ol, #formations ol { list-style-type: none; padding: 0; }
 #competences li, #divers li, #experiences li, #formations li { overflow: hidden; *zoom: 1; margin-bottom: 1.5em; }
 
+<<<<<<< HEAD
 .aside { float: left; width: 15%; margin-right: 4.395604396%; text-align: right; margin-top: .31em; }
 .aside span { display: block; font-size: 9pt; }
+=======
+.dates { float: left; width: 15%; margin-right: 4.395604396%; text-align: right; margin-top: .31em; }
+.dates span { display: block; font-size: 9pt; }
+>>>>>>> a37e8da1e5d86e217c0b0e662d6c7ae00c93602b
 
 .item { width: -moz-calc(100% - (15% + 4.395604396%)); width: -o-calc(100% - (15% + 4.395604396%)); width: -webkit-calc(100% - (15% + 4.395604396%)); width: calc(100% - (15% + 4.395604396%)); float: left; margin-bottom: 1.5em; }
 .item .item-nom { font-weight: bold; margin-right: .5em; font-size: 12pt; }
