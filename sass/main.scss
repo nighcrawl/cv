@@ -196,12 +196,15 @@ a {
 #formations ol {
     list-style-type: none;
     padding: 0;
+}
 
-    li {
-        @include clearfix;
-        margin-bottom: 1.5em;
+#competences li,
+#divers li,
+#experiences li,
+#formations li {
+    @include clearfix;
+    margin-bottom: 1.5em;
 
-    }
 }
 
 .dates {
@@ -227,12 +230,10 @@ a {
         font-weight: bold;
         margin-right: .5em;
         font-size: 12pt;
-        line-height: 1;
     }
 
     .item-lieu {
         font-size: 11pt;
-        line-height: 1;
         display: block;
     }
 
@@ -274,7 +275,6 @@ a {
         @include border-radius(100%);
         max-width: 128px;
         height: auto;
-
     }
 
 	.personne {
