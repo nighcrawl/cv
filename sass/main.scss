@@ -133,6 +133,17 @@ a {
 	font-size: 12px;
 }
 
+#infos {
+    p {
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+    .infos-value {
+        display: inline;
+    }
+}
+
 .infos-type {
 	color: #ccc;
 }

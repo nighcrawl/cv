@@ -190,6 +190,9 @@ a:hover, a:focus { color: #b50055; }
 
 .infos-type, .aside span, #infos .infos-value { font-size: 12px; }
 
+#infos p { text-align: center; margin-bottom: 2em; }
+#infos .infos-value { display: inline; }
+
 .infos-type, .aside span { color: #ccc; }
 
 .section-title { margin-left: -moz-calc(15% + 4.395604396%); margin-left: -o-calc(15% + 4.395604396%); margin-left: -webkit-calc(15% + 4.395604396%); margin-left: calc(15% + 4.395604396%); text-transform: uppercase; font-weight: 900; font-size: 24px; margin-top: 0; }
