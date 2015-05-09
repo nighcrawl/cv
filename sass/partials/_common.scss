@@ -1,0 +1,49 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900,400italic,600italic,700italic);
+
+html {
+    color: #222;
+    font-family: $font-face;
+    font-size: $base-font-size;
+    line-height: $line-height;
+}
+
+a {
+    @include single-transition(all, .25s, ease);
+    color: #0000b5;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: #b50055;
+    }
+}
+
+
+.wrapper {
+    border: 0;
+    margin: 0 auto;
+    max-width: 728px;
+    padding: 
+    2em;
+}
+
+#download {
+    @include border-radius(2px);
+    background: #bbb;
+    color: #fff;
+    display: block;
+    font-weight: 700;
+    margin: 0 auto;
+    padding: .5em .8em;
+    text-align: center;
+
+    @media screen and (min-width: 40em) {
+        max-width: 33%;
+    }
+
+    &:focus,
+    &:hover {
+        color: #fff;
+        background: #aaa;
+    }
+}

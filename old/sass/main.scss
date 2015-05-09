@@ -2,23 +2,12 @@
 @import "compass/utilities";
 @import "normalize";
 
-/* Webfonts Roboto Thin, Normal, Bold & Ultra-Bold */
-//@import url(http://fonts.googleapis.com/css?family=Roboto:700,900,400,300);
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900,400italic,600italic,700italic);
-
-
-//Mixins
 @mixin calc($property, $expression) { 
   #{$property}: -moz-calc(#{$expression}); 
   #{$property}: -o-calc(#{$expression}); 
   #{$property}: -webkit-calc(#{$expression}); 
   #{$property}: calc(#{$expression}); 
 }
-
-//Variables
-$font-face: "Source Sans Pro", sans-serif;
-$base-font-size: 16px;
-$line-height: 1.5;
 
 /*
  * HTML5 Boilerplate
@@ -32,14 +21,14 @@ $line-height: 1.5;
    Base styles: opinionated defaults
    ========================================================================== */
 
-//html {
-//    color: #222;
-//}
+html {
+    color: #222;
+}
 
-//body {
-//    font-size: 1em;
-//    line-height: 1.4;
-//}
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -83,15 +72,16 @@ img {
    Author's custom styles
    ========================================================================== */
 
+/* Webfonts Roboto Thin, Normal, Bold & Ultra-Bold */
+@import url(http://fonts.googleapis.com/css?family=Roboto:700,900,400,300);
+
 html {
-	font-family: $font-face;
-	font-size: $base-font-size;
-    line-height: $line-height;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
 	color: #222;
 }
 
 a {
-    @include single-transition(all, .25s, ease);
     color: #0000b5;
     text-decoration: none;
 
@@ -140,7 +130,7 @@ a {
 
 .infos-type, 
 #infos .infos-value {
-    font-size: .85em;
+	font-size: 12px;
 }
 
 #infos {
@@ -159,15 +149,11 @@ a {
 }
 
 .section-title {
+    @include calc(margin-left,"15% + 4.395604396%");
 	text-transform: uppercase;
 	font-weight: 900;
+    font-size: 24px;
     margin-top: 0;
-
-    // *MQ
-    @media screen and (min-width: 40em){
-        @include calc(margin-left,"15% + 4.395604396%");
-    }
-
 }
 
 #competences,
@@ -196,64 +182,40 @@ a {
 }
 
 .aside {
-    
-
-    // *MQ
-    @media screen and (min-width: 40em){
-        float: left;
-        width: 15%;
-        margin-right: 4.395604396%;
-        text-align: right;
-    }
+    float: left;
+    width: 15%;
+    margin-right: 4.395604396%;
+    text-align: right;
+    margin-top: .21em;
 
     span {
         @extend .infos-type;
-        display: inline-block;
-        font-size: .85em;
-
-        // *MQ
-        @media screen and (min-width: 40em){
-            display: block;
-        }
-    }
-    
-    & span + span:before {
-        @media screen and (max-width: 39.999em){
-            display: inline-block;
-            content: "-";
-            margin-right: .25em;
-        }
+        display: block;
+        font-size: 12px;
     }
 }
 
 .item {
-    
+    @include calc(width,"100% - (15% + 4.395604396%)");
+    float: left;
     margin-bottom: 1.5em;
-
-    // *MQ
-    @media screen and (min-width: 40em){
-        float: left;
-        @include calc(width,"100% - (15% + 4.395604396%)");
-    }
-    
 
     .item-nom {
         font-weight: bold;
         margin-right: .5em;
+        font-size: 16px;
     }
 
     .item-lieu {
+        font-size: 15px;
         display: block;
     }
 
     .item-description {
         font-weight: 300;
+        font-size: 15px;
         line-height: 1.5;
         margin: 0;
-
-        & *:last-child {
-            margin-bottom: 0;
-        }
     }
 
 }
@@ -262,13 +224,18 @@ a {
     margin-bottom: 0;
 }
 
-#competences li {
-    margin-bottom: .5em;
 
-    &:last-child {
-        margin-bottom: 1.5em;
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -285,15 +252,28 @@ a {
     }
 
 	.personne {
-        font-size: 2.5em;
+		font-size: 32px;
 		font-weight:900;
 		margin-bottom: 0;
 	}
 
 	.jobtitle { 
+		font-size: 13px;
 		margin-top: 0; 
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -325,26 +305,18 @@ a {
 
 
 
-#download {
-    @include border-radius(2px);
-    display: block;
-    font-weight: 700;
-    padding: .5em .8em;
-    background: #bbb;
-    color: #fff;
-    margin: 0 auto;
-    text-align: center;
 
-    // *MQ
-    @media screen and (min-width: 40em){
-        max-width: 33%;
-    }
 
-    &:focus, &:hover {
-        color: #fff;
-        background: #aaa
-    } 
-}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -368,8 +340,6 @@ a {
     .avatar { display: none; }
 
     #infos ul { width: 65%; }
-
-    #download { display: none; }
 
 
     img {
