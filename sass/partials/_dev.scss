@@ -1,4 +1,4 @@
-//Mixins
+// Mixins
 @mixin calc($property, $expression) { 
   #{$property}: -moz-calc(#{$expression}); 
   #{$property}: -o-calc(#{$expression}); 
@@ -6,7 +6,7 @@
   #{$property}: calc(#{$expression}); 
 }
 
-//Variables
+// Variables
 $font-face: "Source Sans Pro", sans-serif;
 $base-font-size: 16px;
 $line-height: 1.5;
