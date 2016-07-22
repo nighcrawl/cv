@@ -1,2 +1,6 @@
-
+.sass-cache/
+node_modules/
+v1/
+Gruntfile.json
+package.json
 *.scssc
