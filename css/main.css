@@ -38,6 +38,7 @@ a:hover, a:focus {
   margin: 0 auto;
   max-width: 728px;
   padding: 2em;
+  position: relative;
 }
 
 /* 3. Items 
@@ -52,13 +53,9 @@ a:hover, a:focus {
 .list__item {
   margin-bottom: 1.5em;
 }
-@media only screen and (min-width: 40em) {
-  .list__item {
-    /*padding-left: 15%;*/
-  }
-}
 .list__item--inline {
   display: inline-block;
+  margin-bottom: 0;
 }
 
 .item__title {
@@ -76,22 +73,51 @@ a:hover, a:focus {
   font-weight: 700;
   text-transform: uppercase;
 }
+@media screen and (min-width: 40em) {
+  .item__dates, .skill__name {
+    float: left;
+    left: 2em;
+    margin-right: 4.395604396%;
+    position: absolute;
+    text-align: right;
+    width: 15%;
+  }
+}
 
 .date--start,
 .date--end {
   display: inline;
 }
+@media screen and (min-width: 40em) {
+  .date--start,
+  .date--end {
+    display: block;
+  }
+}
 
 .date--start + .date--end::before {
   content: ' – ';
 }
+@media screen and (min-width: 40em) {
+  .date--start + .date--end::before {
+    content: '';
+    display: none;
+  }
+}
 
 .section {
-  overflow: hidden;
-  *zoom: 1;
   border-bottom: 1px solid #eeeeee;
   margin-bottom: 1em;
   padding-bottom: 1em;
+}
+@media screen and (min-width: 40em) {
+  .section {
+    padding-left: -moz-calc(15% + 4.395604396%);
+    padding-left: -o-calc(15% + 4.395604396%);
+    padding-left: -webkit-calc(15% + 4.395604396%);
+    padding-left: calc(15% + 4.395604396%);
+    padding-right: 5%;
+  }
 }
 .section__title {
   font-weight: 900;
@@ -101,6 +127,10 @@ a:hover, a:focus {
 /*
  * Page header
  * =================== */
+header {
+  padding-bottom: 2em;
+}
+
 .me {
   text-align: center;
   text-transform: uppercase;

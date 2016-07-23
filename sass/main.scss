@@ -41,6 +41,10 @@ $accent-color: $red;
 /*
  * Page header
  * =================== */
+header {
+	padding-bottom: 2em;
+}
+
 .me {
 	text-align: center;
 	text-transform: uppercase;
