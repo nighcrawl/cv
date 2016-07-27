@@ -6,3 +6,4 @@ package.json
 *.scssc
 *.sublime-project
 *.sublime-workspace
+github-synch.php
