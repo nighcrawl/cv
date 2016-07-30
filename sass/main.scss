@@ -72,18 +72,18 @@ header {
  * Page footer
  * =================== */
  footer {
- 	padding: 1em 0;
- 	text-align: center;
+	padding: 1em 0;
+	text-align: center;
  }
 
  .btn {
- 	@include border-radius(2px);
- 	background: $accent-color;
- 	color: #fff;
- 	display: inline-block;
- 	font-weight: 700;
- 	margin: 0 auto;
- 	padding: .5em .8em;
+	@include border-radius(2px);
+	background: $accent-color;
+	color: #fff;
+	display: inline-block;
+	font-weight: 700;
+	margin: 0 auto;
+	padding: .5em .8em;
 	text-align: center;
 
 	&:focus,
@@ -113,3 +113,9 @@ header {
 .item__description.job__description p:first-child {
 	margin-top: 1em;
 }
+
+
+/*
+ * Print
+ * =================== */
+ @import "partials/_print";

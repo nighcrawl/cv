@@ -1,0 +1,68 @@
+
+@media print {
+
+	* {
+		@include box-shadow(none !important);
+		background: transparent;
+		color: #000;
+		text-shadow: none;
+	}
+
+	@page {
+		margin: 1cm 2cm;
+	}
+
+	.wrapper {
+		padding: 0 !important;
+		width: 100% !important;
+	}
+
+	header {
+		padding-bottom: 0;
+	}
+
+	.me__name,
+	.me__title,
+	.contact .list {
+		margin: 0 !important;
+	}
+
+	.me__name {
+		line-height: 1;
+	}
+
+	.section {
+		border-bottom: 0;
+		margin-bottom: .5em;
+		padding-bottom: .5em;
+	}
+
+	p, 
+	.section__title {
+		orphans: 2;
+		widows: 2;
+	}
+
+	.section__title {
+		page-break-after: avoid;
+		margin: 0 !important;
+		line-height: 1;
+	}
+
+	.list__item {
+		margin-bottom: .75em;
+	}
+
+	.section .list__item:last-child {
+		margin-bottom: 0;
+	}
+
+	.item__description p:first-child {
+		margin-top: 0;
+	}
+
+	footer,
+	.me__avatar {
+		display: none;
+	}
+}

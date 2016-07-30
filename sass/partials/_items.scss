@@ -34,10 +34,10 @@
 	@media screen and (min-width: 40em) {
 		float: left;
 		left: 2em;
-        margin-right: 4.395604396%;
-        position: absolute;
-        text-align: right;
-        width: 15%;
+		margin-right: 4.395604396%;
+		position: absolute;
+		text-align: right;
+		width: 15%;
 
 	}
 }
@@ -61,7 +61,6 @@
 }
 
 .section {
-	//@include clearfix;
 	border-bottom: 1px solid lighten($base-color, 80%);
 	margin-bottom: 1em;
 	padding-bottom: 1em;
