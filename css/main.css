@@ -196,6 +196,45 @@ footer {
   margin-top: 1em;
 }
 
+.section.section--codeschool {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #333;
+  color: #fff;
+  padding-left: 5%;
+  padding-top: 1em;
+  margin-top: -1em;
+}
+.section.section--codeschool a {
+  color: #fff;
+}
+
+#codeschool-badges {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#codeschool-badges:before, #codeschool-badges:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+#codeschool-badges .list__item {
+  width: 25%;
+  text-align: center;
+  padding: 0 .5em;
+}
+#codeschool-badges .item__media {
+  max-width: 100%;
+  height: auto;
+}
+
 /*
  * Print
  * =================== */
