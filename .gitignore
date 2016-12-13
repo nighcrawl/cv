@@ -1,3 +1,6 @@
-*.scssc
 node_modules/
 .sass-cache/
+Gruntfile.json
+package.json
+*.sublime-project
+*.sublime-workspace

@@ -1,82 +1,68 @@
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ======================================================================= */
+
 @media print {
-    * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
 
-    .wrapper { padding: 0; width: 100% !important;  }
+	* {
+		@include box-shadow(none !important);
+		background: transparent;
+		color: #000;
+		text-shadow: none;
+	}
 
-    .personne { margin-top: 0; line-height: 1; }
+	@page {
+		margin: 1cm 2cm;
+	}
 
-    .jobtitle { margin: 0; }
+	.wrapper {
+		padding: 0 !important;
+		width: 100% !important;
+	}
 
-    .avatar { display: none; }
+	header {
+		padding-bottom: 0;
+	}
 
-    #infos { border-bottom: 0; }
+	.me__name,
+	.me__title,
+	.contact .list {
+		margin: 0 !important;
+	}
 
-    #infos ul { width: 65%; }
+	.me__name {
+		line-height: 1;
+	}
 
-    #infos p { margin-top: 0; margin-bottom: 0;}
+	.section {
+		border-bottom: 0;
+		margin-bottom: .5em;
+		padding-bottom: .5em;
+	}
 
-    #download { display: none; }
+	p, 
+	.section__title {
+		orphans: 2;
+		widows: 2;
+	}
 
+	.section__title {
+		page-break-after: avoid;
+		margin: 0 !important;
+		line-height: 1;
+	}
 
-    img {
-        page-break-inside: avoid;
-        max-width: 100% !important;
-    }
+	.list__item {
+		margin-bottom: .75em;
+	}
 
-    .section ol li {
-        margin-bottom: 1em;
-    }
+	.section .list__item:last-child {
+		margin-bottom: 0;
+	}
 
-    .aside span + span:before {
-            display: inline-block;
-            content: "-";
-            margin-right: .25em;
-    }
+	.item__description p:first-child {
+		margin-top: 0;
+	}
 
-    .item .item-lieu {
-        display: inline-block;
-        /*page-break-after: avoid;*/
-    }
-
-    .item-description p {
-        margin: .7em 0 0;
-    }
-
-    .item-description p:first-child {
-        margin-top: .25em;
-    }
-
-    #divers {
-        border-bottom: 0;
-        margin-bottom: 0;
-
-        li:last-child {
-            margin-bottom: 0;
-        }
-    }
-
-    @page {
-        margin: 1cm 2cm;
-    }
-
-    p,
-    h2 {
-        orphans: 2;
-        widows: 2;
-    }
-
-    h2 {
-        page-break-after: avoid;
-        margin: 0 0 .25em;
-        line-height: 1;
-    }
+	footer,
+	.me__avatar {
+		display: none;
+	}
 }
