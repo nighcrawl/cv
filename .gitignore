@@ -1,9 +1,12 @@
 node_modules/
 <<<<<<< HEAD
+<<<<<<< HEAD
 .sass-cache/
 Gruntfile.json
 package.json
 =======
+=======
+>>>>>>> f928721dc59c6c5ef9ed65ebc00f0adf39045594
 *.scssc
 >>>>>>> a81e51d60af812f706dad4ea0582917429ce480a
 *.sublime-project
