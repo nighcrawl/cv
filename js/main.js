@@ -10,4 +10,4 @@ var replaceSendEmailLink = function() {
 
 	emailLink.setAttribute("href", "mailto:" + emailName + "@" + emailTLD + "?subject=" + encodeURIComponent(emailSubject));
 	emailLink.innerHTML = emailName + "@" + emailTLD;
-}
+};
