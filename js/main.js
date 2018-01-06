@@ -4,10 +4,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 var replaceSendEmailLink = function() {
 	var emailLink = document.querySelector("#send-mail"),
-		emailName = "ange.chierchia",
-		emailTLD = "gmail.com",
+		emailName = "aihcreihc.egna",
+		emailTLD = "moc.liamg",
 		emailSubject = "Votre profil m'intéresse";
 
-	emailLink.setAttribute("href", "mailto:" + emailName + "@" + emailTLD + "?subject=" + encodeURIComponent(emailSubject));
+	emailLink.setAttribute("href", "mailto:" + emailName.split("").reverse().join("") + "@" + emailTLD.split("").reverse().join("") + "?subject=" + encodeURIComponent(emailSubject));
 	emailLink.innerHTML = emailName + "@" + emailTLD;
 };
