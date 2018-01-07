@@ -9,5 +9,5 @@ var replaceSendEmailLink = function() {
 		emailSubject = "Votre profil m'intéresse";
 
 	emailLink.setAttribute("href", "mailto:" + emailName.split("").reverse().join("") + "@" + emailTLD.split("").reverse().join("") + "?subject=" + encodeURIComponent(emailSubject));
-	emailLink.innerHTML = emailName + "@" + emailTLD;
+	emailLink.innerHTML = emailName.split("").reverse()"join("") + "@" + emailTLD.split("").reverse()"join("");
 };
