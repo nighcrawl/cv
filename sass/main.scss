@@ -1,161 +1,36 @@
-@import "compass";
+@import "_partials/normalize";
 
-// Compass
-@mixin calc($property, $expression) {
-	#{$property} : -moz-calc(#{$expression});
-	#{$property} : -o-calc(#{$expression});
-	#{$property} : -webkit-calc(#{$expression});
-	#{$property} : calc(#{$expression});
+body {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.45;
 }
 
-// Variables
-$font-face: "Source Sans Pro", sans-serif;
-$base-font-size: 16px;
-$base-color: #222222;
-$line-height: 1.5;
-
-$blue: #0000b5;
-$red: #b50055;
-
-$link-color: $blue;
-$accent-color: $red;
-
-/*
- * Main styles
- * =================== */
-
-/* 1. Typography 
- * ------------------- */
-@import "partials/_typo";
-
-/* 2. Base 
- * ------------------- */
-@import "partials/_base";
-
-/* 3. Items 
- * ------------------- */
-@import "partials/_items";
-
-
-
-/*
- * Page header
- * =================== */
-header {
-	padding-bottom: 2em;
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  margin: 1.414em 0 0.5em;
+  font-weight: bold;
+  line-height: 1.2;
 }
 
-.me {
-	text-align: center;
-	text-transform: uppercase;
-
-	&__avatar {
-		@include border-radius(50%);
-		max-width: 128px;
-		height: auto;
-	}
-
-	&__name {
-		font-size: 2.5em;
-		font-weight: 900;
-		margin-bottom: 0;
-	}
-
-	&__title {
-		margin-top: 0;
-		font-weight: 700;
-	}
+h1, .h1 {
+  margin-top: 0;
+  font-size: 3.998em;
 }
 
+h2, .h2 {font-size: 2.827em;}
 
-/*
- * Page footer
- * =================== */
- footer {
-	padding: 1em 0;
-	text-align: center;
- }
+h3, .h3 {font-size: 1.999em;}
 
- .btn {
-	@include border-radius(2px);
-	background: $accent-color;
-	color: #fff;
-	display: inline-block;
-	font-weight: 700;
-	margin: 0 auto;
-	padding: .5em .8em;
-	text-align: center;
+h4, .h4 {font-size: 1.414em;}
 
-	&:focus,
-	&:hover {
-		background: $link-color;
-		color: #fff;
-	}
- }
+small, .font_small {font-size: 0.707em;}
 
-
-/*
- * Special cases
- * =================== */
-.contact {
-	font-size: .875em;
-
-	.list__item:not(:first-child)::before {
-		content: "\00b7";
-		display: inline-block;
-		padding: 0 .25em 0 .025em;
-		font-weight: bold;
-		font-size: 1.25em;
-		vertical-align: middle;
-	}
+.wrapper {
+    margin: 0 auto;
+    max-width: 42em;
 }
 
-.item__description.job__description p:first-child {
-	margin-top: 1em;
+img {
+    height: auto;
+    max-width: 100%;
 }
-
-.section.section--codeschool {
-	@include border-radius(2px);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background: #333;
-	color: #fff;
-	padding-left: 5%;
-	padding-top: 1em;
-	margin-top: -1em;
-
-	a { color: #fff; }
-}
-
-#codeschool-badges {
-	display: flex;
-	flex-grow: 1;
-	flex-shrink: 0;
-	flex-wrap: wrap;
-	justify-content: center;
-
-		&:before, &:after {
-			clear: both;
-			content: "";
-			display: table;
-		}
-
-	.list__item {
-		width: 25%;
-		//float: left;
-		text-align: center;
-		padding: 0 .5em;
-	}
-
-	.item__media {
-		max-width: 100%;
-		height: auto;
-	}
-}
-
-
-/*
- * Print
- * =================== */
- @import "partials/_print";

@@ -1,6 +1,6 @@
 {
   "name": "cv",
-  "version": "2.0.0",
+  "version": "3.0",
   "description": "",
   "private": true,
   "scripts": {
@@ -18,6 +18,8 @@
     "npm": ">=2.15"
   },
   "babel": {
-    "presets": ["es2015"]
+    "presets": [
+      "es2015"
+    ]
   }
 }

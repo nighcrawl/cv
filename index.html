@@ -1,209 +1,102 @@
 <!doctype html>
-<html>
+<html lang="fr">
     <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-        <title>Ange Chierchia - Webdesigner &amp; D&eacute;veloppeur front-end</title>
-        <meta name="description" content="Curriculum vit&aelig; de Ange Chierchia. D&eacute;veloppeur PHP, int&eacute;grateur HTML/CSS/JavaScript, designer Web au Luxembourg" />
-        <meta name="keywords" content="developpeur php, integrateur web, developpeur frontend, web developer luxembourg, designer web" />
-        <meta name="revisit-after" content="7 days" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="css/normalize.css" />
-        <link rel="stylesheet" href="css/main.css" />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ange Chierchia – Webdesigner &amp; D&eacute;veloppeur font-end</title>
+        <meta name="description" content="Curriculum vit&aelig; de Ange Chierchia. D&eacute;veloppeur PHP, int&eacute;grateur HTML/CSS/JavaScript, designer Web au Luxembourg">
+        <meta name="revisit-after" content="7 days">
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700,700i" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/main.css">
     </head>
     <body>
         <div class="wrapper">
-            <header>
-                <div class="me">
-                    <img src="img/ange-chierchia.jpg" alt="Portrait de Ange Chierchia, développeur Web" class="me__avatar" />
-                    <h1 class="me__name">Ange Chierchia</h1>
-                    <p class="me__title">Webdesigner &amp; D&eacute;veloppeur front-end</p>
-                </div>
-                <div class="contact">
-                    <ul class="list list--center">
-                        <li class="list__item list__item--inline"><a href="mailto:dont@spam.me" id="send-mail">dont@spam.me</a></li>
-                        <li class="list__item list__item--inline"><a href="http://twitter.com/nighcrawl">@nighcrawl</a></li>
-                        <li class="list__item list__item--inline"><a href="https://chierchia.fr">https://chierchia.fr</a></li>
+            <header class="card">
+                <img src="assets/img/ange-chierchia.jpg" alt="Portrait de Ange Chierchia, développeur Web" class="card__media">
+                <h1 class="card__title">Ange Chierchia</h1>
+                <div class="card__description">
+                    <p class="job-description h4">Webdesign &amp; D&eacute;veloppeur front-end</p>
+                    <ul class="contact list list--inline">
+                        <li class="list__item"><a href="mailto:dont@spam.me" id="send-email">dont@spam.me</a></li>
+                        <li class="list__item"><a href="https://twitter.com/nighcrawl">@nighcrawl</a></li>
+                        <li class="list__item"><a href="https://chierchia.fr">https://chierchia.fr</a></li>
                     </ul>
                 </div>
             </header>
 
-            <div class="section section--skills">
-                <h2 class="section__title">Comp&eacute;tences</h2>
-                <ol class="list">
-                    <li class="list__item skill">
-                        <h3 class="item__title skill__name">Front-end</h3>
-                        <div class="item__description skill__description">
-                            <p>HTML5, CSS3, Sass, Compass, JavaScript, jQuery, AngularJS <em>(notions)</em>, Grunt <em>(notions)</em>, Gulp <em>(notions)</em></p>
-                        </div>
-                    </li>
-                    <li class="list__item skill">
-                        <h3 class="item__title skill__name">Back-end</h3>
-                        <div class="item__description skill__description">
-                            <p>PHP Objet, CodeIgniter <em>(notions)</em>, MySQL, Git, Python</p>
-                        </div>
-                    </li>
-                    <li class="list__item skill">
-                        <h3 class="item__title skill__name">Logiciels</h3>
-                        <div class="item__description skill__description">
-                            <p>Photoshop, Illustrator, Sublime Text, Atom, MailChimp</p>
-                        </div>
-                    </li>
-                </ol>
-            </div>
+            <main>
+                <section class="section">
+                    <h2 class="section__title">Comp&eacute;tences</h2>
+                    <ol class="list">
+                        <li class="list__item">
+                            <div class="card">
+                                <h3 class="card__title">Front-end</h3>
+                                <div class="card__description">
+                                    <p>HTML5, CSS3, Sass, Compass, JavaScript, jQuery, AngularJS <em>(notions)</em>, Grunt <em>(notions)</em>, Gulp <em>(notions)</em></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <div class="card">
+                                <h3 class="card__title">Back-end</h3>
+                                <div class="card__description">
+                                    <p>PHP Objet, CodeIgniter <em>(notions)</em>, Symfony <em>(notions)</em>, MySQL, Git, Python</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <div class="card">
+                                <h3 class="card__title">Logiciels</h3>
+                                <div class="card__description">
+                                    <p>Photoshop, Illustrator, Sublime Text, Atom, MailChimp</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </section>
 
-            <div class="section section--jobs">
-                <h2 class="section__title">Exp&eacute;riences</h2>
-                <ol class="list">
-                    <li class="list__item job">
-                        <div class="job__details">
-                            <div class="item__dates job__dates">
-                                <div class="date--start">janv. 2015</div>
-                                <div class="date--end">En poste</div>
+                <section class="section">
+                    <h2 class="section__title">Exp&eacute;riences</h2>
+                    <ol class="list">
+                        <li class="list__item">
+                            <div class="card">
+                                <h3 class="card__title"></h3>
+                                <div class="card__meta"></div>
+                                <div class="card__description"></div>
                             </div>
-                            <h3 class="item__title job__position">D&eacute;veloppeur Web</h3>
-                            <div class="job__location">
-                                <a href="https://www.ibakus.com" class="company__name">Ibakus Europe sa</a>, <span class="company__location">Strassen</span>
+                        </li>
+                        <li class="list__item">
+                            <div class="card">
+                                <h3 class="card__title"></h3>
+                                <div class="card__meta"></div>
+                                <div class="card__description"></div>
                             </div>
-                            <div class="item__description job__description">
-                                <p>Développement d'applications Web en PHP et Javascript destinées aux professionnels de la finance et du droit. Conception du nouveau site de pr&eacute;sentation.</p>
+                        </li>
+                        <li class="list__item">
+                            <div class="card">
+                                <h3 class="card__title"></h3>
+                                <div class="card__meta"></div>
+                                <div class="card__description"></div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="list__item job">
-                        <div class="job__details">
-                            <div class="item__dates job__dates">
-                                <div class="date--start">juin 2010</div>
-                                <div class="date--end">d&eacute;c. 2014</div>
+                        </li>
+                        <li class="list__item">
+                            <div class="card">
+                                <h3 class="card__title"></h3>
+                                <div class="card__meta"></div>
+                                <div class="card__description"></div>
                             </div>
-                            <h3 class="item__title job__position">D&eacute;veloppeur et designer Web</h3>
-                            <div class="job__location">
-                                <a href="http://www.cbc.lu" class="company__name">CBC Informatique</a>, <span class="company__location">Bascharage</span>
+                        </li>
+                        <li class="list__item">
+                            <div class="card">
+                                <h3 class="card__title"></h3>
+                                <div class="card__meta"></div>
+                                <div class="card__description"></div>
                             </div>
-                            <div class="item__description job__description">
-                                <p>Application Web de g&eacute;olocalisation de v&eacute;hicule en temps r&eacute;el : <em>conception de l'interface utilisateur adapt&eacute;e pour desktop, tablette et smartphone, utilisation des donn&eacute;es cartographiques Open Street Map, dessins et int&eacute;ractions sur la carte via l'API Leaflet, utilisation de divers services Web de geocoding/reverse geocoding.</em></p>
-                                <p>Cr&eacute;ation d'une plateforme intranet : <em>600 comptes utilisateur, gestion des droits d'acc&egrave;s, partage de documents, agenda, forums de discussion, volet de notifications.</em></p>
-                                <p>R&eacute;alisation d'un mini CMS adaptable aux besoins sp&eacute;cifiques des clients.</p>
-                                <p>Conception et envoi de newsletters en partenariat avec HP, Lenovo et Microsoft en accord avec les <i>Guidelines</i> de chaque partenaire.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list__item job">
-                        <div class="job__details">
-                            <div class="item__dates job__dates">
-                                <div class="date--start">juin 2009</div>
-                                <div class="date--end">sept. 2009</div>
-                            </div>
-                            <h3 class="item__title job__position">D&eacute;veloppeur Web stagiaire</h3>
-                            <div class="job__location">
-                                <a href="http://www.cbc.lu" class="company__name">CBC Informatique</a>, <span class="company__location">Bascharage</span>
-                            </div>
-                            <div class="item__description job__description">
-                                <p>Refonte d'une boutique en ligne en vue d'obtenir une Licence professionnelle Web et commerce &eacute;lectronique : <em>&eacute;tude de  l'existant, r&eacute;daction d'un cahier des charges, d&eacute;finition et int&eacute;gration de la nouvelle charte graphique, d&eacute;veloppement d'un CMS e-commerce personnalis&eacute;, mise en place d'un module de paiement en ligne s&eacute;curis&eacute;.</em></p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list__item job">
-                        <div class="job__details">
-                            <div class="item__dates job__dates">
-                                <div class="date--start">d&eacute;c. 2008</div>
-                                <div class="date--end">avr. 2009</div>
-                            </div>
-                            <h3 class="item__title job__position">D&eacute;veloppeur Web stagiaire</h3>
-                            <div class="job__location">
-                                <a href="http://www.unpointzero.com" class="company__name">Unpointz&eacute;ro</a>, <span class="company__location">Metz</span>
-                            </div>
-                            <div class="item__description job__description">
-                                <p>Cr&eacute;ation d'un site Web de d&eacute;p&ocirc;t d'&oelig;uvres num&eacute;riques dans le cadre de la licence professionnelle : <em>travail collaboratif, d&eacute;finition et r&eacute;daction du cahier des charges, r&eacute;partition des t&acirc;ches, d&eacute;veloppement du module d'inscription utilisateurs.</em></p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list__item job">
-                        <div class="job__details">
-                            <div class="item__dates job__dates">
-                                <div class="date--start">janv. 2008</div>
-                                <div class="date--end">f&eacute;vr. 2008</div>
-                            </div>
-                            <h3 class="item__title job__position">D&eacute;veloppeur Web stagiaire</h3>
-                            <div class="job__location">
-                                <span class="company__name">IPcube</span>, <span class="company__location">Montigny-l&egrave;s-Metz</span>
-                            </div>
-                            <div class="item__description job__description">
-                                <p>D&eacute;veloppement d'un site de gestion de listes de mariage dans le but de valider un BTS Informatique de gestion : <em>d&eacute;finition des diff&eacute;rents niveaux d'acc&egrave;s utilisateurs, cr&eacute;ation du back office, d&eacute;veloppement du module d'inscription et de cr&eacute;ation de listes de mariage.</em></p>
-                            </div>
-                        </div>
-                    </li>
-                </ol>
-            </div>
-
-            <div class="section section--diplomas">
-                <h2 class="section__title">Formations</h2>
-                <ol class="list">
-                    <li class="list__item diploma">
-                        <div class="item__dates diploma__dates">
-                            <div class="date--start">sept. 2008</div>
-                            <div class="date--end">sept. 2009</div>
-                        </div>
-                        <h3 class="item__title diploma__name">Licence professionnelle Web et Commerce &Eacute;lectronique</h3>
-                        <div class="diploma__location">
-                            <a href="http://www.iut.univ-metz.fr/formations/les-licences-professionnelles/systemes-informatiques-et/" class="school__name">IUT Universit&eacute; Paul Verlaine</a>, <span class="school__location">Metz</span>
-                        </div>
-                        <div class="item__description diploma__description">
-                            <p>Design et ergonomie, commerce &eacute;lectronique, xHTML, CSS, Javascript.</p>
-                        </div>
-                    </li>
-                    <li class="list__item diploma">
-                        <div class="item__dates diploma__dates">
-                            <div class="date--start">sept. 2006</div>
-                            <div class="date--end">juin 2008</div>
-                        </div>
-                        <h3 class="item__title diploma__name">BTS Informatique de Gestion</h3>
-                        <div class="diploma__location">
-                            <a href="http://www.ac-nancy-metz.fr/pres-etab/schuman/formations/bts-sio.aspx" class="school__name">Lyc&eacute;e Robert Schuman</a>, <span class="school__location">Metz</span>
-                        </div>
-                        <div class="item__description diploma__description">
-                            <p>Algorithmique, Merise, UML, programmation orient&eacute;e Objet, syst&egrave;me de gestion de base de donn&eacute;es.</p>
-                        </div>
-                    </li>
-                </ol>
-            </div>
-
-            <div class="section section--others">
-                <h2 class="section__title">Divers</h2>
-                <ol class="list">
-                    <li class="list__item other">
-                        <div class="item__dates other__dates">
-                            <div class="date--start">f&eacute;vr. 2012</div>
-                        </div>
-                        <div class="item__description other__description">
-                            <p>Interview&eacute; dans le Webdesign Magazine Hors s&eacute;rie n&deg;13 et r&eacute;daction d'un tutoriel traitant de la cr&eacute;ation d'un design Web pour un restaurant asiatique.</p>
-                        </div>
-                    </li>
-                    <li class="list__item other">
-                        <div class="item__dates other__dates">
-                            <div class="date--start">juil. 2010</div>
-                            <div class="date--end">avr. 2011</div>
-                        </div>
-                        <div class="item__description other__description">
-                            <p>Conception du th&egrave;me WordPress du <a href="http://wdfriday.com">Webdesign Friday</a> en collaboration avec <a href="http://fran6art.com">Francis Chouquet</a> et <a href="http://twikito.com">Matthieu Bu&eacute;</a>.</p>
-                        </div>
-                    </li>
-                </ol>
-            </div>
-
-            <footer>
-                <a class="btn" href="public/Ange-Chierchia-Webdesigner-developpeur-front-end.pdf" id="download" title="T&eacute;l&eacute;charger mon CV au format PDF">T&eacute;l&eacute;charger mon CV au format PDF</a>
-            </footer>
+                        </li>
+                    </ol>
+                </section>
+            </main>
         </div>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script src="js/main.js"></script>
-        <script>
-            var _gaq=[['_setAccount','UA-1952233-6'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
     </body>
 </html>
