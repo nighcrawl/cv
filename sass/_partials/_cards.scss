@@ -13,6 +13,13 @@
     }
 
     &__title {}
+
+    &__meta {
+        color: lighten($base-color, 45%);
+        font-size: .875em;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
 }
 
 
