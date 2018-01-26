@@ -1,7 +1,7 @@
 .wrapper {
     margin: 0 auto;
     max-width: $wrapper-size;
-    padding: 0 1em;
+    padding: 0 1rem;
 
     @media only screen and (min-width: 32em) {
         max-width: $wrapper-size * 0.8;
@@ -15,4 +15,8 @@ img {
 
 .section {
     border-bottom: 1px solid $grey;
+
+    &__title {
+        text-transform: uppercase;
+    }
 }

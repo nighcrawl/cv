@@ -4,19 +4,18 @@ body {
     line-height: $base-line-height;
 
     @media only screen and (min-width: 32em) {
-        font-size: $base-font-size * 1.25;
+        font-size: $base-font-size * 1.125;
     }
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     font-weight: bold;
     line-height: 1.2;
-    margin: .5em 0 .5em;
+    margin: 1rem 0;
 }
 
 h1, .h1 {
     font-size: 3.375em;
-    margin-top: 0;
 }
 
 h2, .h2 {
