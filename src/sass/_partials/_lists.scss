@@ -1,0 +1,20 @@
+.list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    &--inline {
+        .list__item {
+            display: inline-flex;
+        }
+
+        .list__item:not(:first-child):before {
+            content: "•";
+            padding: 0 .25em;
+        }
+    }
+
+    &--center {
+        text-align: center;
+    }
+}
