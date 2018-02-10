@@ -6,11 +6,22 @@
     @media only screen and (min-width: 32em) {
         max-width: $wrapper-size * 0.8;
     }
+
+    @media print {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        max-width: 100%;
+    }
 }
 
 img {
     height: auto;
     max-width: 100%;
+
+    @media print {
+        display: none;
+    }
 }
 
 .section {
@@ -19,5 +30,9 @@ img {
     &__title {
         margin-top: 1.5rem;
         text-transform: uppercase;
+
+        @media print {
+            margin-bottom: .25em;
+        }
     }
 }

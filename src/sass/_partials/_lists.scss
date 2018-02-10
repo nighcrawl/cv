@@ -18,3 +18,9 @@
         text-align: center;
     }
 }
+
+.list .list__item:first-of-type .card {
+    @media print {
+        margin-top: 0;
+    }
+}

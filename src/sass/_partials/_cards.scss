@@ -12,7 +12,11 @@
         margin-bottom: 0;
     }
 
-    &__title {}
+    &__title {
+        @media print {
+            margin-bottom: .25em;
+        }
+    }
 
     &__meta {
         color: lighten($base-color, 45%);
@@ -32,6 +36,12 @@ header {
         text-align: center;
     }
 
+    &.card {
+        @media print {
+            margin-top: 0;
+        }
+    }
+
     .card__title,
     .job-description {
         text-transform: uppercase;
@@ -45,6 +55,10 @@ header {
 
 footer {
     text-align: center;
+
+    @media print {
+        display: none;
+    }
 }
 
 .date--end:before {
