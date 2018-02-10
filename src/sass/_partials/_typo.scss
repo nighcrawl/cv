@@ -33,3 +33,15 @@ h4, .h4 {
 small, .small-text {
     font-size: 0.707em;
 }
+
+
+a {
+	@include single-transition(all, .25s, ease);
+	color: $link-color;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
+}
