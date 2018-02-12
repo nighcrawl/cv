@@ -12,3 +12,11 @@ document.addEventListener('DOMContentLoaded', function () {
     emailLink.setAttribute("href", "mailto:" + email + "?subject=" + encodeURIComponent(emailSubject));
     emailLink.innerHTML = email;
 });
+
+fetch('../../public/jobs.json').then(function (response) {
+    return response.json();
+}).then(function (data) {
+    data.map(function (job) {
+        console.log(job);
+    });
+});

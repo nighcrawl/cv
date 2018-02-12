@@ -4,11 +4,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const emailTLD = "moc.liamg";
     const emailSubject = "Votre profil m'intéresse";
 
-    let email = emailName.split("").reverse().join("")+ "@";
+    let email = emailName.split("").reverse().join("") + "@";
     email += emailTLD.split("").reverse().join("");
 
     emailLink.setAttribute("href", "mailto:" + email
         + "?subject=" + encodeURIComponent(emailSubject)
     );
     emailLink.innerHTML = email;
+});
+
+
+fetch('../../public/jobs.json')
+.then((response) => response.json())
+.then(function(data) {
+    data.map((job) => {
+        console.log(job);
+    });
 });
