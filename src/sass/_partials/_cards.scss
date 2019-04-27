@@ -13,6 +13,8 @@
     }
 
     &__title {
+        font-style: italic;
+        
         @media print {
             margin-bottom: .25em;
         }
@@ -44,7 +46,8 @@ header {
 
     .card__title,
     .job-description {
-        text-transform: uppercase;
+        //text-transform: uppercase;
+        font-style: normal;
     }
 
     .card__media {
