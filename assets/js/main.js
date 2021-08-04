@@ -13,8 +13,8 @@ function relativeTime(start, end, lang = 'fr') {
     var labelAnd = lang === 'fr' ? 'et' : 'and';
 
     var distance  = end.getTime() - start.getTime();
-    var years = Math.floor(distance / (24 * 60 * 60 * 1000 * 365));
-    var months = Math.floor(distance / (24 * 60 * 60 * 1000 * 365/12));
+    var years = Math.floor(distance % (24 * 60 * 60 * 1000 * 365));
+    var months = Math.floor(distance % (24 * 60 * 60 * 1000 * 365/12));
 
     var string = '';
 
@@ -45,10 +45,10 @@ document.addEventListener('DOMContentLoaded', function () {
     var lang = document.querySelector('html').getAttribute('lang');
 
     document.querySelectorAll('.relative-time').forEach(function(el, idx) {
-        var start = el.getAttribute('data-start');
-        var end = el.getAttribute('data-end');
-
+        var start = el.getAttribute('data-start') + 'T00:00:00';
+        var end = el.getAttribute('data-end') + 'T00:00:00';
         var relative = relativeTime(start, end, lang);
+        console.log({lang, start, end, relative});
 
         el.innerHTML = relative;
     });
