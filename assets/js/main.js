@@ -4,17 +4,17 @@ function relativeTime(start, end, lang = 'fr') {
     if (typeof(end) === undefined) {
         end = new Date();
     } else {
-        end = new Date(Date.parse(end));
+        end = new Date(Date.parse(end + 'T00:00:00'));
     }
-    start = new Date(Date.parse(start));
+    start = new Date(Date.parse(start + 'T00:00:00'));
 
     var labelYear = lang === 'fr' ? 'an' : 'year';
     var labelMonth = lang === 'fr' ? 'mois' : 'month';
     var labelAnd = lang === 'fr' ? 'et' : 'and';
 
     var distance  = end.getTime() - start.getTime();
-    var years = Math.floor(distance / (24 * 60 * 60 * 1000 * 365));
-    var months = Math.floor(distance / (24 * 60 * 60 * 1000 * 365/12));
+    var years = Math.floor(distance % (24 * 60 * 60 * 1000 * 365));
+    var months = Math.floor(distance % (24 * 60 * 60 * 1000 * 365/12));
 
     var string = '';
 
@@ -47,8 +47,8 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.relative-time').forEach(function(el, idx) {
         var start = el.getAttribute('data-start');
         var end = el.getAttribute('data-end');
-
         var relative = relativeTime(start, end, lang);
+        console.log({lang, start, end, relative});
 
         el.innerHTML = relative;
     });
