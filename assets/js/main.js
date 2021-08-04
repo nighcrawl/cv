@@ -1,7 +1,7 @@
 'use strict';
 
 function relativeTime(start, end, lang = 'fr') {
-    if (typeof(end) === undefined) {
+    if (typeof(end) === null) {
         end = new Date();
     } else {
         end = new Date(Date.parse(end + 'T00:00:00'));
