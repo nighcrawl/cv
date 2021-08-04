@@ -1,7 +1,7 @@
 'use strict';
 
 function relativeTime(start, end, lang = 'fr') {
-    if (typeof(end) === null) {
+    if (end === null) {
         end = new Date();
     } else {
         end = new Date(Date.parse(end + 'T00:00:00'));
@@ -12,14 +12,21 @@ function relativeTime(start, end, lang = 'fr') {
     var labelMonth = lang === 'fr' ? 'mois' : 'month';
     var labelAnd = lang === 'fr' ? 'et' : 'and';
 
+    var yearInMs = 1000 * 60 * 60 * 24 * 365;
+    var monthInMs = 1000 * 60 * 60 * 24 * 30;
+
     var distance  = end.getTime() - start.getTime();
-    var years = Math.floor(distance % (24 * 60 * 60 * 1000 * 365));
-    var months = Math.floor(distance % (24 * 60 * 60 * 1000 * 365/12));
+    var years = Math.floor(distance / yearInMs);
+    var months = Math.floor(distance / monthInMs);
 
     var string = '';
 
     if (years > 0) {
         string += years + ' ' + labelYear + (years > 1 ? 's' : '');
+
+        var delta = Math.floor(distance % yearInMs);
+        months = Math.round(delta / monthInMs);
+
         if (months > 0) {
             string += ' ' + labelAnd + ' ' + months + ' ' + labelMonth + (months > 1 && lang !== 'fr' ? 's' : '');
         }
