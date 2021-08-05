@@ -25,6 +25,19 @@
         font-size: .875em;
         font-weight: bold;
         text-transform: uppercase;
+
+        .relative-time {
+            font-size: .8em;
+            font-style: italic;
+            
+            &:before {
+                content: " (";
+            }
+
+            &:after {
+                content: ")";
+            }
+        }
     }
 }
 
