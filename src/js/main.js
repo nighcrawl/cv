@@ -41,7 +41,7 @@ function relativeTime(start, end, lang = 'fr') {
 
 document.addEventListener('DOMContentLoaded', () => {
     let emailLink = document.getElementById('send-email');
-    const emailName = "aihcreihc.egna";
+    const emailName = "sboj+aihcreihc.egna";
     const emailTLD = "moc.liamg";
     const emailSubject = document.querySelector("html").getAttribute('lang') === "fr" ? "Votre profil m'intéresse" : "I'm interested in your profile";
 
