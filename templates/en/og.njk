@@ -1,0 +1,23 @@
+---
+permalink: /en/og/index.html
+layout: null
+---
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    html,body{margin:0}
+    body{width:1200px;height:630px;display:flex;align-items:center;justify-content:center;background:#0b5fff;color:#fff;font:700 72px/1 system-ui;}
+    .card{width:1060px;height:500px;background:#fff;color:#111;border-radius:32px;padding:60px;display:flex;flex-direction:column;justify-content:center;box-shadow:0 20px 60px rgba(0,0,0,.2)}
+    .title{font-size:64px;margin:0 0 12px}
+    .sub{font:500 28px/1.4 system-ui;color:#444;margin:0}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1 class="title">{{ en.site.identity.name }}</h1>
+    <p class="sub">{{ en.site.identity.title }} — {{ en.site.identity.location }}</p>
+  </div>
+</body>
+</html>

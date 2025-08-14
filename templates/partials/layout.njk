@@ -1,31 +1,41 @@
 <!doctype html>
-<html lang="fr">
+<html lang="{{ lang or 'fr' }}">
 <head>
+  {% if lang == 'en' %}
+    {% set site = en.site %}
+    {% set i18n = i18n.en %}
+    {% set path_pdf = '/en/cv.pdf' %}
+    {% set path_json = '/en/resume.json' %}
+    {% set path_og = '/en/og-image.png' %}
+    {% set preposition = 'in' %}
+  {% else %}
+    {% set site = fr.site %}
+    {% set i18n = i18n.fr %}
+    {% set path_pdf = '/cv.pdf' %}
+    {% set path_json = '/resume.json' %}
+    {% set path_og = '/og-image.png' %}
+    {% set preposition = 'à' %}
+  {% endif %}
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ site.identity.name }} – {{ site.identity.title }}</title>
-  <link rel="alternate" type="application/pdf"  href="{{ '/cv.pdf' | url }}" title="CV PDF">
-  <link rel="alternate" type="application/json" href="{{ '/resume.json' | url }}" title="JSON Resume">
-  <meta name="description" content="{{ site.identity.title }} à {{ site.identity.location }}">
-  <meta property="og:title" content="{{ __ogtitle or (site.identity.name + ' – ' + site.identity.title) }}">
-  <meta property="og:description" content="{{ __ogdesc or (site.identity.title + ' à ' + site.identity.location) }}">
-  <meta property="og:image" content="{{ (__ogimg or 'og-image.png') | url }}">
+  <meta name="description" content="{{ site.identity.title }} {{ preposition }} {{ site.identity.location }}">
+
+  <link rel="alternate" href="{{ '/' | url }}" hreflang="fr">
+  <link rel="alternate" href="{{ '/en/' | url }}" hreflang="en">
+  <link rel="alternate" href="{{ '/' | url }}" hreflang="x-default">
+
+  <link rel="alternate" type="application/pdf"  href="{{ path_pdf  | url }}"  title="CV PDF">
+  <link rel="alternate" type="application/json" href="{{ path_json | url }}" title="JSON Resume">
+
+  <meta property="og:title" content="{{ site.identity.name }} – {{ site.identity.title }}">
+  <meta property="og:description" content="{{ site.identity.title }} {{ preposition }} {{ site.identity.location }}">
+  <meta property="og:image" content="{{ path_og | url }}">
   <meta name="twitter:card" content="summary_large_image">
+
   <link rel="stylesheet" href="{{ '/assets/styles.css' | url }}">
   <link rel="stylesheet" href="{{ '/assets/print.css' | url }}" media="print">
-
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Person",
-    "name":"{{ site.identity.name }}",
-    "jobTitle":"{{ site.identity.title }}",
-    "url":"{{ site.identity.website }}",
-    "email":"{{ site.identity.email }}",
-    "address":{"@type":"PostalAddress","addressLocality":"{{ site.identity.location }}"},
-    "sameAs":[{% for s in site.identity.socials %}"{{ s.url }}"{% if not loop.last %},{% endif %}{% endfor %}]
-  }
-  </script>
 </head>
 <body>
   <main class="container">

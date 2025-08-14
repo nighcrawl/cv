@@ -1,15 +1,11 @@
 import YAML from "yaml";
 
 export default function(eleventyConfig) {
-  // ↓ autorise .yml / .yaml comme fichiers de data globaux
-  eleventyConfig.addDataExtension("yml",  contents => YAML.parse(contents));
-  eleventyConfig.addDataExtension("yaml", contents => YAML.parse(contents));
-
+  eleventyConfig.addDataExtension("yml",  c => YAML.parse(c));
+  eleventyConfig.addDataExtension("yaml", c => YAML.parse(c));
   eleventyConfig.addPassthroughCopy({"src/assets": "assets"});
-  eleventyConfig.addFilter("fmtDate", (str) => {
-    if (!str) return "Aujourd'hui";
-    return str.replace(/-/g, "·");
-  });
+
+  eleventyConfig.addFilter("fmtDate", (str) => !str ? "Aujourd'hui" : str.replace(/-/g, "·"));
 
   return {
     dir: { input: "templates", includes: "partials", data: "../data", output: "dist" },

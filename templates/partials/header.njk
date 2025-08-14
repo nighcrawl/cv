@@ -1,4 +1,3 @@
-
 <header class="header">
   <h1>{{ site.identity.name }}</h1>
   <p class="subtitle">{{ site.identity.title }}</p>
@@ -12,9 +11,23 @@
       <a href="{{ s.url }}" rel="me noopener" target="_blank">{{ s.name }}</a>{% if not loop.last %} · {% endif %}
     {% endfor %}
   </p>
+
+  {% if lang == 'en' %}
+    {% set pdf_href = '/en/cv.pdf' %}
+    {% set json_href = '/en/resume.json' %}
+    {% set switch_href = '/' %}
+    {% set switch_hreflang = 'fr' %}
+  {% else %}
+    {% set pdf_href = '/cv.pdf' %}
+    {% set json_href = '/resume.json' %}
+    {% set switch_href = '/en/' %}
+    {% set switch_hreflang = 'en' %}
+  {% endif %}
+
   <div class="actions">
-    <a class="btn" href="{{ '/cv.pdf' | url }}" download aria-label="Télécharger le CV en PDF">Télécharger le PDF</a>
-    <a class="btn ghost" href="{{ '/resume.json' | url }}" aria-label="Afficher le JSON Resume">JSON Resume</a>
+    <a class="btn" href="{{ pdf_href | url }}" download aria-label="{{ i18n.labels.pdf }}">{{ i18n.labels.pdf }}</a>
+    <a class="btn ghost" href="{{ json_href | url }}" aria-label="{{ i18n.labels.json }}">{{ i18n.labels.json }}</a>
+    <a class="btn ghost" href="{{ switch_href | url }}" hreflang="{{ switch_hreflang }}">{{ i18n.labels.switchTo }}</a>
   </div>
 
 </header>
