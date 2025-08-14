@@ -12,4 +12,9 @@
       <a href="{{ s.url }}" rel="me noopener" target="_blank">{{ s.name }}</a>{% if not loop.last %} · {% endif %}
     {% endfor %}
   </p>
+  <div class="actions">
+    <a class="btn" href="{{ '/cv.pdf' | url }}" download aria-label="Télécharger le CV en PDF">Télécharger le PDF</a>
+    <a class="btn ghost" href="{{ '/resume.json' | url }}" aria-label="Afficher le JSON Resume">JSON Resume</a>
+  </div>
+
 </header>

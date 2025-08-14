@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ site.identity.name }} – {{ site.identity.title }}</title>
+  <link rel="alternate" type="application/pdf"  href="{{ '/cv.pdf' | url }}" title="CV PDF">
+  <link rel="alternate" type="application/json" href="{{ '/resume.json' | url }}" title="JSON Resume">
   <meta name="description" content="{{ site.identity.title }} à {{ site.identity.location }}">
   <meta property="og:title" content="{{ __ogtitle or (site.identity.name + ' – ' + site.identity.title) }}">
   <meta property="og:description" content="{{ __ogdesc or (site.identity.title + ' à ' + site.identity.location) }}">
@@ -11,6 +13,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="{{ '/assets/styles.css' | url }}">
   <link rel="stylesheet" href="{{ '/assets/print.css' | url }}" media="print">
+
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
