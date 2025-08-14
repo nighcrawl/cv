@@ -1,0 +1,15 @@
+
+<header class="header">
+  <h1>{{ site.identity.name }}</h1>
+  <p class="subtitle">{{ site.identity.title }}</p>
+  <p class="meta">
+    <span>{{ site.identity.location }}</span>
+    {% if site.identity.email %} • <a href="mailto:{{ site.identity.email }}">{{ site.identity.email }}</a>{% endif %}
+    {% if site.identity.website %} • <a href="{{ site.identity.website }}">{{ site.identity.website }}</a>{% endif %}
+  </p>
+  <p class="socials">
+    {% for s in site.identity.socials %}
+      <a href="{{ s.url }}" rel="me noopener" target="_blank">{{ s.name }}</a>{% if not loop.last %} · {% endif %}
+    {% endfor %}
+  </p>
+</header>

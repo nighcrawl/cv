@@ -1,0 +1,48 @@
+
+{% extends "layout.njk" %}
+{% block content %}
+
+{% include "header.njk" %}
+
+<section id="skills">
+  <h2>Compétences</h2>
+  {% for group in site.skills %}
+    <h3>{{ group.group }}</h3>
+    <ul class="tags">
+      {% for s in group.items %}<li>{{ s }}</li>{% endfor %}
+    </ul>
+  {% endfor %}
+</section>
+
+
+
+<section id="experience">
+  <h2>Expériences</h2>
+  {% for xp in site.experience %}
+    {% include "section-experience.njk" %}
+  {% endfor %}
+</section>
+
+<section id="education">
+  <h2>Études</h2>
+  {% for edu in site.education %}
+    {% include "section-education.njk" %}
+  {% endfor %}
+</section>
+
+{% if site.extras %}
+<section id="extras">
+  <h2>Extras</h2>
+  <ul>
+    {% for e in site.extras %}
+      <li><strong>{{ e.date }}</strong> — {{ e.title }}</li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+{% endblock %}
+
+{% set __ogtitle = site.identity.name + " – " + site.identity.title %}
+{% set __ogdesc  = site.identity.title + " à " + site.identity.location %}
+{% set __ogimg   = "og-image.png" %}

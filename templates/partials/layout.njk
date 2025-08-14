@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.identity.name }} – {{ site.identity.title }}</title>
+  <meta name="description" content="{{ site.identity.title }} à {{ site.identity.location }}">
+  <meta property="og:title" content="{{ __ogtitle or (site.identity.name + ' – ' + site.identity.title) }}">
+  <meta property="og:description" content="{{ __ogdesc or (site.identity.title + ' à ' + site.identity.location) }}">
+  <meta property="og:image" content="{{ (__ogimg or 'og-image.png') | url }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="{{ '/assets/styles.css' | url }}">
+  <link rel="stylesheet" href="{{ '/assets/print.css' | url }}" media="print">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"{{ site.identity.name }}",
+    "jobTitle":"{{ site.identity.title }}",
+    "url":"{{ site.identity.website }}",
+    "email":"{{ site.identity.email }}",
+    "address":{"@type":"PostalAddress","addressLocality":"{{ site.identity.location }}"},
+    "sameAs":[{% for s in site.identity.socials %}"{{ s.url }}"{% if not loop.last %},{% endif %}{% endfor %}]
+  }
+  </script>
+</head>
+<body>
+  <main class="container">
+    {% block content %}{% endblock %}
+  </main>
+  <footer class="footer">
+    {% include "footer.njk" %}
+  </footer>
+</body>
+</html>

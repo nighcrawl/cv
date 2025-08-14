@@ -1,0 +1,11 @@
+
+<article class="edu">
+  <header>
+    <h3>{{ edu.degree }} — <span class="school">{{ edu.school }}</span></h3>
+    <p class="when">{{ edu.start | fmtDate }} → {{ edu.end | fmtDate }}</p>
+    <p class="where">{{ edu.location }}</p>
+  </header>
+  {% if edu.details %}
+    {% for d in edu.details %}<p>{{ d }}</p>{% endfor %}
+  {% endif %}
+</article>

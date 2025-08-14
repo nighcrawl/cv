@@ -1,0 +1,19 @@
+
+<article class="xp">
+  <header>
+    <h3>{{ xp.role }} — <span class="company">{{ xp.company }}</span></h3>
+    <p class="when">{{ xp.start | fmtDate }} → {{ xp.end | fmtDate }}</p>
+    <p class="where">{{ xp.location }}</p>
+  </header>
+  {% if xp.description %}
+    {% for h in xp.description %}<p>{{ h }}</p>{% endfor %}
+  {% endif %}
+  {% if xp.projects %}
+  <p class="projects">
+    Projets : 
+    {% for p in xp.projects %}
+      <a href="{{ p.url }}" target="_blank" rel="noopener">{{ p.name }}</a>{% if not loop.last %}, {% endif %}
+    {% endfor %}
+  </p>
+  {% endif %}
+</article>
