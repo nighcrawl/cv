@@ -17,28 +17,55 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: 'npm'
+      
       - name: Install
         run: npm ci
+      
       - name: Validate data
         run: npm run validate
+      
       - name: Build CSS (Sass)
         run: npm run scss:build
+      
       - name: Install Playwright (Chromium)
         run: npx playwright install --with-deps chromium
+      
       - name: Build site
         run: ELEVENTY_PATH_PREFIX="/${{ github.event.repository.name }}/" npm run build
+      
       - name: Generate PDF
         run: npm run pdf
+
       - name: Generate JSON Resume
         run: npm run resume
+
       - name: Generate OG image
         run: npm run og
-      - name: Upload artifact
+
+      # ... steps avant: checkout, setup node, npm ci, build, pdf, og, etc.
+      - name: Deploy to OVH (FTPS)
+        uses: SamKirkland/FTP-Deploy-Action@v4
+        with:
+          server: ${{ secrets.OVH_HOST }}         # ex: ftp.cluster0xx.hosting.ovh.net
+          username: ${{ secrets.OVH_USER }}       # login FTP
+          password: ${{ secrets.OVH_PASS }}       # mot de passe FTP
+          protocol: ftps
+          port: 21
+          local-dir: dist/                        # ce que tu viens de builder
+          server-dir: www/cv/                     # dossier cible sur OVH (adapte si besoin)
+          exclude: |                              # évite d’écraser des fichiers sensibles
+            **/.git*
+            **/.DS_Store
+            **/.htaccess
+          # dangerous-clean-slate: true           # active-le si tu veux vider www/cv/ à chaque déploiement
+
+      - name: Upload artifact for GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
