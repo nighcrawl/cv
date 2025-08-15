@@ -1,3 +1,12 @@
+# [3.4.0](https://github.com/nighcrawl/cv/compare/v3.3.1...v3.4.0) (2025-08-15)
+
+
+### Features
+
+* **pdf:** make print match web (A4 page, colors, no-breaks, SSR durations) and harden generation ([172929c](https://github.com/nighcrawl/cv/commit/172929cf9171f1ce32d5f7501fb4a3b752d1cc00))
+* **styles:** self-host Nunito (woff2) + preload; drop Google Fonts ([3344fc0](https://github.com/nighcrawl/cv/commit/3344fc08c4fb9623090ae04892367dddb4e7959d))
+* **styles:** self-host Nunito (woff2) + preload; drop Google Fonts ([350dfbd](https://github.com/nighcrawl/cv/commit/350dfbd5176f05f40cedd6d38914f0d534d67eda))
+
 ## [3.3.1](https://github.com/nighcrawl/cv/compare/v3.3.0...v3.3.1) (2025-08-15)
 
 
