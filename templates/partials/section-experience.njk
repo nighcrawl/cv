@@ -30,7 +30,7 @@
 
       {% if xp.projects %}
         <p>{% if lang == 'en' %}Some projects I worked on:{% else %}Quelques projets sur lesquels j'ai travaillé&nbsp;:{% endif %}</p>
-        <ul>
+        <ul class="projects">
           {% for p in xp.projects %}
             <li><a href="{{ p.url }}">{{ p.name }}</a></li>
           {% endfor %}
