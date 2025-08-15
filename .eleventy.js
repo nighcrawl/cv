@@ -65,6 +65,7 @@ export default function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/assets/css/main.css": "assets/css/main.css" });
   eleventyConfig.addPassthroughCopy({ "src/assets/img": "assets/img" });
   eleventyConfig.addPassthroughCopy({ "src/assets/js": "assets/js" });
+  eleventyConfig.addPassthroughCopy({ "src/assets/fonts": "assets/fonts" });
 
 
 
