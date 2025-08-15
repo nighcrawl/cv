@@ -1,3 +1,10 @@
+# [3.5.0](https://github.com/nighcrawl/cv/compare/v3.4.2...v3.5.0) (2025-08-15)
+
+
+### Features
+
+* **data:** update Skills section + add i18n for GitHub footnote ([3c139e8](https://github.com/nighcrawl/cv/commit/3c139e899050524f0cd969175a3a6d1e7c0e0a06))
+
 ## [3.4.2](https://github.com/nighcrawl/cv/compare/v3.4.1...v3.4.2) (2025-08-15)
 
 
