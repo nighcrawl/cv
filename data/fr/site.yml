@@ -8,6 +8,7 @@ identity:
   socials:
     - name: "Mastodon"
       url: "https://mastodon.social/@nighcrawl"
+      handle: "@nighcrawl"
     - name: "GitHub"
       url: "https://github.com/nighcrawl"
 
@@ -121,7 +122,8 @@ education:
 extras:
   - date: "2012-02"
     title: "Interview Webdesign Magazine HS n°13 + tutoriel « design Web pour restaurant asiatique »"
-  - date: "2010-07 – 2011-04"
+  - date: "2010-07"
+    end: "2011-04"
     title: "Conception du thème WordPress du Webdesign Friday en collaboration avec Francis Chouquet et Matthieu Bué."
     collaborators:
       - "Francis Chouquet"

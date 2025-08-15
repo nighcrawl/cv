@@ -1,19 +1,40 @@
+{# Rendu EXACT de chaque expérience, au format de ta page #}
+<li class="list__item">
+  <div class="card">
+    <h3 class="card__title">{{ xp.role }}</h3>
+    <div class="card__meta">
+      <span class="date--start">{{ xp.start | dateFmt(lang,'shortMonthYear') }}</span>
+      {% if xp.end %}
+        <span class="date--end">{{ xp.end | dateOr('En poste',lang,'shortMonthYear') }}</span>
+        <span class="relative-time" data-start="{{ xp.start }}" data-end="{{ xp.end }}"></span>
+      {% else %}
+        <span class="date--end">{% if lang == 'en' %}Present{% else %}En poste{% endif %}</span>
+        <span class="relative-time" data-start="{{ xp.start }}"></span>
+      {% endif %}
+    </div>
+    <div class="card__description">
+      <div class="company">
+        {% if xp.url %}
+          <a href="{{ xp.url }}" class="company__name">{{ xp.company }}</a>, <span class="company__location">{{ xp.location }}</span>
+        {% else %}
+          <span class="company__name">{{ xp.company }}</span>, <span class="company__location">{{ xp.location }}</span>
+        {% endif %}
+      </div>
 
-<article class="xp">
-  <header>
-    <h3>{{ xp.role }} — <span class="company">{{ xp.company }}</span></h3>
-    <p class="when">{{ xp.start | fmtDate }} → {{ xp.end | fmtDate }}</p>
-    <p class="where">{{ xp.location }}</p>
-  </header>
-  {% if xp.description %}
-    {% for h in xp.description %}<p>{{ h }}</p>{% endfor %}
-  {% endif %}
-  {% if xp.projects %}
-  <p class="projects">
-    Projets : 
-    {% for p in xp.projects %}
-      <a href="{{ p.url }}" target="_blank" rel="noopener">{{ p.name }}</a>{% if not loop.last %}, {% endif %}
-    {% endfor %}
-  </p>
-  {% endif %}
-</article>
+      {% if xp.description %}
+        {% for p in xp.description %}
+          <p>{{ p }}</p>
+        {% endfor %}
+      {% endif %}
+
+      {% if xp.projects %}
+        <p><b>{% if lang == 'en' %}Some projects I worked on:{% else %}Quelques projets sur lesquels j'ai travaillé&nbsp;:{% endif %}</b></p>
+        <ul>
+          {% for p in xp.projects %}
+            <li><a href="{{ p.url }}">{{ p.name }}</a></li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+  </div>
+</li>

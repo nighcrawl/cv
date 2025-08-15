@@ -1,33 +1,26 @@
-<header class="header">
-  <h1>{{ site.identity.name }}</h1>
-  <p class="subtitle">{{ site.identity.title }}</p>
-  <p class="meta">
-    <span>{{ site.identity.location }}</span>
-    {% if site.identity.email %} • <a href="mailto:{{ site.identity.email }}">{{ site.identity.email }}</a>{% endif %}
-    {% if site.identity.website %} • <a href="{{ site.identity.website }}">{{ site.identity.website }}</a>{% endif %}
-  </p>
-  <p class="socials">
-    {% for s in site.identity.socials %}
-      <a href="{{ s.url }}" rel="me noopener" target="_blank">{{ s.name }}</a>{% if not loop.last %} · {% endif %}
-    {% endfor %}
-  </p>
+<header class="card">
+  {# garde le même visuel ; remplace le src si tu as un autre portrait #}
+  <img src="{{ '/assets/img/ange-chierchia-cf.jpg' | url }}" alt="Portrait de {{ site.identity.name }}, développeur Web" class="card__media">
+  <h1 class="card__title">{{ site.identity.name }}</h1>
+  <div class="card__description">
+    <p class="job-description h4">{{ site.identity.title }}</p>
+    <ul class="contact list list--inline list--center">
+      {% if site.identity.email %}
+        <li class="list__item"><a href="mailto:{{ site.identity.email }}" id="send-email">{{ site.identity.email }}</a></li>
+      {% endif %}
 
-  {% if lang == 'en' %}
-    {% set pdf_href = '/en/cv.pdf' %}
-    {% set json_href = '/en/resume.json' %}
-    {% set switch_href = '/' %}
-    {% set switch_hreflang = 'fr' %}
-  {% else %}
-    {% set pdf_href = '/cv.pdf' %}
-    {% set json_href = '/resume.json' %}
-    {% set switch_href = '/en/' %}
-    {% set switch_hreflang = 'en' %}
-  {% endif %}
+      {# essaie de ressortir Mastodon s’il existe, sinon le premier social #}
+      {% set masto = (site.identity.socials or []) | selectattr("name","equalto","Mastodon") | list | first %}
+      {% set firstSocial = (site.identity.socials or []) | first %}
+      {% if masto %}
+        <li class="list__item"><a href="{{ masto.url }}">{{ masto.handle }}</a></li>
+      {% elseif firstSocial %}
+        <li class="list__item"><a href="{{ firstSocial.url }}">{{ firstSocial.url }}</a></li>
+      {% endif %}
 
-  <div class="actions">
-    <a class="btn" href="{{ pdf_href | url }}" download aria-label="{{ i18n.labels.pdf }}">{{ i18n.labels.pdf }}</a>
-    <a class="btn ghost" href="{{ json_href | url }}" aria-label="{{ i18n.labels.json }}">{{ i18n.labels.json }}</a>
-    <a class="btn ghost" href="{{ switch_href | url }}" hreflang="{{ switch_hreflang }}">{{ i18n.labels.switchTo }}</a>
+      {% if site.identity.website %}
+        <li class="list__item"><a href="{{ site.identity.website }}">{{ site.identity.website }}</a></li>
+      {% endif %}
+    </ul>
   </div>
-
 </header>

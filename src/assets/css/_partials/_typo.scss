@@ -1,0 +1,68 @@
+body {
+    font-family: $base-font-face;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    @media only screen and (min-width: 32em) {
+        font-size: $base-font-size * 1.125;
+    }
+
+    @media only print {
+        font-size: 10pt;
+        color: $base-color !important;
+    }
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 1rem 0;
+
+    @media print {
+        margin-bottom: .25em;
+    }
+}
+
+h1, .h1 {
+    font-size: 3.375em;
+
+    @media print {
+        font-size: 2.4em;
+    }
+}
+
+h2, .h2 {
+    font-size: 2.25em;
+
+    @media print {
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+}
+
+h3, .h3 {
+    font-size: 1.5em;
+
+    @media print {
+        font-size: 1em;
+    }
+}
+
+h4, .h4 {
+    font-size: 1em;
+}
+
+small, .small-text {
+    font-size: 0.707em;
+}
+
+
+a {
+	@include single-transition(all, .25s, ease);
+	color: $link-color;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
+}

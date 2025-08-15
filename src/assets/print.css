@@ -1,7 +1,0 @@
-
-@page { size: A4; margin: 14mm; }
-body { font-size: 11pt; }
-#extras { page-break-before: always; }
-.tags li { border-color: #ccc; }
-.footer { display: none; }
-.actions { display: none !important; }

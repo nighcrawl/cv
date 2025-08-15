@@ -26,6 +26,8 @@ jobs:
         run: npm ci
       - name: Validate data
         run: npm run validate
+      - name: Build CSS (Sass)
+        run: npm run scss:build
       - name: Build
         run: npm run build
       - name: Install Playwright (Chromium)
