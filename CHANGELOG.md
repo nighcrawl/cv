@@ -1,3 +1,10 @@
+## [3.3.1](https://github.com/nighcrawl/cv/compare/v3.3.0...v3.3.1) (2025-08-15)
+
+
+### Bug Fixes
+
+* **release:** version release asset names to avoid GitHub “already_exists” ([5ed644b](https://github.com/nighcrawl/cv/commit/5ed644bbf3b69c7c0414ff2aabd665eb8afd80b6))
+
 # [3.3.0](https://github.com/nighcrawl/cv/compare/v3.2.0...v3.3.0) (2025-08-15)
 
 
