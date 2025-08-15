@@ -1,31 +1,34 @@
+// scripts/og.mjs
 import { chromium } from "playwright";
-import { exec } from "node:child_process";
+import { resolve } from "node:path";
 
-const server = exec("npx http-server dist -p 8081 -s");
-const wait = ms => new Promise(r => setTimeout(r, ms));
+const fileURL = (p) => "file://" + resolve(p);
+
+async function shot(inputHtml, outputPng) {
+  const browser = await chromium.launch({
+    args: ["--no-sandbox", "--disable-dev-shm-usage"]
+  });
+  const page = await browser.newPage({
+    viewport: { width: 1200, height: 630, deviceScaleFactor: 2 }
+  });
+
+  // Aucune requête réseau externe
+  await page.route("**/*", route => {
+    const u = route.request().url();
+    if (u.startsWith("file:") || u.startsWith("data:")) return route.continue();
+    return route.abort();
+  });
+
+  await page.goto(fileURL(inputHtml), { waitUntil: "load", timeout: 30000 });
+  // attendre les polices si présentes (safe, non bloquant si absent)
+  await page.evaluate(async () => { if (document.fonts?.ready) { await document.fonts.ready; } });
+  await page.screenshot({ path: outputPng });
+  await browser.close();
+}
 
 (async () => {
-  await wait(800);
-  const browser = await chromium.launch();
-
-  // FR
-  {
-    const page = await browser.newPage({ viewport: { width: 1200, height: 630 } });
-    await page.goto("http://localhost:8081/og/index.html", { waitUntil: "networkidle" });
-    await page.screenshot({ path: "dist/og-image.png" });
-    await page.close();
-    console.log("✔ dist/og-image.png");
-  }
-
-  // EN
-  {
-    const page = await browser.newPage({ viewport: { width: 1200, height: 630 } });
-    await page.goto("http://localhost:8081/en/og/index.html", { waitUntil: "networkidle" });
-    await page.screenshot({ path: "dist/en/og-image.png" });
-    await page.close();
-    console.log("✔ dist/en/og-image.png");
-  }
-
-  await browser.close();
-  server.kill();
+  await shot("dist/og/index.html", "dist/og-image.png");
+  console.log("✔ dist/og-image.png");
+  await shot("dist/en/og/index.html", "dist/en/og-image.png");
+  console.log("✔ dist/en/og-image.png");
 })();
