@@ -26,7 +26,8 @@
         font-weight: bold;
         text-transform: uppercase;
 
-        .relative-time {
+        .relative-time,
+        .relative-time--ssr {
             font-size: .8em;
             font-style: italic;
             

@@ -1,1 +1,517 @@
-﻿/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:rgba(0,0,0,0)}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}.wrapper{margin:0 auto;max-width:40em;padding:0 1rem}@media only screen and (min-width: 32em){.wrapper{max-width:32em}}@media print{.wrapper{margin:0;padding:0;width:100%;max-width:100%}}img{height:auto;max-width:100%}@media print{img{display:none}}.section{border-bottom:1px solid hsl(0,0%,88.3333333333%)}.section__title{margin-top:1.5rem}@media print{.section__title{margin-bottom:.25em}}.switch-lang{text-align:center;display:block;margin:.5em auto 0}@media print{.switch-lang{display:none}}body{font-family:"Nunito",sans-serif;font-size:15px;line-height:1.5}@media only screen and (min-width: 32em){body{font-size:16.875px}}@media only print{body{font-size:10pt;color:#222 !important}}h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{font-weight:bold;line-height:1.2;margin:1rem 0}@media print{h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{margin-bottom:.25em}}h1,.h1{font-size:3.375em}@media print{h1,.h1{font-size:2.4em}}h2,.h2{font-size:2.25em}@media print{h2,.h2{font-size:1.5em;margin-bottom:0}}h3,.h3{font-size:1.5em}@media print{h3,.h3{font-size:1em}}h4,.h4{font-size:1em}small,.small-text{font-size:.707em}a{-moz-transition:all .25s ease;-o-transition:all .25s ease;-webkit-transition:all .25s ease;transition:all .25s ease;color:#0000b5;text-decoration:none}a:hover,a:focus{color:#b50055}.btn{-moz-border-radius:2px;-o-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;background:#b50055;color:#fff;display:inline-block;font-weight:700;margin:0 auto;padding:.5em .8em;text-align:center}.btn:focus,.btn:hover{background:#0000b5;color:#fff}.list{list-style-type:none;margin:0;padding:0}.list--inline .list__item{display:inline-flex}.list--inline .list__item:not(:first-child):before{content:"•";padding:0 .25em}.list--center{text-align:center}@media print{.list .list__item:first-of-type .card{margin-top:0}}.card{margin:1.5rem 0}.card *:first-child{margin-top:0}.card *:last-child{margin-bottom:0}.card__title{font-style:italic}@media print{.card__title{margin-bottom:.25em}}.card__meta{color:hsl(0,0%,58.3333333333%);font-size:.875em;font-weight:bold;text-transform:uppercase}.card__meta .relative-time{font-size:.8em;font-style:italic}.card__meta .relative-time:before{content:" ("}.card__meta .relative-time:after{content:")"}header.card,header .card__description{align-items:center;display:flex;flex-direction:column;text-align:center}@media print{header.card{margin-top:0}}header .card__title,header .job-description{font-style:normal}header .card__media{border-radius:50%;max-width:128px}footer{text-align:center}@media print{footer{display:none}}.date--end:before{content:"–";padding:0 .25em}@media print{@page{size:A4;margin:14mm 12mm}html,body{background:#fff !important}body{font:11pt/1.35 "Nunito",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#000;-webkit-print-color-adjust:exact;print-color-adjust:exact;hyphens:auto}*{box-shadow:none !important;text-shadow:none !important}.wrapper{margin:0;padding:0}.card__media{width:110px;height:110px;object-fit:cover;border-radius:999px}a,a:visited{color:#000;text-decoration:none}.switch-lang,.actions{display:none !important}h1,h2,h3{break-after:avoid;page-break-after:avoid}.card,.list__item{break-inside:avoid;page-break-inside:avoid}.section{margin:0 0 12mm}.section__title{border-bottom:1px solid #ccc;padding-bottom:2mm;margin:0 0 4mm}#skills .list{columns:2;column-gap:18px}#skills .card{break-inside:avoid;page-break-inside:avoid}.relative-time{display:none !important}.relative-time--ssr{display:none !important;color:#555;font-variant:small-caps}}
+@charset "UTF-8";
+/* Nunito self-hosted (latin) */
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/nunito/nunito-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/nunito/nunito-400-italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/nunito/nunito-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/nunito/nunito-700-italic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden], template {
+  display: none;
+}
+
+a {
+  background-color: transparent;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+pre {
+  overflow: auto;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 40em;
+  padding: 0 1rem;
+}
+@media only screen and (min-width: 32em) {
+  .wrapper {
+    max-width: 32em;
+  }
+}
+@media print {
+  .wrapper {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+@media print {
+  img {
+    display: none;
+  }
+}
+
+.section {
+  border-bottom: 1px solid rgb(225.25, 225.25, 225.25);
+}
+.section__title {
+  margin-top: 1.5rem;
+}
+@media print {
+  .section__title {
+    margin-bottom: 0.25em;
+  }
+}
+
+.switch-lang {
+  text-align: center;
+  display: block;
+  margin: 0.5em auto 0;
+}
+@media print {
+  .switch-lang {
+    display: none;
+  }
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+@media only screen and (min-width: 32em) {
+  body {
+    font-size: 16.875px;
+  }
+}
+@media only print {
+  body {
+    font-size: 10pt;
+    color: #222222 !important;
+  }
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 1rem 0;
+}
+@media print {
+  h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    margin-bottom: 0.25em;
+  }
+}
+
+h1, .h1 {
+  font-size: 3.375em;
+}
+@media print {
+  h1, .h1 {
+    font-size: 2.4em;
+  }
+}
+
+h2, .h2 {
+  font-size: 2.25em;
+}
+@media print {
+  h2, .h2 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+}
+
+h3, .h3 {
+  font-size: 1.5em;
+}
+@media print {
+  h3, .h3 {
+    font-size: 1em;
+  }
+}
+
+h4, .h4 {
+  font-size: 1em;
+}
+
+small, .small-text {
+  font-size: 0.707em;
+}
+
+a {
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  color: #0000b5;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: #b50055;
+}
+
+.btn {
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background: #b50055;
+  color: #fff;
+  display: inline-block;
+  font-weight: 700;
+  margin: 0 auto;
+  padding: 0.5em 0.8em;
+  text-align: center;
+}
+.btn:focus, .btn:hover {
+  background: #0000b5;
+  color: #fff;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.list--inline .list__item {
+  display: inline-flex;
+}
+.list--inline .list__item:not(:first-child):before {
+  content: "•";
+  padding: 0 0.25em;
+}
+.list--center {
+  text-align: center;
+}
+
+@media print {
+  .list .list__item:first-of-type .card {
+    margin-top: 0;
+  }
+}
+
+.card {
+  margin: 1.5rem 0;
+}
+.card *:first-child {
+  margin-top: 0;
+}
+.card *:last-child {
+  margin-bottom: 0;
+}
+.card__title {
+  font-style: italic;
+}
+@media print {
+  .card__title {
+    margin-bottom: 0.25em;
+  }
+}
+.card__meta {
+  color: rgb(148.75, 148.75, 148.75);
+  font-size: 0.875em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.card__meta .relative-time,
+.card__meta .relative-time--ssr {
+  font-size: 0.8em;
+  font-style: italic;
+}
+.card__meta .relative-time:before,
+.card__meta .relative-time--ssr:before {
+  content: " (";
+}
+.card__meta .relative-time:after,
+.card__meta .relative-time--ssr:after {
+  content: ")";
+}
+
+header.card, header .card__description {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+@media print {
+  header.card {
+    margin-top: 0;
+  }
+}
+header .card__title,
+header .job-description {
+  font-style: normal;
+}
+header .card__media {
+  border-radius: 50%;
+  max-width: 128px;
+}
+
+footer {
+  text-align: center;
+}
+@media print {
+  footer {
+    display: none;
+  }
+}
+
+.date--end:before {
+  content: "–";
+  padding: 0 0.25em;
+}
+
+/* === PRINT === */
+@media print {
+  @page {
+    size: A4;
+    margin: 10mm 10mm 12mm 10mm;
+  }
+  /* A4 portrait */
+  html,
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  body {
+    font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.35;
+  }
+  .wrapper {
+    max-width: none;
+  }
+  /* Nettoyage visuel */
+  .card {
+    box-shadow: none !important;
+  }
+  .btn,
+  .switch-lang,
+  .no-print,
+  script {
+    display: none !important;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  /* Éviter les coupures moches */
+  .card,
+  .list__item {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  /* Skills en deux colonnes */
+  #skills .list {
+    column-count: 3;
+  }
+  #jobs .list ul.projects {
+    column-count: 2;
+  }
+  h2,
+  h3 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+  section {
+    break-before: avoid;
+  }
+  /* Durées : afficher la version SSR, masquer la version JS */
+  .relative-time {
+    display: none !important;
+  }
+}
+/* Par sécurité : masquer la fallback SSR à l’écran */
+.relative-time--ssr {
+  display: none;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22_partials/_fonts.scss%22,%22_partials/_normalize.scss%22,%22_partials/_layout.scss%22,%22_partials/_vars.scss%22,%22_partials/_typo.scss%22,%22_partials/_buttons.scss%22,%22_partials/_lists.scss%22,%22_partials/_cards.scss%22,%22_partials/_print.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22;AAAA;AACA;EACC;EACA;EACA;EACA;EACA;;AAED;EACC;EACA;EACA;EACA;EACA;;AAED;EACC;EACA;EACA;EACA;EACA;;AAED;EACC;EACA;EACA;EACA;EACA;;AC3BD;AAA4E;EAAK;EAAuB;EAA0B;;;AAA8B;EAAK;;;AAAS;EAA2F;;;AAAc;EAA4B;EAAqB;;;AAAwB;EAAsB;EAAa;;;AAAS;EAAkB;;;AAAa;EAAE;;;AAA6B;EAAiB;;;AAAU;EAAY;;;AAAyB;EAAS;;;AAAiB;EAAI;;;AAAkB;EAAG;EAAc;;;AAAgB;EAAK;EAAgB;;;AAAW;EAAM;;;AAAc;EAAQ;EAAc;EAAc;EAAkB;;;AAAwB;EAAI;;;AAAW;EAAI;;;AAAe;EAAI;;;AAAS;EAAe;;;AAAgB;EAAO;;;AAAgB;EAAG;EAAuB;;;AAAS;EAAI;;;AAAc;EAAkB;EAAiC;;;AAAc;EAAsC;EAAc;EAAa;;;AAAS;EAAO;;;AAAiB;EAAc;;;AAAoB;EAA0E;EAA0B;;;AAAe;EAAsC;;;AAAe;EAAiD;EAAS;;;AAAU;EAAM;;;AAAmB;EAA2C;EAAsB;;;AAAU;EAAgG;;;AAAY;EAAqB;EAA6B;;;AAAuB;EAAmG;;;AAAwB;EAAS;EAAyB;EAAa;;;AAA8B;EAAO;EAAS;;;AAAU;EAAS;;;AAAc;EAAS;;;AAAiB;EAAM;EAAyB;;;AAAiB;EAAM;;;ACA14D;EACI;EACA,WCGW;EDFX;;AAEA;EALJ;IAMQ;;;AAGJ;EATJ;IAUQ;IACA;IACA;IACA;;;;AAIR;EACI;EACA;;AAEA;EAJJ;IAKQ;;;;AAIR;EACI;;AAEA;EACI;;AAEA;EAHJ;IAIQ;;;;AAMZ;EACI;EACA;EACA;;AAEA;EALJ;IAMQ;;;;AE7CR;EACI;EACA;EACA;;AACA;EAJJ;IAKQ;;;AAGJ;EARJ;IASQ;IACA;;;;AAIR;EACI;EACA;EACA;;AAEA;EALJ;IAMQ;;;;AAIR;EACI;;AAEA;EAHJ;IAIQ;;;;AAIR;EACI;;AAEA;EAHJ;IAIQ;IACA;;;;AAIR;EACI;;AAEA;EAHJ;IAIQ;;;;AAIR;EACI;;;AAGJ;EACI;;;AAIJ;EDnCI;EACA;EACA;EACA;ECkCH,ODpDM;ECqDN;;AAEA;EAEC,ODxDI;;;AETN;EFgBI,oBEfuB;EFgBvB,kBEhBuB;EFiBvB,uBEjBuB;EFkBvB,eElBuB;EACvB,YFOE;EENF;EACA;EACA;EACA;EACA;EACA;;AAEA;EAEI,YFJD;EEKC;;;ACbR;EACI;EACA;EACA;;AAGI;EACI;;AAGJ;EACI;EACA;;AAIR;EACI;;;AAKJ;EADJ;IAEQ;;;;ACvBR;EAGI;;AAGA;EACI;;AAGJ;EACI;;AAGJ;EACI;;AAEA;EAHJ;IAIQ;;;AAIR;EACI;EACA;EACA;EACA;;AAEA;AAAA;EAEI;EACA;;AAEA;AAAA;EACI;;AAGJ;AAAA;EACI;;;AASZ;EACI;EACA;EACA;EACA;;AAIA;EADJ;IAEQ;;;AAIR;AAAA;EAGI;;AAGJ;EACI;EACA;;;AAIR;EACI;;AAEA;EAHJ;IAIQ;;;;AAIR;EACI;EACA;;;AClFJ;AACA;EACE;IACE;IACA;;AAGF;EACA;AAAA;IAEE;IACA;;EAGF;IACE;IACA;IACA;;EAGF;IACE;;AAGF;EACA;IACE;;EAGF;AAAA;AAAA;AAAA;IAIE;;EAGF;IACE;IACA;;AAGF;EACA;AAAA;IAEE;IACA;;AAGF;EACA;IACE;;EAGF;IACE;;EAGF;AAAA;IAEE;IACA;;EAGF;IACE;;AAGF;EACA;IACE;;;AAIJ;AACA;EACE%22,%22file%22:%22main.css%22%7D */
