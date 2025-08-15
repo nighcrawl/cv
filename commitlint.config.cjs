@@ -5,7 +5,7 @@ module.exports = {
     'body-max-line-length': [0],
     'footer-max-line-length': [0],
     'scope-enum': [2, 'always', [
-      'templates','styles','i18n','pdf','og','pages','ci','build','data','scripts','repo','release'
+      'templates','styles','i18n','pdf','og','pages','ci','build','data','scripts','repo','release','gitflow'
     ]]
   }
 };
