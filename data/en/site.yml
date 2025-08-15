@@ -15,32 +15,26 @@ identity:
 skills:
   - group: "Front-end"
     items:
-      - HTML5
-      - CSS3
+      - HTML
+      - CSS
       - Sass
-      - Compass
       - JavaScript
+      - React (Gutenberg block development)
       - jQuery
-      - AngularJS (some knowledge)
-      - ReactJS (some knowledge)
-      - Smarty
-      - Jekyll
-      - NPM / Grunt / Gulp
+      - Responsive Web Design
+      - SEO
+      - Accessibility
   - group: "Back-end"
     items:
-      - PHP 7+
-      - CodeIgniter (some knowledge)
-      - Symfony
+      - WordPress (themes, plugins, CPT)
+      - PHP (OOP, basic Symfony)
       - MySQL
-      - Git
-      - Python
-  - group: "Softwares"
+  - group: "Tools & Workflow"
     items:
-      - Photoshop
-      - Illustrator
-      - Sublime Text
-      - Atom
-      - MailChimp
+      - Git
+      - npm
+      - Gulp
+
 
 experience:
   - company: "Concept Factory"
@@ -126,7 +120,7 @@ extras:
     title: "2-pages Interview and publication of a tutorial on designing the layout of an asian restaurant themed website in Webdesign Magazine Hors Série #13"
   - date: "2010-07"
     end: "2011-04"
-    title: "Collaboration work with Francis Chouquet and Matthieu Bué on the WordPress theme for Webdesign Friday website."
+    title: "Collaboration work with <a href='https://fran6art.com'>Francis Chouquet</a> and <a href='https://twikito.com'>Matthieu Bué</a> on the WordPress theme for Webdesign Friday website."
     collaborators:
       - "Francis Chouquet"
       - "Matthieu Bué"
