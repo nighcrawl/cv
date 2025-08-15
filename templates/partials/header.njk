@@ -1,0 +1,26 @@
+<header class="card">
+  {# garde le même visuel ; remplace le src si tu as un autre portrait #}
+  <img src="{{ '/assets/img/ange-chierchia-cf.jpg' | url }}" alt="Portrait de {{ site.identity.name }}, développeur Web" class="card__media">
+  <h1 class="card__title">{{ site.identity.name }}</h1>
+  <div class="card__description">
+    <p class="job-description h4">{{ site.identity.title }}</p>
+    <ul class="contact list list--inline list--center">
+      {% if site.identity.email %}
+        <li class="list__item"><a href="mailto:{{ site.identity.email }}" id="send-email">{{ site.identity.email }}</a></li>
+      {% endif %}
+
+      {# essaie de ressortir Mastodon s’il existe, sinon le premier social #}
+      {% set masto = (site.identity.socials or []) | selectattr("name","equalto","Mastodon") | list | first %}
+      {% set firstSocial = (site.identity.socials or []) | first %}
+      {% if masto %}
+        <li class="list__item"><a href="{{ masto.url }}">{{ masto.handle }}</a></li>
+      {% elseif firstSocial %}
+        <li class="list__item"><a href="{{ firstSocial.url }}">{{ firstSocial.url }}</a></li>
+      {% endif %}
+
+      {% if site.identity.website %}
+        <li class="list__item"><a href="{{ site.identity.website }}">{{ site.identity.website }}</a></li>
+      {% endif %}
+    </ul>
+  </div>
+</header>

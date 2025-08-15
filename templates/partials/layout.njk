@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="{{ lang or 'fr' }}">
+  <head>
+    {% if lang == 'en' %}
+      {% set site = en.site %}
+      {% set i18n = i18n.en %}
+      {% set switch_href = '/' %}
+      {% set switch_lang = 'fr' %}
+      {% set path_pdf = '/en/cv.pdf' %}
+      {% set path_json = '/en/resume.json' %}
+      {% set preposition = 'in' %}
+      {% set xdefault = '/' %}
+    {% else %}
+      {% set site = fr.site %}
+      {% set i18n = i18n.fr %}
+      {% set switch_href = '/en/' %}
+      {% set switch_lang = 'en' %}
+      {% set path_pdf = '/cv.pdf' %}
+      {% set path_json = '/resume.json' %}
+      {% set preposition = 'à' %}
+      {% set xdefault = '/' %}
+    {% endif %}
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ site.identity.name }} – {{ site.identity.title }}</title>
+    <meta name="description" content="Curriculum vitæ de {{ site.identity.name }}. {{ site.identity.title }} {{ preposition }} {{ site.identity.location }}">
+    <meta name="revisit-after" content="7 days">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,700,700i" rel="stylesheet">
+    {# même chemin que ton site actuel #}
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}">
+
+    {# hreflang comme l’original #}
+    <link rel="alternate" href="{{ '/en/' | url }}" hreflang="en">
+    <link rel="alternate" href="{{ xdefault | url }}" hreflang="x-default">
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <small><a href="{{ switch_href | url }}" class="switch-lang" lang="{{ switch_lang }}">{{ i18n.labels.switchTo }}</a></small>
+
+      <main class="page">{% block content %}{% endblock %}</main>
+
+      {# scripts EXACTS du layout fourni #}
+      <script src="{{ '/assets/js/main.js' | url }}" charset="utf-8"></script>
+      <script>
+        var _gaq=[['_setAccount','UA-1952233-6'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+      </script>
+    </div>
+  </body>
+</html>

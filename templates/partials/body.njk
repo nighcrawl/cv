@@ -1,0 +1,77 @@
+{# ===== HEADER ===== #}
+{% include "header.njk" %}
+
+{# ===== COMPÉTENCES ===== #}
+<section class="section" id="skills">
+  <h2 class="section__title">{{ i18n.labels.skills }}</h2>
+  <ol class="list">
+    {% for group in site.skills %}
+      <li class="list__item">
+        <div class="card">
+          <h3 class="card__title">{{ group.group }}</h3>
+          <div class="card__description">
+            <p>{{ group.items | join(', ') }}</p>
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+  </ol>
+</section>
+
+{# ===== EXPÉRIENCES ===== #}
+<section class="section" id="jobs">
+  <h2 class="section__title">{{ i18n.labels.experience }}</h2>
+  <ol class="list">
+    {% for xp in site.experience %}
+      {% include "section-experience.njk" %}
+    {% endfor %}
+  </ol>
+</section>
+
+{# ===== FORMATIONS ===== #}
+<section class="section" id="diplomas">
+  <h2 class="section__title">{{ i18n.labels.education }}</h2>
+  <ol class="list">
+    {% for edu in site.education %}
+      {% include "section-education.njk" %}
+    {% endfor %}
+  </ol>
+</section>
+
+{# ===== DIVERS ===== #}
+{% if site.extras %}
+<section class="section" id="misc">
+  <h2 class="section__title">{{ i18n.labels.extras }}</h2>
+  <ol class="list">
+    {% for e in site.extras %}
+      <li class="list__item">
+        <div class="card">
+          <div class="card__meta">
+            {% if e.date %}<span class="date--start">{{ e.date | dateFmt(lang,'shortMonthYear') }}</span>{% endif %}
+            {% if e.end %}<span class="date--end">{{ e.end | dateFmt(lang,'shortMonthYear') }}</span>{% endif %}
+          </div>
+          <div class="card__description">
+            <p>{{ e.title }}</p>
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+  </ol>
+</section>
+{% endif %}
+
+{# ===== FOOTER ===== #}
+{% if lang == 'en' %}
+  {% set pdf_link = '/en/cv.pdf' %}
+{% else %}
+  {% set pdf_link = '/cv.pdf' %}
+{% endif %}
+
+<footer class="card">
+  <a class="btn" href="{{ pdf_link | url }}" id="download" title="{% if lang == 'en' %}Download my resume as PDF{% else %}Télécharger mon CV au format PDF{% endif %}">
+    {{ i18n.labels.pdf }}
+  </a>
+  <p class="small-text">
+    Les sources de mon CV sont <a href="https://github.com/nighcrawl/cv">disponibles sur GitHub.</a>
+  </p>
+</footer>

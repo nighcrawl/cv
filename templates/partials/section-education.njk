@@ -1,0 +1,21 @@
+<li class="list__item">
+  <div class="card">
+    <h3 class="card__title">{{ edu.degree }}</h3>
+    <div class="card__meta">
+      <span class="date--start">{{ edu.start | dateFmt(lang,'shortMonthYear') }}</span>
+      <span class="date--end">{{ edu.end | dateOr('En poste',lang,'shortMonthYear') }}</span>
+    </div>
+    <div class="card__description">
+      <div class="school">
+        {% if edu.url %}
+          <a href="{{ edu.url }}" class="school__name">{{ edu.school }}</a>, <span class="schschool__location">{{ edu.location }}</span>
+        {% else %}
+          <span class="school__name">{{ edu.school }}</span>, <span class="schschool__location">{{ edu.location }}</span>
+        {% endif %}
+      </div>
+      {% if edu.details %}
+        <p>{{ edu.details | join(', ') }}</p>
+      {% endif %}
+    </div>
+  </div>
+</li>

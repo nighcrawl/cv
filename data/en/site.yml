@@ -1,0 +1,139 @@
+
+identity:
+  name: "Ange Chierchia"
+  title: "Full-stack Web Developer"
+  location: "Metz, France"
+  email: "ange.chierchia+job@gmail.com"
+  website: "https://chierchia.fr"
+  socials:
+    - name: "Mastodon"
+      url: "https://mastodon.social/@nighcrawl"
+      handle: "@nighcrawl"
+    - name: "GitHub"
+      url: "https://github.com/nighcrawl"
+
+skills:
+  - group: "Front-end"
+    items:
+      - HTML5
+      - CSS3
+      - Sass
+      - Compass
+      - JavaScript
+      - jQuery
+      - AngularJS (some knowledge)
+      - ReactJS (some knowledge)
+      - Smarty
+      - Jekyll
+      - NPM / Grunt / Gulp
+  - group: "Back-end"
+    items:
+      - PHP 7+
+      - CodeIgniter (some knowledge)
+      - Symfony
+      - MySQL
+      - Git
+      - Python
+  - group: "Softwares"
+    items:
+      - Photoshop
+      - Illustrator
+      - Sublime Text
+      - Atom
+      - MailChimp
+
+experience:
+  - company: "Concept Factory"
+    role: "Front-end Web Developer"
+    start: "2018-12-01"
+    end: null
+    location: "Luxembourg"
+    description: 
+      - "Integration of newsletters, front-end development, Design and integration of animated Web banners with JavaScript for various clients."
+    projects:
+      - { name: "Foyer Assurances Belgique", url: "https://assurancesfoyer.be" }
+      - { name: "Luxembourg Institute of Health", url: "https://lih.lu" }
+      - { name: "Croix-Rouge luxembourgeoise", url: "https://croix-rouge.lu" }
+      - { name: "De Schnékert Traiteur", url: "https://schnekert.lu" }
+      - { name: "Mobilitéit", url: "https://mobiliteit.lu" }
+      - { name: "Flex Carsharing", url: "https://flex.lu" }
+      - { name: "#MVOS2019", url: "https://mvos.lu" }
+
+  - company: "Ibakus Europe SA"
+    role: "Web Developer"
+    start: "2015-01-19"
+    end: "2018-11-30"
+    location: "Strassen (Luxembourg)"
+    description:
+
+
+      - "Development of Web applications with PHP, MySQL and JavaScript for Finance and Law professionals. Design of the presentation website with Sass, JavaScript and PHP."
+      - "Development of an API used to get companies informations available from Luxembourgish, Belgian and French Trade Registers. The API is fed by several Web scrapers written in Python and PHP."
+
+  - company: "CBC Informatique"
+    role: "Webdesigner and developer"
+    start: "2010-06-01"
+    end: "2014-12-31"
+    location: "Bascharage (Luxembourg)"
+    description:
+      - "In charge of User Interface design, front and back-end development for a Real-time vehicle tracking Web application. Open Street Map and Leaflet were used to display the journeys made by the user’s fleet of vehicles, day by day. Several geocoding and reverse geocoding web services were used to retrieve the name of the each location where vehicules stopped."
+      - "Development of an Intranet platform used by 500+ users with different access rights, document sharing, forums and email and Web notifications."
+      - "Writing of a small modular CMS to answer the specific needs of the customers."
+      - "Designed and sent email newsletters in partnership with HP, Lenovo and Microsoft in accordance with Guidelines of each partner."
+
+  - company: "CBC Informatique"
+    role: "Trainee Web Developer"
+    start: "2009-06-01"
+    end: "2009-09-11"
+    location: "Bascharage (Luxembourg)"
+    description:
+      - "Redesign of an online store to validate a Bachelor’s degree in Computer Science. I was in charge of studying the actual website, drafting the specifications for the new one, defining and design the new UI and UX. I also develop a custom CMS and set up PayPal for online payments."
+
+  - company: "Unpointzéro"
+    role: "Trainee Web Developer"
+    start: "2008-12-01"
+    end: "2009-04-30"
+    location: "Metz"
+    description:
+      - "Collaborate on the development of a digital artworks repository website, as part of Bachelor’s degree. Drafting the project specifications, tasks distribution, design of the user registration process with HTML, CSS, JavaScript, MySQL and PHP."
+
+  - company: "IPcube"
+    role: "Trainee Web Developer"
+    start: "2008-01-01"
+    end: "2008-02-29"
+    location: "Montigny-lès-Metz"
+    description:
+      - "Develop a wedding lists management website in order to validate a BTEC Higher National Diploma in Computer Science. Manage different user access levels : wedding list creators and friends of creators. UI and UX design."
+
+education:
+  - school: "IUT Université Paul Verlaine"
+    degree: "Professional Bachelor’s degree in Computer Science"
+    start: "2008-09"
+    end: "2009-09"
+    location: "Metz"
+    details:
+      - "User Interface design and User Experience design, e-commerce, xHTML, CSS, JavaScript."
+  - school: "Lycée Robert Schuman"
+    degree: "BTEC Higher National Diploma in Computer Science"
+    start: "2006-09"
+    end: "2008-06"
+    location: "Metz"
+    details:
+      - "Algorithmic, Merise and UML methodologies, Object-oriented programming in PHP and C#, SQL Server and MySQL database management system."
+
+extras:
+  - date: "2012-02"
+    title: "2-pages Interview and publication of a tutorial on designing the layout of an asian restaurant themed website in Webdesign Magazine Hors Série #13"
+  - date: "2010-07"
+    end: "2011-04"
+    title: "Collaboration work with Francis Chouquet and Matthieu Bué on the WordPress theme for Webdesign Friday website."
+    collaborators:
+      - "Francis Chouquet"
+      - "Matthieu Bué"
+    links:
+      - { name: "Webdesign Friday", url: "http://wdfriday.com" }
+      - { name: "fran6art.com", url: "https://fran6art.com" }
+      - { name: "twikito.com", url: "https://twikito.com" }
+
+metadata:
+  source_page: "https://chierchia.fr/cv/"

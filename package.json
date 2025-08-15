@@ -1,32 +1,29 @@
 {
-  "name": "cv",
-  "description": "Ce dépot git contient les fichiers sources de mon CV disponible sur https://chierchia.fr/cv",
-  "version": "3.2.0",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nighcrawl/cv.git"
-  },
-  "author": "Ange Chierchia <ange.chierchia@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nighcrawl/cv/issues"
-  },
-  "homepage": "https://github.com/nighcrawl/cv#readme",
+  "name": "cv-eleventy",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "start": "browser-sync start --server ./ --files ./",
-    "js": "babel ./src/js --out-dir ./assets/js",
-    "sass": "sass --watch --style compressed ./src/sass/main.scss ./assets/css/main.css"
+    "scss:dev": "sass src/assets/css/main.scss:src/assets/css/main.css --watch --embed-source-map",
+    "scss:build": "sass src/assets/css/main.scss:src/assets/css/main.css --no-source-map --style=compressed",
+    "dev": "concurrently -k \"eleventy --serve\" \"npm run scss:dev\"",
+    "build": "npm run scss:build && eleventy",
+    "validate": "node scripts/validate.mjs",
+    "pdf": "node scripts/pdf.mjs",
+    "fmt": "prettier --write \"{data,templates,src,scripts}/**/*\"",
+    "resume": "node scripts/resume.mjs",
+    "og": "node scripts/og.mjs",
+    "release": "npm run validate && npm run build && npm run resume && npm run pdf && npm run og"
   },
   "devDependencies": {
-    "@babel/cli": "^7.14.8",
-    "@babel/core": "^7.15.0",
-    "@babel/preset-env": "^7.15.0",
-    "browser-sync": "^2.27.5",
-    "sass": "^1.37.5"
-  },
-  "babel": {
-    "presets": [
-      "@babel/preset-env"
-    ]
+    "@11ty/eleventy": "^3.0.0",
+    "concurrently": "^9.2.0",
+    "gray-matter": "^4.0.3",
+    "http-server": "^14.1.1",
+    "js-yaml": "^4.1.0",
+    "playwright": "^1.46.0",
+    "prettier": "^3.3.3",
+    "sass": "^1.90.0",
+    "yaml": "^2.5.0",
+    "zod": "^3.23.8"
   }
 }

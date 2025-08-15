@@ -1,0 +1,37 @@
+@media print {
+    @page { size: A4; margin: 14mm 12mm; } /* laisse Playwright appliquer ça (voir §4) */
+  
+    html, body { background: #fff !important; }
+    body {
+      font: 11pt/1.35 'Nunito', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+      color: #000;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+      hyphens: auto;
+    }
+    * { box-shadow: none !important; text-shadow: none !important; }
+  
+    /* header compact */
+    .wrapper { margin: 0; padding: 0; }
+    .card__media { width: 110px; height: 110px; object-fit: cover; border-radius: 999px; }
+  
+    /* liens non bleus / pas de soulignement */
+    a, a:visited { color: #000; text-decoration: none; }
+  
+    /* éléments inutiles en PDF */
+    .switch-lang, .actions { display: none !important; }
+  
+    /* éviter les coupures moches */
+    h1, h2, h3 { break-after: avoid; page-break-after: avoid; }
+    .card, .list__item { break-inside: avoid; page-break-inside: avoid; }
+    .section { margin: 0 0 12mm; }
+    .section__title { border-bottom: 1px solid #ccc; padding-bottom: 2mm; margin: 0 0 4mm; }
+  
+    /* compacter la section compétences en 2 colonnes */
+    #skills .list { columns: 2; column-gap: 18px; }
+    #skills .card { break-inside: avoid; page-break-inside: avoid; }
+  
+    /* afficher une durée côté serveur, masquer la version JS */
+    .relative-time { display: none !important; }
+    .relative-time--ssr { display: none !important; color: #555; font-variant: small-caps; }
+}  

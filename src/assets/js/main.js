@@ -3,6 +3,8 @@
 function relativeTime(start, end) {
   var lang = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'fr';
 
+  console.log({start, end})
+
   if (end === null) {
     end = new Date();
   } else {
@@ -10,6 +12,10 @@ function relativeTime(start, end) {
   }
 
   start = new Date(Date.parse(start + 'T00:00:00'));
+
+  console.log('parse', {start, end})
+
+
   var labelYear = lang === 'fr' ? 'an' : 'year';
   var labelMonth = lang === 'fr' ? 'mois' : 'month';
   var labelAnd = lang === 'fr' ? 'et' : 'and';
