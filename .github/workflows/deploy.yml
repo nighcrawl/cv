@@ -50,7 +50,7 @@ jobs:
 
       # ... steps avant: checkout, setup node, npm ci, build, pdf, og, etc.
       - name: Deploy to OVH (FTPS)
-        uses: SamKirkland/FTP-Deploy-Action@v4
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.OVH_HOST }}         # ex: ftp.cluster0xx.hosting.ovh.net
           username: ${{ secrets.OVH_USER }}       # login FTP
