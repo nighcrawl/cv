@@ -71,6 +71,7 @@ export default function(eleventyConfig) {
   return {
     dir: { input: "templates", includes: "partials", data: "../data", output: "dist" },
     markdownTemplateEngine: "njk",
-    htmlTemplateEngine: "njk"
+    htmlTemplateEngine: "njk",
+    pathPrefix: process.env.ELEVENTY_PATH_PREFIX || "/"
   };
 }
