@@ -11,12 +11,12 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
 
   // FR
   await page.goto("http://localhost:8080/", { waitUntil: "networkidle" });
-  await page.pdf({ path: "dist/cv.pdf", format: "A4", printBackground: true });
+  await page.pdf({ path: "dist/cv.pdf", format: "A4", printBackground: true, preferCSSPageSize: true });
   console.log("✔ dist/cv.pdf");
 
   // EN
   await page.goto("http://localhost:8080/en/", { waitUntil: "networkidle" });
-  await page.pdf({ path: "dist/en/cv.pdf", format: "A4", printBackground: true });
+  await page.pdf({ path: "dist/en/cv.pdf", format: "A4", printBackground: true, preferCSSPageSize: true });
   console.log("✔ dist/en/cv.pdf");
 
   await browser.close();

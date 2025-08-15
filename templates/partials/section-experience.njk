@@ -3,15 +3,22 @@
   <div class="card">
     <h3 class="card__title">{{ xp.role }}</h3>
     <div class="card__meta">
-      <span class="date--start">{{ xp.start | dateFmt(lang,'shortMonthYear') }}</span>
+      <span class="date--start">{{ xp.start | dateFmt(lang, 'shortMonthYear') }}</span>
       {% if xp.end %}
-        <span class="date--end">{{ xp.end | dateOr('En poste',lang,'shortMonthYear') }}</span>
-        <span class="relative-time" data-start="{{ xp.start }}" data-end="{{ xp.end }}"></span>
+        <span class="date--end">{{ xp.end | dateFmt(lang, 'shortMonthYear') }}</span>
+        <span class="relative-time" data-start="{{ xp.start | dateAttr }}" data-end="{{ xp.end | dateAttr }}"></span>
+        <span class="relative-time--ssr">
+          ({{ xp.start | relativeMonths(xp.end, lang) }})
+        </span>
       {% else %}
         <span class="date--end">{% if lang == 'en' %}Present{% else %}En poste{% endif %}</span>
-        <span class="relative-time" data-start="{{ xp.start }}"></span>
+        <span class="relative-time" data-start="{{ xp.start | dateAttr }}"></span>
+        <span class="relative-time--ssr">
+          ({{ xp.start | relativeMonths(null, lang) }})
+        </span>
       {% endif %}
     </div>
+
     <div class="card__description">
       <div class="company">
         {% if xp.url %}
