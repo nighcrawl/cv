@@ -6,3 +6,5 @@ labels:
   pdf: "Download PDF"
   json: "JSON Resume"
   switchTo: "Version française"
+  resumeSources: "The sources of my résumé are"
+  availableOnGitHub: "available on GitHub."

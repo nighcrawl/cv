@@ -51,7 +51,7 @@
             {% if e.end %}<span class="date--end">{{ e.end | dateFmt(lang,'shortMonthYear') }}</span>{% endif %}
           </div>
           <div class="card__description">
-            <p>{{ e.title }}</p>
+            <p>{{ e.title | safe }}</p>
           </div>
         </div>
       </li>
@@ -72,6 +72,6 @@
     {{ i18n.labels.pdf }}
   </a>
   <p class="small-text">
-    Les sources de mon CV sont <a href="https://github.com/nighcrawl/cv">disponibles sur GitHub.</a>
+    {{ i18n.labels.resumeSources}} <a href="https://github.com/nighcrawl/cv">{{ i18n.labels.availableOnGitHub}}</a>
   </p>
 </footer>
