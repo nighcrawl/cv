@@ -49,21 +49,20 @@ jobs:
         run: npm run og
 
       # ... steps avant: checkout, setup node, npm ci, build, pdf, og, etc.
-      - name: Deploy to OVH (FTPS)
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Deploy to OVH (SFTP)
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-          server: ${{ secrets.OVH_HOST }}         # ex: ftp.cluster0xx.hosting.ovh.net
-          username: ${{ secrets.OVH_USER }}       # login FTP
-          password: ${{ secrets.OVH_PASS }}       # mot de passe FTP
-          protocol: ftps
-          port: 21
-          local-dir: dist/                        # ce que tu viens de builder
-          server-dir: www/cv/                     # dossier cible sur OVH (adapte si besoin)
-          exclude: |                              # évite d’écraser des fichiers sensibles
+          server: ${{ secrets.OVH_HOST }}      # ex: ftp.cluster028.hosting.ovh.net
+          username: ${{ secrets.OVH_USER }}
+          password: ${{ secrets.OVH_PASS }}
+          port: 22
+          local_path: dist/*
+          remote_path: www/cv/
+          sftp_only: true
+          exclude: |
             **/.git*
             **/.DS_Store
-            **/.htaccess
-          # dangerous-clean-slate: true           # active-le si tu veux vider www/cv/ à chaque déploiement
+            **/*.map
 
       - name: Upload artifact for GitHub Pages
         uses: actions/upload-pages-artifact@v3
