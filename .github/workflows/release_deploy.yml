@@ -1,0 +1,77 @@
+name: Release & Deploy
+
+on:
+  push:
+    branches: [ master]
+  workflow_dispatch:
+
+permissions:
+  contents: write # tags, releases, commits CHANGELOG
+  pages: write # deploy GitHub Pages
+  id-token: write # OIDC for Pages
+
+concurrency:
+  group: release-and-deploy
+  cancel-in-progress: true
+
+jobs:
+  release_deploy:
+    runs-on: ubuntu-latest
+    env:
+      NODE_VERSION: 20
+      PATH_PREFIX: "/${{ github.event.repository.name }}/"   # => "/cv/"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # requis pour semantic-release
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+
+      - run: npm ci
+
+      # Build avec le même pathPrefix que Pages & OVH
+      - name: Build site
+        run: ELEVENTY_PATH_PREFIX="${{ env.PATH_PREFIX }}" npm run build
+
+      - name: Install Playwright (Chromium)
+        run: npx playwright install --with-deps chromium
+
+      - name: Generate PDFs
+        run: ELEVENTY_PATH_PREFIX="${{ env.PATH_PREFIX }}" npm run pdf
+
+      - name: Generate JSON Resume
+        run: npm run resume
+
+      - name: Generate OG images
+        run: npm run og
+
+      # GitHub Release (tag + CHANGELOG + assets versionnés)
+      - name: Semantic release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx semantic-release
+
+      # GitHub Pages
+      - name: Upload artifact for Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+      - name: Deploy to GitHub Pages
+        id: ghpages
+        uses: actions/deploy-pages@v4
+
+      # OVH (SFTP)
+      - name: Deploy to OVH (SFTP)
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        with:
+          server:   ${{ secrets.OVH_HOST }}
+          username: ${{ secrets.OVH_USER }}
+          password: ${{ secrets.OVH_PASS }}
+          port: 22
+          local_path: dist/*
+          remote_path: www/cv/
+          sftp_only: true
