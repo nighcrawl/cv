@@ -1,0 +1,20 @@
+{
+  "branches": ["master"],
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    ["@semantic-release/changelog", { "changelogFile": "CHANGELOG.md" }],
+    ["@semantic-release/npm", { "npmPublish": false }],
+    ["@semantic-release/git", { "assets": ["CHANGELOG.md", "package.json"] }],
+    ["@semantic-release/github", {
+      "assets": [
+        { "path": "dist/cv.pdf",          "label": "CV (FR) PDF" },
+        { "path": "dist/en/cv.pdf",       "label": "CV (EN) PDF" },
+        { "path": "dist/resume.json",     "label": "Resume (FR) JSON" },
+        { "path": "dist/en/resume.json",  "label": "Resume (EN) JSON" },
+        { "path": "dist/og-image.png",    "label": "OG Image (FR)" },
+        { "path": "dist/en/og-image.png", "label": "OG Image (EN)" }
+      ]
+    }]
+  ]
+}

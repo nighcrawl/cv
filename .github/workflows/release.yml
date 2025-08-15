@@ -1,0 +1,46 @@
+name: Release
+
+on:
+  push:
+    branches: [ master ]
+  workflow_dispatch:
+
+permissions:
+  contents: write   # nécessaire pour tag, release, commit CHANGELOG
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # impératif pour semantic-release
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      # Build complet pour produire les assets attachés à la release
+      - name: Build site (pathPrefix Pages)
+        run: ELEVENTY_PATH_PREFIX="/${{ github.event.repository.name }}/" npm run build
+
+      - name: Install Playwright (Chromium)
+        run: npx playwright install --with-deps chromium
+
+      - name: Generate PDFs
+        run: npm run pdf
+
+      - name: Generate JSON Resume
+        run: npm run resume
+
+      - name: Generate OG images
+        run: npm run og
+
+      # Crée la release + CHANGELOG + tag + attache les fichiers de dist/
+      - name: Semantic release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx semantic-release
