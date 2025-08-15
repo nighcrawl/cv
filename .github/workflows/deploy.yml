@@ -28,10 +28,10 @@ jobs:
         run: npm run validate
       - name: Build CSS (Sass)
         run: npm run scss:build
-      - name: Build
-        run: npm run build
       - name: Install Playwright (Chromium)
         run: npx playwright install --with-deps chromium
+      - name: Build site
+        run: ELEVENTY_PATH_PREFIX="/${{ github.event.repository.name }}/" npm run build
       - name: Generate PDF
         run: npm run pdf
       - name: Generate JSON Resume
