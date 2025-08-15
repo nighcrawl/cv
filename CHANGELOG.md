@@ -1,3 +1,10 @@
+## [3.4.2](https://github.com/nighcrawl/cv/compare/v3.4.1...v3.4.2) (2025-08-15)
+
+
+### Bug Fixes
+
+* update relative time calculation ([c8e2ed5](https://github.com/nighcrawl/cv/commit/c8e2ed5fb01c2c9aba5499bc54a52b873884fd3f))
+
 ## [3.4.1](https://github.com/nighcrawl/cv/compare/v3.4.0...v3.4.1) (2025-08-15)
 
 
