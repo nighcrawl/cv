@@ -1,3 +1,10 @@
+## [3.4.1](https://github.com/nighcrawl/cv/compare/v3.4.0...v3.4.1) (2025-08-15)
+
+
+### Bug Fixes
+
+* **pdf:** serve dist under pathPrefix during CI so CSS/fonts resolve (no more bare PDFs 🤞) ([1ed5863](https://github.com/nighcrawl/cv/commit/1ed586303f43c5e26256ba2d0511c57d394cae2f))
+
 # [3.4.0](https://github.com/nighcrawl/cv/compare/v3.3.1...v3.4.0) (2025-08-15)
 
 
