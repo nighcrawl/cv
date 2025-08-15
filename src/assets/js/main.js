@@ -29,7 +29,7 @@ function relativeTime(start, end) {
   if (years > 0) {
     string += years + ' ' + labelYear + (years > 1 ? 's' : '');
     var delta = Math.floor(distance % yearInMs);
-    months = Math.round(delta / monthInMs);
+    months = Math.ceil(delta / monthInMs);
 
     if (months > 0) {
       string += ' ' + labelAnd + ' ' + months + ' ' + labelMonth + (months > 1 && lang !== 'fr' ? 's' : '');
