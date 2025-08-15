@@ -7,15 +7,9 @@
       {% if xp.end %}
         <span class="date--end">{{ xp.end | dateFmt(lang, 'shortMonthYear') }}</span>
         <span class="relative-time" data-start="{{ xp.start | dateAttr }}" data-end="{{ xp.end | dateAttr }}"></span>
-        <span class="relative-time--ssr">
-          ({{ xp.start | relativeMonths(xp.end, lang) }})
-        </span>
       {% else %}
-        <span class="date--end">{% if lang == 'en' %}Present{% else %}En poste{% endif %}</span>
+        <span class="date--end">{% if lang == 'en' %}Actual position{% else %}En poste{% endif %}</span>
         <span class="relative-time" data-start="{{ xp.start | dateAttr }}"></span>
-        <span class="relative-time--ssr">
-          ({{ xp.start | relativeMonths(null, lang) }})
-        </span>
       {% endif %}
     </div>
 
@@ -35,7 +29,7 @@
       {% endif %}
 
       {% if xp.projects %}
-        <p><b>{% if lang == 'en' %}Some projects I worked on:{% else %}Quelques projets sur lesquels j'ai travaillé&nbsp;:{% endif %}</b></p>
+        <p>{% if lang == 'en' %}Some projects I worked on:{% else %}Quelques projets sur lesquels j'ai travaillé&nbsp;:{% endif %}</p>
         <ul>
           {% for p in xp.projects %}
             <li><a href="{{ p.url }}">{{ p.name }}</a></li>
