@@ -5,19 +5,21 @@
     "@semantic-release/release-notes-generator",
     ["@semantic-release/changelog", { "changelogFile": "CHANGELOG.md" }],
     ["@semantic-release/npm", { "npmPublish": false }],
-    ["@semantic-release/git", { 
+    ["@semantic-release/git", {
       "assets": ["CHANGELOG.md", "package.json"],
       "message": "chore(release): ${nextRelease.version} [skip ci]"
     }],
     ["@semantic-release/github", {
       "assets": [
-        { "path": "dist/cv.pdf",          "label": "CV (FR) PDF" },
-        { "path": "dist/en/cv.pdf",       "label": "CV (EN) PDF" },
-        { "path": "dist/resume.json",     "label": "Resume (FR) JSON" },
-        { "path": "dist/en/resume.json",  "label": "Resume (EN) JSON" },
-        { "path": "dist/og-image.png",    "label": "OG Image (FR)" },
-        { "path": "dist/en/og-image.png", "label": "OG Image (EN)" }
-      ]
+        { "path": "dist/cv.pdf",          "label": "CV (FR) PDF",          "name": "cv-${nextRelease.version}-fr.pdf" },
+        { "path": "dist/en/cv.pdf",       "label": "CV (EN) PDF",          "name": "cv-${nextRelease.version}-en.pdf" },
+        { "path": "dist/resume.json",     "label": "Resume (FR) JSON",     "name": "resume-${nextRelease.version}-fr.json" },
+        { "path": "dist/en/resume.json",  "label": "Resume (EN) JSON",     "name": "resume-${nextRelease.version}-en.json" },
+        { "path": "dist/og-image.png",    "label": "OG Image (FR)",        "name": "og-image-${nextRelease.version}-fr.png" },
+        { "path": "dist/en/og-image.png", "label": "OG Image (EN)",        "name": "og-image-${nextRelease.version}-en.png" }
+      ],
+      "successComment": false,
+      "failComment": false
     }]
   ]
 }
