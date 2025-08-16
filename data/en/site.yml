@@ -45,7 +45,7 @@ experience:
     description: 
       - "Development and integration of WordPress websites using a custom in-house theme."
       - "Creation and implementation of newsletters for Luxair and Voyages Emile Weber."
-      - "Design and production of animated web bann
+      - "Design and production of animated web banners in JavaScript for Luxair and Tango."
     projects:
       - { name: "Foyer Assurances Belgique", url: "https://assurancesfoyer.be" }
       - { name: "Luxembourg Institute of Health", url: "https://lih.lu" }
