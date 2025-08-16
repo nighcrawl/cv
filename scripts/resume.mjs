@@ -16,7 +16,7 @@ for (const lang of langs) {
   };
   const work = (site.experience || []).map(x => ({
     name: x.company, position: x.role, location: x.location,
-    startDate: x.start, endDate: x.end || "", highlights: x.highlights || [],
+    startDate: x.start, endDate: x.end || "", highlights: x.description || [],
     url: x.projects?.[0]?.url || undefined
   }));
   const education = (site.education || []).map(e => ({
