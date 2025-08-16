@@ -43,7 +43,9 @@ experience:
     end: null
     location: "Luxembourg"
     description: 
-      - "Integration of newsletters, front-end development, Design and integration of animated Web banners with JavaScript for various clients."
+      - "Development and integration of WordPress websites using a custom in-house theme."
+      - "Creation and implementation of newsletters for Luxair and Voyages Emile Weber."
+      - "Design and production of animated web banners in JavaScript for Luxair and Tango."
     projects:
       - { name: "Foyer Assurances Belgique", url: "https://assurancesfoyer.be" }
       - { name: "Luxembourg Institute of Health", url: "https://lih.lu" }
@@ -59,8 +61,6 @@ experience:
     end: "2018-11-30"
     location: "Strassen (Luxembourg)"
     description:
-
-
       - "Development of Web applications with PHP, MySQL and JavaScript for Finance and Law professionals. Design of the presentation website with Sass, JavaScript and PHP."
       - "Development of an API used to get companies informations available from Luxembourgish, Belgian and French Trade Registers. The API is fed by several Web scrapers written in Python and PHP."
 
