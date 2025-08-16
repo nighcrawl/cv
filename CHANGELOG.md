@@ -1,3 +1,10 @@
+## [3.5.2](https://github.com/nighcrawl/cv/compare/v3.5.1...v3.5.2) (2025-08-16)
+
+
+### Bug Fixes
+
+* **data:** job @ Concept Factory ([c800231](https://github.com/nighcrawl/cv/commit/c80023129e6551f213433e33770e8064eb4ea800))
+
 ## [3.5.1](https://github.com/nighcrawl/cv/compare/v3.5.0...v3.5.1) (2025-08-16)
 
 
