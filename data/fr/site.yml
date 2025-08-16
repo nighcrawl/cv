@@ -42,10 +42,8 @@ experience:
     start: "2018-12-01"
     end: null
     location: "Luxembourg"
-    description: 
-      - "Développement et intégration de sites WordPress avec un thème conçu en interne."
-      - "Création et mise en place de newsletters pour Luxair et Voyages Emile Weber."
-      - "Conception et réalisation de bannières web animées en JavaScript pour Luxair et Tango."
+    description:
+      - "Développement et intégration de sites WordPress avec un thème conçu en interne, ainsi que la création de newsletters et de bannières animées en JavaScript pour des clients tels que Luxair, Voyages Emile Weber et Tango."
     projects:
       - { name: "Foyer Assurances Belgique", url: "https://assurancesfoyer.be" }
       - { name: "Luxembourg Institute of Health", url: "https://lih.lu" }
