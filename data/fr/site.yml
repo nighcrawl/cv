@@ -42,7 +42,7 @@ experience:
     start: "2018-12-01"
     end: null
     location: "Luxembourg"
-    description: 
+    description:
       - "Développement et intégration de sites WordPress avec un thème conçu en interne, ainsi que la création de newsletters et de bannières animées en JavaScript pour des clients tels que Luxair, Voyages Emile Weber et Tango."
     projects:
       - { name: "Foyer Assurances Belgique", url: "https://assurancesfoyer.be" }

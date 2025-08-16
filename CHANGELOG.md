@@ -1,3 +1,10 @@
+## [3.5.1](https://github.com/nighcrawl/cv/compare/v3.5.0...v3.5.1) (2025-08-16)
+
+
+### Bug Fixes
+
+* **data:** update jobs @ concept factory (fr/en) and resume json highlights ([b574f42](https://github.com/nighcrawl/cv/commit/b574f4248302b60952235e6bcc6793aa6459b637))
+
 # [3.5.0](https://github.com/nighcrawl/cv/compare/v3.4.2...v3.5.0) (2025-08-15)
 
 
