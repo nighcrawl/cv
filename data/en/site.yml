@@ -37,6 +37,20 @@ skills:
 
 
 experience:
+  - company: "Foyer Group"
+    role: "WordPress Developer (Consultant)"
+    start: "2025-03-01"
+    end: null
+    location: "Leudelange (Luxembourg)"
+    description:
+      - "Consultant within the MarCom Web division: maintenance of the corporate website and redesigns of satellite sites."
+  - company: "Foyer Group"
+    role: "WordPress Developer (Consultant)"
+    start: "2024-10-01"
+    end: "2024-12-31"
+    location: "Leudelange (Luxembourg)"
+    description:
+      - "Supported Foyer Assurances in finalizing and launching the new website for the Belgian market."
   - company: "Concept Factory"
     role: "Front-end Web Developer"
     start: "2018-12-01"

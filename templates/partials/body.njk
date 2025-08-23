@@ -22,7 +22,7 @@
 <section class="section" id="jobs">
   <h2 class="section__title">{{ i18n.labels.experience }}</h2>
   <ol class="list">
-    {% for xp in site.experience %}
+    {% for xp in site.experience | sortByDateDesc %}
       {% include "section-experience.njk" %}
     {% endfor %}
   </ol>
