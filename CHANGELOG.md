@@ -1,3 +1,19 @@
+# [3.6.0](https://github.com/nighcrawl/cv/compare/v3.5.2...v3.6.0) (2025-08-23)
+
+
+### Bug Fixes
+
+* **data:** job @ Concept Factory EN ([3a02352](https://github.com/nighcrawl/cv/commit/3a02352385f25eefb78e0edc4a206332975b5359))
+* **data:** Job @ Concept Factory EN ([f3f8af4](https://github.com/nighcrawl/cv/commit/f3f8af43392ed1a0044eee4cfa02b35fa3ffa52b))
+* **data:** job @ Concept Factory FR ([b0dbd20](https://github.com/nighcrawl/cv/commit/b0dbd200c90c4df2c133b4bae4b1df21077ce17c))
+* **scripts:** Resume JSON highlights ([863c103](https://github.com/nighcrawl/cv/commit/863c103d670d34b11179f0ea18a577396bf36cd7))
+
+
+### Features
+
+* **data:** add consulting mission for Foyer Group FR/EN ([ee0a38f](https://github.com/nighcrawl/cv/commit/ee0a38fba626164e6805c0574f336ea44eaf2b96))
+* **pages:** sort experiences by end date desc (current first, ties by start) ([ae6cc92](https://github.com/nighcrawl/cv/commit/ae6cc923c5fd7f391b1579b44ee66c1b1383125c))
+
 ## [3.5.2](https://github.com/nighcrawl/cv/compare/v3.5.1...v3.5.2) (2025-08-16)
 
 
