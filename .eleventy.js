@@ -55,11 +55,27 @@ export default function(eleventyConfig) {
     return parts.join(" ");
   };
 
+  const sortByDateDesc = (items = []) => {
+    const FUTURE = new Date(9999, 0, 1);
+    return [...items].sort((a, b) => {
+      const aEnd = a.end ? toDate(a.end) : FUTURE;
+      const bEnd = b.end ? toDate(b.end) : FUTURE;
+
+      if (bEnd - aEnd !== 0) return bEnd - aEnd; // fin la plus récente d'abord
+
+      const aStart = a.start ? toDate(a.start) : new Date(0);
+      const bStart = b.start ? toDate(b.start) : new Date(0);
+
+      return bStart - aStart; // sinon début le plus récent d'abords
+    })
+  }
+
   // Enregistre les filtres Nunjucks
   eleventyConfig.addFilter("dateFmt", dateFmt);
   eleventyConfig.addFilter("dateOr", dateOr);
   eleventyConfig.addFilter("dateAttr", dateAttr);
   eleventyConfig.addFilter("relativeMonths", relativeMonths);
+  eleventyConfig.addFilter("sortByDateDesc", sortByDateDesc);
 
   // au lieu de copier tout le dossier assets
   eleventyConfig.addPassthroughCopy({ "src/assets/css/main.css": "assets/css/main.css" });
