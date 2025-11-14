@@ -1,3 +1,10 @@
+## [3.7.1](https://github.com/nighcrawl/cv/compare/v3.7.0...v3.7.1) (2025-11-14)
+
+
+### Bug Fixes
+
+* **ci:** ignore commitlint for dependabot ([5a967c8](https://github.com/nighcrawl/cv/commit/5a967c87b39948f73ba5579826fd16b4ba513efb))
+
 # [3.7.0](https://github.com/nighcrawl/cv/compare/v3.6.0...v3.7.0) (2025-11-14)
 
 
