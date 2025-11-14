@@ -44,6 +44,9 @@ experience:
     location: "Leudelange (Luxembourg)"
     description:
       - "Consultant au sein du pôle MarkComWeb : maintenance du site institutionnel et refontes des sites satellites."
+    projects:
+      - { name: "Rapport annuel 2024", url: "https://groupe.foyer.lu/fr/rapport-annuel"}
+      - { name: "CapitalAtWork", url: "https://capitalatwork.com" }
   - company: "Foyer Group"
     role: "Développeur WordPress consultant"
     start: "2024-10-01"
@@ -51,6 +54,8 @@ experience:
     location: "Leudelange (Luxembourg)"
     description:
       - "Accompagnement de Foyer Assurances dans la finalisation et la mise en production du nouveau site pour le marché belge."
+    projects:
+      - { name: "Foyer Assurances Belgique", url: "https://assurancesfoyer.be" }
   - company: "Concept Factory"
     role: "Développeur Web Front-End"
     start: "2018-12-01"
@@ -59,7 +64,6 @@ experience:
     description:
       - "Développement et intégration de sites WordPress avec un thème conçu en interne, ainsi que la création de newsletters et de bannières animées en JavaScript pour des clients tels que Luxair, Voyages Emile Weber et Tango."
     projects:
-      - { name: "Foyer Assurances Belgique", url: "https://assurancesfoyer.be" }
       - { name: "Luxembourg Institute of Health", url: "https://lih.lu" }
       - { name: "Croix-Rouge luxembourgeoise", url: "https://croix-rouge.lu" }
       - { name: "De Schnékert Traiteur", url: "https://schnekert.lu" }
