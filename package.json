@@ -29,7 +29,7 @@
     "gray-matter": "^4.0.3",
     "http-server": "^14.1.1",
     "husky": "^9.1.7",
-    "js-yaml": "^4.1.0",
+    "js-yaml": "^4.1.1",
     "playwright": "^1.55.1",
     "prettier": "^3.3.3",
     "sass": "^1.90.0",
