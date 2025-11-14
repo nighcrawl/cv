@@ -1,3 +1,10 @@
+# [3.7.0](https://github.com/nighcrawl/cv/compare/v3.6.0...v3.7.0) (2025-11-14)
+
+
+### Features
+
+* **data:** update CF projects + add Foyer projects FR/EN ([bf98685](https://github.com/nighcrawl/cv/commit/bf98685ce674eaaddf019d2171a2058072465c65))
+
 # [3.6.0](https://github.com/nighcrawl/cv/compare/v3.5.2...v3.6.0) (2025-08-23)
 
 
