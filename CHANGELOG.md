@@ -1,3 +1,10 @@
+# [3.8.0](https://github.com/nighcrawl/cv/compare/v3.7.1...v3.8.0) (2025-12-13)
+
+
+### Features
+
+* **data:** update job @ Foyer group ([7131653](https://github.com/nighcrawl/cv/commit/7131653c0f8ffe4f8b4a9fbc02153b88ecc41f64))
+
 ## [3.7.1](https://github.com/nighcrawl/cv/compare/v3.7.0...v3.7.1) (2025-11-14)
 
 
