@@ -40,13 +40,14 @@ experience:
   - company: "Foyer Group"
     role: "Développeur WordPress consultant"
     start: "2025-03-01"
-    end: null
+    end: "2025-12-31"
     location: "Leudelange (Luxembourg)"
     description:
       - "Consultant au sein du pôle MarkComWeb : maintenance du site institutionnel et refontes des sites satellites."
     projects:
       - { name: "Rapport annuel 2024", url: "https://groupe.foyer.lu/fr/rapport-annuel"}
       - { name: "CapitalAtWork", url: "https://capitalatwork.com" }
+      - { name: "Refonte de la recherche Agents", url: "https://www.foyer.lu/fr/agents-assurance/"}
   - company: "Foyer Group"
     role: "Développeur WordPress consultant"
     start: "2024-10-01"
