@@ -1,3 +1,10 @@
+# [3.9.0](https://github.com/nighcrawl/cv/compare/v3.8.0...v3.9.0) (2026-03-15)
+
+
+### Features
+
+* **data:** add new project for Concept Factory ([f46b5f2](https://github.com/nighcrawl/cv/commit/f46b5f219ddd5e1fd2b0d3a3a93f05106cfa13cb))
+
 # [3.8.0](https://github.com/nighcrawl/cv/compare/v3.7.1...v3.8.0) (2025-12-13)
 
 
