@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [ develop, master ]
 
+permissions:
+  contents: read
+  pull-requests: read
+
 jobs:
   commitlint:
     if: github.event_name == 'pull_request' && github.actor != 'dependabot[bot]' 
