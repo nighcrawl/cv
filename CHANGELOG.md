@@ -1,3 +1,10 @@
+# [3.10.0](https://github.com/nighcrawl/cv/compare/v3.9.0...v3.10.0) (2026-09-05)
+
+
+### Features
+
+* **data:** add Blockshifter in extras section ([d7423e2](https://github.com/nighcrawl/cv/commit/d7423e26d52db4feffb8a8b0e7dc0bf84349ea59))
+
 # [3.9.0](https://github.com/nighcrawl/cv/compare/v3.8.0...v3.9.0) (2026-03-15)
 
 
