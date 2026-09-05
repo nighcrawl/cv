@@ -136,6 +136,8 @@ education:
       - "Algorithmic, Merise and UML methodologies, Object-oriented programming in PHP and C#, SQL Server and MySQL database management system."
 
 extras:
+  - date: "2026-08"
+    title: "Release of Blockshifter, my first open-source WordPress plugin"
   - date: "2012-02"
     title: "2-pages Interview and publication of a tutorial on designing the layout of an asian restaurant themed website in Webdesign Magazine Hors Série #13"
   - date: "2010-07"
