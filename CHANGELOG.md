@@ -1,3 +1,10 @@
+## [3.10.1](https://github.com/nighcrawl/cv/compare/v3.10.0...v3.10.1) (2026-09-12)
+
+
+### Bug Fixes
+
+* déployer sur cv.chierchia.fr au lieu de chierchia.fr/cv ([bb818bb](https://github.com/nighcrawl/cv/commit/bb818bb1e031cc8e2edbaee262cd3e3b0cacbab5))
+
 # [3.10.0](https://github.com/nighcrawl/cv/compare/v3.9.0...v3.10.0) (2026-09-05)
 
 
