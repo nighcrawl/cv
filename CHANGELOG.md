@@ -1,3 +1,10 @@
+## [3.10.2](https://github.com/nighcrawl/cv/compare/v3.10.1...v3.10.2) (2026-09-20)
+
+
+### Bug Fixes
+
+* rollback deploy ([9568af3](https://github.com/nighcrawl/cv/commit/9568af389ad0ffc16944a3f2a4ed476fb60f99ea))
+
 ## [3.10.1](https://github.com/nighcrawl/cv/compare/v3.10.0...v3.10.1) (2026-09-12)
 
 
