@@ -1,3 +1,10 @@
+## [3.10.3](https://github.com/nighcrawl/cv/compare/v3.10.2...v3.10.3) (2026-09-20)
+
+
+### Bug Fixes
+
+* **data:** point Flex and MVOS2019 links to web archive snapshots ([41c3e18](https://github.com/nighcrawl/cv/commit/41c3e18a214208f74425b5653f079364eb4c626e))
+
 ## [3.10.2](https://github.com/nighcrawl/cv/compare/v3.10.1...v3.10.2) (2026-09-20)
 
 
