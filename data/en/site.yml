@@ -72,8 +72,8 @@ experience:
       - { name: "Croix-Rouge luxembourgeoise", url: "https://croix-rouge.lu" }
       - { name: "De Schnékert Traiteur", url: "https://schnekert.lu" }
       - { name: "Mobilitéit", url: "https://mobiliteit.lu" }
-      - { name: "Flex Carsharing", url: "https://flex.lu" }
-      - { name: "#MVOS2019", url: "https://mvos.lu" }
+      - { name: "Flex Carsharing", url: "https://web.archive.org/web/20250429081208/https://www.flex.lu/fr/accueil/" }
+      - { name: "#MVOS2019", url: "https://web.archive.org/web/20190820050015/https://www.mvos.lu/fr/" }
 
   - company: "Ibakus Europe SA"
     role: "Web Developer"
