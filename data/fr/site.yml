@@ -138,7 +138,7 @@ education:
 
 extras:
   - date: "2026-08"
-    title: "Publication de Blockshifter, mon premier plugin WordPress open source"
+    title: "Publication de <a href='https://wordpress.org/plugins/blockshifter/'>Blockshifter</a>, mon premier plugin WordPress open source"
   - date: "2012-02"
     title: "Interview Webdesign Magazine HS n°13 + tutoriel « design Web pour restaurant asiatique »"
   - date: "2010-07"
