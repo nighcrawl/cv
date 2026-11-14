@@ -1,3 +1,10 @@
+# [3.12.0](https://github.com/nighcrawl/cv/compare/v3.11.0...v3.12.0) (2026-11-14)
+
+
+### Features
+
+* **data:** add GitLab CI in skills ([37dcda6](https://github.com/nighcrawl/cv/commit/37dcda6f2bca4a472e735c9e5b79b318d78a4a2a))
+
 # [3.11.0](https://github.com/nighcrawl/cv/compare/v3.10.3...v3.11.0) (2026-11-14)
 
 
