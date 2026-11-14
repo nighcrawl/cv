@@ -1,3 +1,15 @@
+# [3.11.0](https://github.com/nighcrawl/cv/compare/v3.10.3...v3.11.0) (2026-11-14)
+
+
+### Bug Fixes
+
+* **data:** add link to Blockshifter plugin page on WordPress.org ([a79a107](https://github.com/nighcrawl/cv/commit/a79a10755606c5e4fe9a7d4a9e898644ed5da493))
+
+
+### Features
+
+* **data:** add new project for Concept Factory ([2716b28](https://github.com/nighcrawl/cv/commit/2716b2869f6d9c647471f0290ce2d9a280b132f9))
+
 ## [3.10.3](https://github.com/nighcrawl/cv/compare/v3.10.2...v3.10.3) (2026-09-20)
 
 
