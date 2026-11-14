@@ -67,6 +67,7 @@ experience:
     description:
       - "Développement et intégration de sites WordPress avec un thème conçu en interne, ainsi que la création de newsletters et de bannières animées en JavaScript pour des clients tels que Luxair, Voyages Emile Weber et Tango."
     projects:
+      - { name: "Luxembourg Research Clinic", url: "https://researchclinic.lu"}
       - { name: "OfWaasser - Wat leeft?", url: "https://ofwaasser.lu"}
       - { name: "Luxembourg Institute of Health", url: "https://lih.lu" }
       - { name: "Croix-Rouge luxembourgeoise", url: "https://croix-rouge.lu" }
