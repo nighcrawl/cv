@@ -1,3 +1,11 @@
+## [3.13.1](https://github.com/nighcrawl/cv/compare/v3.13.0...v3.13.1) (2026-11-19)
+
+
+### Bug Fixes
+
+* **data:** remove client project count from CI description ([2f55cae](https://github.com/nighcrawl/cv/commit/2f55cae56f24a4c60cc3b1c6dc1408ea3ea02e6d))
+* **data:** remove client project count from CI description ([#83](https://github.com/nighcrawl/cv/issues/83)) ([d2cc2c0](https://github.com/nighcrawl/cv/commit/d2cc2c066ff52b59809b6a7b20f86271ec6c8f36))
+
 # [3.13.0](https://github.com/nighcrawl/cv/compare/v3.12.0...v3.13.0) (2026-11-19)
 
 
