@@ -3,8 +3,6 @@
 function relativeTime(start, end) {
   var lang = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'fr';
 
-  console.log({start, end})
-
   if (end === null) {
     end = new Date();
   } else {
@@ -13,24 +11,18 @@ function relativeTime(start, end) {
 
   start = new Date(Date.parse(start + 'T00:00:00'));
 
-  console.log('parse', {start, end})
-
-
   var labelYear = lang === 'fr' ? 'an' : 'year';
   var labelMonth = lang === 'fr' ? 'mois' : 'month';
   var labelAnd = lang === 'fr' ? 'et' : 'and';
-  var yearInMs = 1000 * 60 * 60 * 24 * 365;
-  var monthInMs = 1000 * 60 * 60 * 24 * 30;
-  var distance = end.getTime() - start.getTime();
-  var years = Math.floor(distance / yearInMs);
-  var months = Math.floor(distance / monthInMs);
+  // Calendar months, inclusive of the starting month (June -> December = 7 months).
+  var total = (end.getFullYear() - start.getFullYear()) * 12 + (end.getMonth() - start.getMonth());
+  if (end.getDate() >= start.getDate()) total += 1;
+  var years = Math.floor(total / 12);
+  var months = total % 12;
   var string = '';
 
   if (years > 0) {
     string += years + ' ' + labelYear + (years > 1 ? 's' : '');
-    var delta = Math.floor(distance % yearInMs);
-    months = Math.ceil(delta / monthInMs);
-
     if (months > 0) {
       string += ' ' + labelAnd + ' ' + months + ' ' + labelMonth + (months > 1 && lang !== 'fr' ? 's' : '');
     }
