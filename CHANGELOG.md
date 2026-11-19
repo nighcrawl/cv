@@ -1,3 +1,19 @@
+# [3.13.0](https://github.com/nighcrawl/cv/compare/v3.12.0...v3.13.0) (2026-11-19)
+
+
+### Bug Fixes
+
+* **data:** rename FR tooling skills group to Outillage & DevOps ([9db20c1](https://github.com/nighcrawl/cv/commit/9db20c1a6a170e8b71d3dc117b03e499ec14d719))
+* **data:** simplify job title to Gutenberg & front-end ([459ef46](https://github.com/nighcrawl/cv/commit/459ef4629c3a2fa76fe333f73f9eab7e8cff5841))
+* **scripts:** compute job durations with calendar months ([042072b](https://github.com/nighcrawl/cv/commit/042072b3b4c331f117d17e9739e219f1856b1138))
+
+
+### Features
+
+* **data:** add deployment metrics and Blockshifter details ([30ea70f](https://github.com/nighcrawl/cv/commit/30ea70f406a6969f534157d2a4e6dc2092c674dd))
+* **data:** reposition CV as senior WordPress developer ([f0e6a16](https://github.com/nighcrawl/cv/commit/f0e6a168a4bb94f3e9771500c7cca03f73573b69))
+* **data:** repositionnement en développeur WordPress senior ([#80](https://github.com/nighcrawl/cv/issues/80)) ([f998934](https://github.com/nighcrawl/cv/commit/f998934a6b652a2934eba50bc37e715ec7c4fe57))
+
 # [3.12.0](https://github.com/nighcrawl/cv/compare/v3.11.0...v3.12.0) (2026-11-14)
 
 
