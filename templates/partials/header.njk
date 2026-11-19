@@ -4,6 +4,9 @@
   <h1 class="card__title">{{ site.identity.name }}</h1>
   <div class="card__description">
     <p class="job-description h4">{{ site.identity.title }}</p>
+    {% if site.identity.summary %}
+      <p class="summary">{{ site.identity.summary }}</p>
+    {% endif %}
     <ul class="contact list list--inline list--center">
       {% if site.identity.email %}
         <li class="list__item"><a href="mailto:{{ site.identity.email }}" id="send-email">{{ site.identity.email }}</a></li>

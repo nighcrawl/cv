@@ -1,3 +1,50 @@
+# [3.12.0](https://github.com/nighcrawl/cv/compare/v3.11.0...v3.12.0) (2026-11-14)
+
+
+### Features
+
+* **data:** add GitLab CI in skills ([37dcda6](https://github.com/nighcrawl/cv/commit/37dcda6f2bca4a472e735c9e5b79b318d78a4a2a))
+
+# [3.11.0](https://github.com/nighcrawl/cv/compare/v3.10.3...v3.11.0) (2026-11-14)
+
+
+### Bug Fixes
+
+* **data:** add link to Blockshifter plugin page on WordPress.org ([a79a107](https://github.com/nighcrawl/cv/commit/a79a10755606c5e4fe9a7d4a9e898644ed5da493))
+
+
+### Features
+
+* **data:** add new project for Concept Factory ([2716b28](https://github.com/nighcrawl/cv/commit/2716b2869f6d9c647471f0290ce2d9a280b132f9))
+
+## [3.10.3](https://github.com/nighcrawl/cv/compare/v3.10.2...v3.10.3) (2026-09-20)
+
+
+### Bug Fixes
+
+* **data:** point Flex and MVOS2019 links to web archive snapshots ([41c3e18](https://github.com/nighcrawl/cv/commit/41c3e18a214208f74425b5653f079364eb4c626e))
+
+## [3.10.2](https://github.com/nighcrawl/cv/compare/v3.10.1...v3.10.2) (2026-09-20)
+
+
+### Bug Fixes
+
+* rollback deploy ([9568af3](https://github.com/nighcrawl/cv/commit/9568af389ad0ffc16944a3f2a4ed476fb60f99ea))
+
+## [3.10.1](https://github.com/nighcrawl/cv/compare/v3.10.0...v3.10.1) (2026-09-12)
+
+
+### Bug Fixes
+
+* déployer sur cv.chierchia.fr au lieu de chierchia.fr/cv ([bb818bb](https://github.com/nighcrawl/cv/commit/bb818bb1e031cc8e2edbaee262cd3e3b0cacbab5))
+
+# [3.10.0](https://github.com/nighcrawl/cv/compare/v3.9.0...v3.10.0) (2026-09-05)
+
+
+### Features
+
+* **data:** add Blockshifter in extras section ([d7423e2](https://github.com/nighcrawl/cv/commit/d7423e26d52db4feffb8a8b0e7dc0bf84349ea59))
+
 # [3.9.0](https://github.com/nighcrawl/cv/compare/v3.8.0...v3.9.0) (2026-03-15)
 
 
