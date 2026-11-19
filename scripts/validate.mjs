@@ -7,6 +7,7 @@ const siteSchema = z.object({
   identity: z.object({
     name: z.string(),
     title: z.string(),
+    summary: z.string().optional(),
     location: z.string().optional(),
     email: z.string().optional(),
     website: z.string().url().optional(),
