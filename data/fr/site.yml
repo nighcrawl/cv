@@ -37,7 +37,7 @@ skills:
       - MySQL
       - Composer
       - Python (scraping)
-  - group: "Industrialisation"
+  - group: "Outillage & DevOps"
     items:
       - Git (normalisation du workflow)
       - GitLab CI (déploiement continu)
