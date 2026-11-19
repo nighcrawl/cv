@@ -1,7 +1,7 @@
 identity:
   name: "Ange Chierchia"
   title: "Senior WordPress Developer · Gutenberg, front-end & tooling"
-  summary: "Over 15 years of web development in Luxembourg, including 8 years building WordPress sites in an agency. I design custom themes and Gutenberg blocks for institutional and enterprise clients, and I improve the team's tooling: Bedrock-style architecture and continuous deployment with GitLab CI. Author of the open-source plugin Blockshifter."
+  summary: "Over 15 years of web development in Luxembourg, including 8 years building WordPress sites in an agency. I design custom themes and Gutenberg blocks for institutional and enterprise clients, and I improve the team's tooling: Bedrock-style architecture and continuous deployment with GitLab CI, which cut production deployments from 15–20 min to 2 min. Author of the open-source plugin Blockshifter."
   location: "Metz, France"
   email: "ange.chierchia+job@gmail.com"
   website: "https://chierchia.fr"
@@ -58,7 +58,7 @@ experience:
     description:
       - "Co-designed IAWP, the agency's in-house WordPress theme, with two colleagues. Technical lead on version 3.x (2026), built largely on my own: a mix of ACF blocks, custom Gutenberg blocks and custom options added to core blocks."
       - "Built the \"IAWP Plugins\" plugin, used on recent projects: visual transformation of core blocks (e.g. turning core/columns into a SwiperJS carousel)."
-      - "Standardised the Git workflow and set up continuous deployment with GitLab CI, co-written with the system administrator and co-presented to the team in a workshop. In use since March 2026 on 5–6 client projects: easier releases and fewer merge conflicts."
+      - "Standardised the Git workflow and set up continuous deployment with GitLab CI, co-written with the system administrator and co-presented to the team in a workshop. In use since March 2026 on 5–6 client projects: production deployments down from 15–20 min (manual FTP) to 2 min (build and rsync included), and fewer merge conflicts."
       - "Ongoing migration (since October 2026) to a Roots Bedrock-style file architecture to automate WordPress core and plugin updates."
       - "Seconded as a consultant to Foyer Group (2 assignments): launch of the Foyer Assurances Belgium website (Oct–Dec 2024), then maintenance of the corporate website and redesign of satellite sites within the MarCom Web division (Mar–Dec 2025)."
       - "Email newsletters and animated JavaScript banners for Luxair, Voyages Emile Weber and Tango."
@@ -111,7 +111,7 @@ education:
 
 extras:
   - date: "2026-08"
-    title: "Release of <a href='https://wordpress.org/plugins/blockshifter/'>Blockshifter</a>, my first open-source WordPress plugin"
+    title: "Release of <a href='https://wordpress.org/plugins/blockshifter/'>Blockshifter</a>, my first open-source WordPress plugin, which visually extends the editor's core blocks (<a href='https://blockshifter.dev'>blockshifter.dev</a>)"
   - date: "2012-02"
     title: "2-pages Interview and publication of a tutorial on designing the layout of an asian restaurant themed website in Webdesign Magazine Hors Série #13"
   - date: "2010-07"

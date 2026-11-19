@@ -35,7 +35,7 @@ function relativeTime(start, end) {
 
 document.addEventListener('DOMContentLoaded', function () {
   var emailLink = document.getElementById('send-email');
-  var emailName = "sboj+aihcreihc.egna";
+  var emailName = "boj+aihcreihc.egna";
   var emailTLD = "moc.liamg";
   var emailSubject = document.querySelector("html").getAttribute('lang') === "fr" ? "Votre profil m'intéresse" : "I'm interested in your profile";
   var email = emailName.split("").reverse().join("") + "@";

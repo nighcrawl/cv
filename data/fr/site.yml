@@ -1,7 +1,7 @@
 identity:
   name: "Ange Chierchia"
   title: "Développeur WordPress senior · Gutenberg, front-end & industrialisation"
-  summary: "Plus de 15 ans de développement web au Luxembourg, dont 8 ans sur WordPress en agence. Je conçois des thèmes et des blocs Gutenberg sur mesure pour des clients institutionnels et grands comptes, et je fais évoluer l'outillage de l'équipe : architecture type Bedrock, déploiement continu via GitLab CI. Auteur du plugin open source Blockshifter."
+  summary: "Plus de 15 ans de développement web au Luxembourg, dont 8 ans sur WordPress en agence. Je conçois des thèmes et des blocs Gutenberg sur mesure pour des clients institutionnels et grands comptes, et je fais évoluer l'outillage de l'équipe : architecture type Bedrock, déploiement continu via GitLab CI, qui a ramené les mises en production de 15–20 min à 2 min. Auteur du plugin open source Blockshifter."
   location: "Metz, France"
   email: "ange.chierchia+job@gmail.com"
   website: "https://chierchia.fr"
@@ -58,7 +58,7 @@ experience:
     description:
       - "Co-conception d'IAWP, le thème WordPress interne de l'agence, avec deux collègues. Lead technique de la version 3.x (2026), menée en grande partie seul : mélange de blocs ACF, de blocs Gutenberg sur mesure et d'options ajoutées aux blocs natifs."
       - "Développement du plugin « IAWP Plugins », installé sur les projets récents : transformation visuelle des blocs natifs (ex. core/columns en carrousel SwiperJS)."
-      - "Normalisation du workflow Git et déploiement continu via GitLab CI, co-écrit avec l'administrateur système et co-présenté à l'équipe lors d'un workshop. Utilisé depuis mars 2026 sur 5 à 6 projets clients : mises en production simplifiées et moins de conflits de merge."
+      - "Normalisation du workflow Git et déploiement continu via GitLab CI, co-écrit avec l'administrateur système et co-présenté à l'équipe lors d'un workshop. Utilisé depuis mars 2026 sur 5 à 6 projets clients : mise en production passée de 15–20 min (FTP manuel) à 2 min (build et rsync compris), et moins de conflits de merge."
       - "Migration en cours (depuis octobre 2026) vers une architecture de fichiers type Roots Bedrock, pour automatiser les mises à jour du cœur WordPress et des plugins."
       - "Consultant détaché chez Foyer Group (2 missions) : mise en production du site Foyer Assurances Belgique (oct.–déc. 2024), puis maintenance du site institutionnel et refonte des sites satellites au sein du pôle MarkComWeb (mars–déc. 2025)."
       - "Newsletters et bannières animées en JavaScript pour Luxair, Voyages Emile Weber et Tango."
@@ -89,7 +89,7 @@ experience:
     location: "Bascharage (Luxembourg)"
     description:
       - "Application Web de géolocalisation de véhicule en temps réel : conception de l'interface utilisateur adaptée pour desktop, tablette et smartphone, utilisation des données cartographiques Open Street Map, dessins et intéractions sur la carte via l'API Leaflet, utilisation de divers services Web de geocoding/reverse geocoding."
-      - "Création d'une plateforme intranet : 600 comptes utilisateur, gestion des droits d'accès, partage de documents, agenda, forums de discussion, volet de notifications."
+      - "Création d'une plateforme intranet : plus de 500 comptes utilisateur, gestion des droits d'accès, partage de documents, agenda, forums de discussion, volet de notifications."
       - "Réalisation d'un mini CMS adaptable aux besoins spécifiques des clients."
       - "Conception et envoi de newsletters en partenariat avec HP, Lenovo et Microsoft en accord avec les Guidelines de chaque partenaire."
 
@@ -111,7 +111,7 @@ education:
 
 extras:
   - date: "2026-08"
-    title: "Publication de <a href='https://wordpress.org/plugins/blockshifter/'>Blockshifter</a>, mon premier plugin WordPress open source"
+    title: "Publication de <a href='https://wordpress.org/plugins/blockshifter/'>Blockshifter</a>, mon premier plugin WordPress open source, qui étend visuellement les blocs natifs de l'éditeur (<a href='https://blockshifter.dev'>blockshifter.dev</a>)"
   - date: "2012-02"
     title: "Interview Webdesign Magazine HS n°13 + tutoriel « design Web pour restaurant asiatique »"
   - date: "2010-07"
