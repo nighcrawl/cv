@@ -41,6 +41,7 @@ skills:
     items:
       - Git (normalisation du workflow)
       - GitLab CI (déploiement continu)
+      - Renovate
       - Architecture type Roots Bedrock
       - npm
       - Gulp
@@ -59,7 +60,7 @@ experience:
       - "Co-conception d'IAWP, le thème WordPress interne de l'agence, avec deux collègues. Lead technique de la version 3.x (2026), menée en grande partie seul : mélange de blocs ACF, de blocs Gutenberg sur mesure et d'options ajoutées aux blocs natifs."
       - "Développement du plugin « IAWP Plugins », installé sur les projets récents : transformation visuelle des blocs natifs (ex. core/columns en carrousel SwiperJS)."
       - "Normalisation du workflow Git et déploiement continu via GitLab CI, co-écrit avec l'administrateur système et co-présenté à l'équipe lors d'un workshop. Utilisé sur les projets clients depuis mars 2026 : mise en production passée de 15–20 min (FTP manuel) à 2 min (build et rsync compris), et moins de conflits de merge."
-      - "Migration en cours (depuis octobre 2026) vers une architecture de fichiers type Roots Bedrock, pour automatiser les mises à jour du cœur WordPress et des plugins."
+      - "En test depuis octobre 2026 : architecture type Roots Bedrock pour gérer le cœur WordPress et les plugins via Composer, et Renovate sur le GitLab de l'agence pour automatiser les mises à jour (merge requests toutes les 2 h ; fusion automatique des correctifs, validation humaine pour les versions mineures et majeures)."
       - "Détaché en tant que consultant chez Foyer Group en 2024 et 2025 (voir les missions détaillées)."
       - "Newsletters et bannières animées en JavaScript pour Luxair, Voyages Emile Weber et Tango."
     projects:

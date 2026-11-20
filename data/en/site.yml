@@ -41,6 +41,7 @@ skills:
     items:
       - Git (workflow standardisation)
       - GitLab CI (continuous deployment)
+      - Renovate
       - Roots Bedrock-style architecture
       - npm
       - Gulp
@@ -59,7 +60,7 @@ experience:
       - "Co-designed IAWP, the agency's in-house WordPress theme, with two colleagues. Technical lead on version 3.x (2026), built largely on my own: a mix of ACF blocks, custom Gutenberg blocks and custom options added to core blocks."
       - "Built the \"IAWP Plugins\" plugin, used on recent projects: visual transformation of core blocks (e.g. turning core/columns into a SwiperJS carousel)."
       - "Standardised the Git workflow and set up continuous deployment with GitLab CI, co-written with the system administrator and co-presented to the team in a workshop. In use on client projects since March 2026: production deployments down from 15–20 min (manual FTP) to 2 min (build and rsync included), and fewer merge conflicts."
-      - "Ongoing migration (since October 2026) to a Roots Bedrock-style file architecture to automate WordPress core and plugin updates."
+      - "In testing since October 2026: Roots Bedrock-style architecture to manage WordPress core and plugins with Composer, and Renovate on the agency's GitLab to automate updates (merge requests every 2 hours; patches merged automatically, minor and major versions reviewed by a human)."
       - "Seconded as a consultant to Foyer Group in 2024 and 2025 (see detailed assignments)."
       - "Email newsletters and animated JavaScript banners for Luxair, Voyages Emile Weber and Tango."
     projects:
