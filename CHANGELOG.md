@@ -1,3 +1,11 @@
+# [3.17.0](https://github.com/nighcrawl/cv/compare/v3.16.0...v3.17.0) (2026-11-20)
+
+
+### Features
+
+* **data:** shorten summary ([9d04299](https://github.com/nighcrawl/cv/commit/9d042992b300871a8784b448037cb87166d13492))
+* **data:** shorten summary ([#91](https://github.com/nighcrawl/cv/issues/91)) ([9f19c79](https://github.com/nighcrawl/cv/commit/9f19c79b0dabc1bb2231fb225f8f120714cef136))
+
 # [3.16.0](https://github.com/nighcrawl/cv/compare/v3.15.0...v3.16.0) (2026-11-20)
 
 
