@@ -1,3 +1,16 @@
+# [3.18.0](https://github.com/nighcrawl/cv/compare/v3.17.0...v3.18.0) (2026-11-20)
+
+
+### Bug Fixes
+
+* **scripts:** validate experience description and extras end date ([f3a6303](https://github.com/nighcrawl/cv/commit/f3a6303db55d9c6a9a6e3219430fade7663c45f3))
+
+
+### Features
+
+* **data:** add CV as code entry and fix validator ([#93](https://github.com/nighcrawl/cv/issues/93)) ([1910aed](https://github.com/nighcrawl/cv/commit/1910aedf1a272b127d24d6c02f12e9ab65db3a67))
+* **data:** add CV as code entry to extras ([10837da](https://github.com/nighcrawl/cv/commit/10837da3d9f9add2f0097fbf7e859f1b568b8e8f))
+
 # [3.17.0](https://github.com/nighcrawl/cv/compare/v3.16.0...v3.17.0) (2026-11-20)
 
 
