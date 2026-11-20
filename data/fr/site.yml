@@ -109,10 +109,10 @@ experience:
     end: "2014-12-31"
     location: "Bascharage (Luxembourg)"
     description:
-      - "Application Web de géolocalisation de véhicule en temps réel : conception de l'interface utilisateur adaptée pour desktop, tablette et smartphone, utilisation des données cartographiques Open Street Map, dessins et intéractions sur la carte via l'API Leaflet, utilisation de divers services Web de geocoding/reverse geocoding."
-      - "Création d'une plateforme intranet : plus de 500 comptes utilisateur, gestion des droits d'accès, partage de documents, agenda, forums de discussion, volet de notifications."
-      - "Réalisation d'un mini CMS adaptable aux besoins spécifiques des clients."
-      - "Conception et envoi de newsletters en partenariat avec HP, Lenovo et Microsoft en accord avec les Guidelines de chaque partenaire."
+      - "Application de géolocalisation de véhicules en temps réel : conception de l'interface responsive (desktop, tablette, mobile), cartographie OpenStreetMap et Leaflet, géocodage et géocodage inverse."
+      - "Plateforme intranet de plus de 500 utilisateurs : gestion des droits, partage de documents, agenda, forums, notifications."
+      - "Mini CMS sur mesure, adapté aux besoins de chaque client."
+      - "Conception et envoi de newsletters co-brandées avec HP, Lenovo et Microsoft, conformes aux chartes de chaque marque."
 
 education:
   - school: "IUT Université Paul Verlaine"
