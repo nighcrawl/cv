@@ -109,10 +109,10 @@ experience:
     end: "2014-12-31"
     location: "Bascharage (Luxembourg)"
     description:
-      - "In charge of User Interface design, front and back-end development for a Real-time vehicle tracking Web application. Open Street Map and Leaflet were used to display the journeys made by the user’s fleet of vehicles, day by day. Several geocoding and reverse geocoding web services were used to retrieve the name of the each location where vehicules stopped."
-      - "Development of an Intranet platform used by 500+ users with different access rights, document sharing, forums and email and Web notifications."
-      - "Writing of a small modular CMS to answer the specific needs of the customers."
-      - "Designed and sent email newsletters in partnership with HP, Lenovo and Microsoft in accordance with Guidelines of each partner."
+      - "Real-time vehicle tracking web application: responsive UI design (desktop, tablet, mobile), OpenStreetMap and Leaflet mapping, geocoding and reverse geocoding."
+      - "Intranet platform with 500+ users: access rights, document sharing, calendar, forums, notifications."
+      - "Small custom CMS, tailored to each client's needs."
+      - "Designed and sent co-branded email newsletters with HP, Lenovo and Microsoft, following each brand's guidelines."
 
 education:
   - school: "IUT Université Paul Verlaine"
