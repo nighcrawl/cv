@@ -1,3 +1,11 @@
+# [3.14.0](https://github.com/nighcrawl/cv/compare/v3.13.1...v3.14.0) (2026-11-20)
+
+
+### Features
+
+* **data:** list Foyer Group assignments as separate experiences ([5644ff1](https://github.com/nighcrawl/cv/commit/5644ff176426e0a409b127870f9f74188c7ab1dd))
+* **data:** list Foyer Group assignments as separate experiences ([#85](https://github.com/nighcrawl/cv/issues/85)) ([96105e0](https://github.com/nighcrawl/cv/commit/96105e0f7d35e5786ece7d37e7c94266a9e3917e))
+
 ## [3.13.1](https://github.com/nighcrawl/cv/compare/v3.13.0...v3.13.1) (2026-11-19)
 
 
