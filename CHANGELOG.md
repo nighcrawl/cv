@@ -1,3 +1,11 @@
+# [3.19.0](https://github.com/nighcrawl/cv/compare/v3.18.0...v3.19.0) (2026-11-20)
+
+
+### Features
+
+* **data:** add Renovate and mark Bedrock as in testing ([29d52da](https://github.com/nighcrawl/cv/commit/29d52da954f9e93e6a4368835c50b17e2aae2589))
+* **data:** add Renovate and mark Bedrock as in testing ([#95](https://github.com/nighcrawl/cv/issues/95)) ([2d4abcd](https://github.com/nighcrawl/cv/commit/2d4abcd1ed5cc714b810853709fadcfd3a3469be))
+
 # [3.18.0](https://github.com/nighcrawl/cv/compare/v3.17.0...v3.18.0) (2026-11-20)
 
 
