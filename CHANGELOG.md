@@ -1,3 +1,11 @@
+# [3.15.0](https://github.com/nighcrawl/cv/compare/v3.14.0...v3.15.0) (2026-11-20)
+
+
+### Features
+
+* **data:** rewrite Ibakus experience and mention Symfony ([3ae8abb](https://github.com/nighcrawl/cv/commit/3ae8abbcb6a58a10db7737d295732362f7c6266d))
+* **data:** rewrite Ibakus experience and mention Symfony ([#87](https://github.com/nighcrawl/cv/issues/87)) ([8af6349](https://github.com/nighcrawl/cv/commit/8af63493cb2433de2d0477c48dc7cc008356de27))
+
 # [3.14.0](https://github.com/nighcrawl/cv/compare/v3.13.1...v3.14.0) (2026-11-20)
 
 
