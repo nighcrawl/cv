@@ -133,6 +133,8 @@ education:
 extras:
   - date: "2026-08"
     title: "Publication de <a href='https://wordpress.org/plugins/blockshifter/'>Blockshifter</a>, mon premier plugin WordPress open source, qui étend visuellement les blocs natifs de l'éditeur (<a href='https://blockshifter.dev'>blockshifter.dev</a>)"
+  - date: "2025-08"
+    title: "<strong>CV as code</strong> : ce CV, versionné sur GitHub depuis 2013, est généré avec Eleventy et déployé automatiquement via GitHub Actions (versionnement sémantique, génération du PDF avec Playwright, versions FR/EN). <a href='https://github.com/nighcrawl/cv'>Sources sur GitHub</a>."
   - date: "2012-02"
     title: "Interview Webdesign Magazine HS n°13 + tutoriel « design Web pour restaurant asiatique »"
   - date: "2010-07"
