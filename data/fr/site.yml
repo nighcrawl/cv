@@ -1,7 +1,7 @@
 identity:
   name: "Ange Chierchia"
   title: "Développeur WordPress senior · Gutenberg & front-end"
-  summary: "Plus de 15 ans de développement web au Luxembourg, dont 8 ans sur WordPress en agence. Je conçois des thèmes et des blocs Gutenberg sur mesure pour des clients institutionnels et grands comptes, et je fais évoluer l'outillage de l'équipe : architecture type Bedrock, déploiement continu via GitLab CI, qui a ramené les mises en production de 15–20 min à 2 min. Auteur du plugin open source Blockshifter."
+  summary: "Plus de 15 ans de développement web, dont 8 sur WordPress en agence. Thèmes et blocs Gutenberg sur mesure, et déploiement continu via GitLab CI : 2 min par mise en production au lieu de 15–20. Auteur du plugin open source Blockshifter."
   location: "Metz, France"
   email: "ange.chierchia+job@gmail.com"
   website: "https://chierchia.fr"
