@@ -1,3 +1,11 @@
+# [3.16.0](https://github.com/nighcrawl/cv/compare/v3.15.0...v3.16.0) (2026-11-20)
+
+
+### Features
+
+* **data:** tighten CBC Informatique experience ([f95a3f7](https://github.com/nighcrawl/cv/commit/f95a3f789bcc242faf60401a50436fe16abd0519))
+* **data:** tighten CBC Informatique experience ([#89](https://github.com/nighcrawl/cv/issues/89)) ([7717a56](https://github.com/nighcrawl/cv/commit/7717a5685bae1f7d7dd2afe7911a09ca851b32df))
+
 # [3.15.0](https://github.com/nighcrawl/cv/compare/v3.14.0...v3.15.0) (2026-11-20)
 
 
