@@ -60,18 +60,38 @@ experience:
       - "Développement du plugin « IAWP Plugins », installé sur les projets récents : transformation visuelle des blocs natifs (ex. core/columns en carrousel SwiperJS)."
       - "Normalisation du workflow Git et déploiement continu via GitLab CI, co-écrit avec l'administrateur système et co-présenté à l'équipe lors d'un workshop. Utilisé sur les projets clients depuis mars 2026 : mise en production passée de 15–20 min (FTP manuel) à 2 min (build et rsync compris), et moins de conflits de merge."
       - "Migration en cours (depuis octobre 2026) vers une architecture de fichiers type Roots Bedrock, pour automatiser les mises à jour du cœur WordPress et des plugins."
-      - "Consultant détaché chez Foyer Group (2 missions) : mise en production du site Foyer Assurances Belgique (oct.–déc. 2024), puis maintenance du site institutionnel et refonte des sites satellites au sein du pôle MarkComWeb (mars–déc. 2025)."
+      - "Détaché en tant que consultant chez Foyer Group en 2024 et 2025 (voir les missions détaillées)."
       - "Newsletters et bannières animées en JavaScript pour Luxair, Voyages Emile Weber et Tango."
     projects:
-      - { name: "Foyer Assurances Belgique", url: "https://assurancesfoyer.be" }
-      - { name: "Foyer – Rapport annuel 2024", url: "https://groupe.foyer.lu/fr/rapport-annuel" }
-      - { name: "Foyer – Refonte de la recherche Agents", url: "https://www.foyer.lu/fr/agents-assurance/" }
-      - { name: "CapitalAtWork", url: "https://capitalatwork.com" }
       - { name: "Luxembourg Institute of Health", url: "https://lih.lu" }
       - { name: "Croix-Rouge luxembourgeoise", url: "https://croix-rouge.lu" }
       - { name: "Mobilitéit", url: "https://mobiliteit.lu" }
       - { name: "Luxembourg Research Clinic", url: "https://researchclinic.lu" }
       - { name: "OfWaasser - Wat leeft?", url: "https://ofwaasser.lu" }
+
+  - company: "Foyer Group"
+    role: "Développeur WordPress · Consultant pour Concept Factory"
+    start: "2025-03-01"
+    end: "2025-12-31"
+    location: "Leudelange (Luxembourg)"
+    description:
+      - "Mission de conseil pour le compte de Concept Factory, au sein du pôle MarkComWeb de Foyer."
+      - "Maintenance du site institutionnel du groupe et refonte des sites satellites."
+    projects:
+      - { name: "Rapport annuel 2024", url: "https://groupe.foyer.lu/fr/rapport-annuel" }
+      - { name: "CapitalAtWork", url: "https://capitalatwork.com" }
+      - { name: "Refonte de la recherche Agents", url: "https://www.foyer.lu/fr/agents-assurance/" }
+
+  - company: "Foyer Group"
+    role: "Développeur WordPress · Consultant pour Concept Factory"
+    start: "2024-10-01"
+    end: "2024-12-31"
+    location: "Leudelange (Luxembourg)"
+    description:
+      - "Mission de conseil pour le compte de Concept Factory."
+      - "Finalisation et mise en production du nouveau site Foyer Assurances pour le marché belge."
+    projects:
+      - { name: "Foyer Assurances Belgique", url: "https://assurancesfoyer.be" }
 
   - company: "Ibakus Europe SA"
     role: "Développeur Web"
