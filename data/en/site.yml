@@ -99,8 +99,9 @@ experience:
     end: "2018-11-30"
     location: "Strassen (Luxembourg)"
     description:
-      - "Development of Web applications with PHP, MySQL and JavaScript for Finance and Law professionals. Design of the presentation website with Sass, JavaScript and PHP."
-      - "Development of an API used to get companies informations available from Luxembourgish, Belgian and French Trade Registers. The API is fed by several Web scrapers written in Python and PHP."
+      - "Business web applications for legal and finance professionals: custom PHP development, then Symfony on the later projects; JavaScript on the front end."
+      - "Full redesign of the company website, from design to launch."
+      - "Designed an API centralising company data from the Luxembourg, Belgian and French trade registers, fed by scrapers written in Python and PHP."
 
   - company: "CBC Informatique"
     role: "Webdesigner and developer"
