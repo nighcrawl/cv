@@ -7,8 +7,6 @@ on:
 
 permissions:
   contents: write # tags, releases, commits CHANGELOG
-  pages: write # deploy GitHub Pages
-  id-token: write # OIDC for Pages
 
 concurrency:
   group: release-and-deploy
@@ -32,7 +30,7 @@ jobs:
 
       - run: npm ci
 
-      # Build avec le même pathPrefix que Pages & OVH
+      # Build avec le pathPrefix d'OVH (www/cv/)
       - name: Build site
         run: ELEVENTY_PATH_PREFIX="${{ env.PATH_PREFIX }}" npm run build
 
@@ -54,19 +52,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx semantic-release
 
-      # GitHub Pages
-      - name: Upload artifact for Pages
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./dist
-
-      - name: Deploy to GitHub Pages
-        id: ghpages
-        uses: actions/deploy-pages@v4
-
       # OVH (SFTP)
       - name: Deploy to OVH (SFTP)
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        uses: wlixcc/SFTP-Deploy-Action@da88a4dbe95286266bbac3c0b2b8284048d20c8f # v1.2.4
         with:
           server:   ${{ secrets.OVH_HOST }}
           username: ${{ secrets.OVH_USER }}
