@@ -9,6 +9,7 @@ for (const lang of langs) {
   const basics = {
     name: site.identity?.name,
     label: site.identity?.title,
+    summary: site.identity?.summary,
     email: site.identity?.email,
     url: site.identity?.website,
     location: { city: site.identity?.location },

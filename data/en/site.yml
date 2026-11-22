@@ -1,7 +1,7 @@
-
 identity:
   name: "Ange Chierchia"
-  title: "Full-stack Web Developer"
+  title: "Senior WordPress Developer · Gutenberg & front-end"
+  summary: "15+ years of web development, including 8 on WordPress in an agency. Custom themes and Gutenberg blocks, plus continuous deployment with GitLab CI: 2-minute releases instead of 15–20. Author of the open-source plugin Blockshifter."
   location: "Metz, France"
   email: "ange.chierchia+job@gmail.com"
   website: "https://chierchia.fr"
@@ -13,67 +13,86 @@ identity:
       url: "https://github.com/nighcrawl"
 
 skills:
+  - group: "WordPress"
+    items:
+      - Custom themes
+      - Gutenberg blocks (React)
+      - ACF blocks
+      - Plugins (published on wordpress.org)
+      - Core block extensions
+      - CPT
   - group: "Front-end"
     items:
       - HTML
-      - CSS
-      - Sass
+      - CSS / Sass
       - JavaScript
-      - React (Gutenberg block development)
-      - jQuery
+      - React
+      - SwiperJS
       - Responsive Web Design
-      - SEO
       - Accessibility
+      - Technical SEO
   - group: "Back-end"
     items:
-      - WordPress (themes, plugins, CPT)
-      - PHP (OOP, basic Symfony)
+      - PHP 8 (OOP)
       - MySQL
-  - group: "Tools & Workflow"
+      - Composer
+      - Python (scraping)
+  - group: "Tooling & DevOps"
     items:
-      - Git
+      - Git (workflow standardisation)
+      - GitLab CI (continuous deployment)
+      - Renovate
+      - Roots Bedrock-style architecture
       - npm
       - Gulp
-
+  - group: "Languages"
+    items:
+      - French (native)
+      - English (professional written, intermediate spoken)
 
 experience:
-  - company: "Foyer Group"
-    role: "WordPress Developer (Consultant)"
-    start: "2025-03-01"
-    end: "2025-12-31"
-    location: "Leudelange (Luxembourg)"
-    description:
-      - "Consultant within the MarCom Web division: maintenance of the corporate website and redesigns of satellite sites."
-    projects:
-      - { name: "Annual Report 2024", url: "https://groupe.foyer.lu/en/annual-report"}
-      - { name: "CapitalAtWork", url: "https://www.capitalatwork.com/en-lu/" }
-      - { name: "Redesign of the Agents search", url: "https://www.foyer.lu/en/insurance-agents/" }
-  
-  - company: "Foyer Group"
-    role: "WordPress Developer (Consultant)"
-    start: "2024-10-01"
-    end: "2024-12-31"
-    location: "Leudelange (Luxembourg)"
-    description:
-      - "Supported Foyer Assurances in finalizing and launching the new website for the Belgian market."
-    projects:
-    - { name: "Foyer Assurances Belgique", url: "https://assurancesfoyer.be" }
-  
   - company: "Concept Factory"
     role: "Front-end Web Developer"
     start: "2018-12-01"
     end: null
     location: "Luxembourg"
-    description: 
-      - "Development and integration of WordPress websites with a custom in-house theme, along with the creation of newsletters and animated JavaScript banners for clients such as Luxair, Voyages Emile Weber, and Tango."
+    description:
+      - "Co-designed IAWP, the agency's in-house WordPress theme, with two colleagues. Technical lead on version 3.x (2026), built largely on my own: a mix of ACF blocks, custom Gutenberg blocks and custom options added to core blocks."
+      - "Built the \"IAWP Plugins\" plugin, used on recent projects: visual transformation of core blocks (e.g. turning core/columns into a SwiperJS carousel)."
+      - "Standardised the Git workflow and set up continuous deployment with GitLab CI, co-written with the system administrator and co-presented to the team in a workshop. In use on client projects since March 2026: production deployments down from 15–20 min (manual FTP) to 2 min (build and rsync included), and fewer merge conflicts."
+      - "In testing since October 2026: Roots Bedrock-style architecture to manage WordPress core and plugins with Composer, and Renovate on the agency's GitLab to automate updates (merge requests every 2 hours; patches merged automatically, minor and major versions reviewed by a human)."
+      - "Seconded as a consultant to Foyer Group in 2024 and 2025 (see detailed assignments)."
+      - "Email newsletters and animated JavaScript banners for Luxair, Voyages Emile Weber and Tango."
     projects:
-      - { name: "OfWaasser - Wat leeft?", url: "https://ofwaasser.lu"}
       - { name: "Luxembourg Institute of Health", url: "https://lih.lu" }
       - { name: "Croix-Rouge luxembourgeoise", url: "https://croix-rouge.lu" }
-      - { name: "De Schnékert Traiteur", url: "https://schnekert.lu" }
       - { name: "Mobilitéit", url: "https://mobiliteit.lu" }
-      - { name: "Flex Carsharing", url: "https://web.archive.org/web/20250429081208/https://www.flex.lu/fr/accueil/" }
-      - { name: "#MVOS2019", url: "https://web.archive.org/web/20190820050015/https://www.mvos.lu/fr/" }
+      - { name: "Luxembourg Research Clinic", url: "https://researchclinic.lu" }
+      - { name: "OfWaasser - Wat leeft?", url: "https://ofwaasser.lu" }
+
+  - company: "Foyer Group"
+    role: "WordPress Developer · Consultant for Concept Factory"
+    start: "2025-03-01"
+    end: "2025-12-31"
+    location: "Leudelange (Luxembourg)"
+    description:
+      - "Consulting assignment on behalf of Concept Factory, within Foyer's MarCom Web division."
+      - "Maintenance of the group's corporate website and redesign of satellite sites."
+    projects:
+      - { name: "Annual Report 2024", url: "https://groupe.foyer.lu/en/annual-report" }
+      - { name: "CapitalAtWork", url: "https://www.capitalatwork.com/en-lu/" }
+      - { name: "Agents search redesign", url: "https://www.foyer.lu/en/insurance-agents/" }
+
+  - company: "Foyer Group"
+    role: "WordPress Developer · Consultant for Concept Factory"
+    start: "2024-10-01"
+    end: "2024-12-31"
+    location: "Leudelange (Luxembourg)"
+    description:
+      - "Consulting assignment on behalf of Concept Factory."
+      - "Finalised and launched the new Foyer Assurances website for the Belgian market."
+    projects:
+      - { name: "Foyer Assurances Belgique", url: "https://assurancesfoyer.be" }
 
   - company: "Ibakus Europe SA"
     role: "Web Developer"
@@ -81,8 +100,9 @@ experience:
     end: "2018-11-30"
     location: "Strassen (Luxembourg)"
     description:
-      - "Development of Web applications with PHP, MySQL and JavaScript for Finance and Law professionals. Design of the presentation website with Sass, JavaScript and PHP."
-      - "Development of an API used to get companies informations available from Luxembourgish, Belgian and French Trade Registers. The API is fed by several Web scrapers written in Python and PHP."
+      - "Business web applications for legal and finance professionals: custom PHP development, then Symfony on the later projects; JavaScript on the front end."
+      - "Full redesign of the company website, from design to launch."
+      - "Designed an API centralising company data from the Luxembourg, Belgian and French trade registers, fed by scrapers written in Python and PHP."
 
   - company: "CBC Informatique"
     role: "Webdesigner and developer"
@@ -90,34 +110,10 @@ experience:
     end: "2014-12-31"
     location: "Bascharage (Luxembourg)"
     description:
-      - "In charge of User Interface design, front and back-end development for a Real-time vehicle tracking Web application. Open Street Map and Leaflet were used to display the journeys made by the user’s fleet of vehicles, day by day. Several geocoding and reverse geocoding web services were used to retrieve the name of the each location where vehicules stopped."
-      - "Development of an Intranet platform used by 500+ users with different access rights, document sharing, forums and email and Web notifications."
-      - "Writing of a small modular CMS to answer the specific needs of the customers."
-      - "Designed and sent email newsletters in partnership with HP, Lenovo and Microsoft in accordance with Guidelines of each partner."
-
-  - company: "CBC Informatique"
-    role: "Trainee Web Developer"
-    start: "2009-06-01"
-    end: "2009-09-11"
-    location: "Bascharage (Luxembourg)"
-    description:
-      - "Redesign of an online store to validate a Bachelor’s degree in Computer Science. I was in charge of studying the actual website, drafting the specifications for the new one, defining and design the new UI and UX. I also develop a custom CMS and set up PayPal for online payments."
-
-  - company: "Unpointzéro"
-    role: "Trainee Web Developer"
-    start: "2008-12-01"
-    end: "2009-04-30"
-    location: "Metz"
-    description:
-      - "Collaborate on the development of a digital artworks repository website, as part of Bachelor’s degree. Drafting the project specifications, tasks distribution, design of the user registration process with HTML, CSS, JavaScript, MySQL and PHP."
-
-  - company: "IPcube"
-    role: "Trainee Web Developer"
-    start: "2008-01-01"
-    end: "2008-02-29"
-    location: "Montigny-lès-Metz"
-    description:
-      - "Develop a wedding lists management website in order to validate a BTEC Higher National Diploma in Computer Science. Manage different user access levels : wedding list creators and friends of creators. UI and UX design."
+      - "Real-time vehicle tracking web application: responsive UI design (desktop, tablet, mobile), OpenStreetMap and Leaflet mapping, geocoding and reverse geocoding."
+      - "Intranet platform with 500+ users: access rights, document sharing, calendar, forums, notifications."
+      - "Small custom CMS, tailored to each client's needs."
+      - "Designed and sent co-branded email newsletters with HP, Lenovo and Microsoft, following each brand's guidelines."
 
 education:
   - school: "IUT Université Paul Verlaine"
@@ -137,7 +133,9 @@ education:
 
 extras:
   - date: "2026-08"
-    title: "Release of Blockshifter, my first open-source WordPress plugin"
+    title: "Release of <a href='https://wordpress.org/plugins/blockshifter/'>Blockshifter</a>, my first open-source WordPress plugin, which visually extends the editor's core blocks (<a href='https://blockshifter.dev'>blockshifter.dev</a>)"
+  - date: "2025-08"
+    title: "<strong>CV as code</strong>: this resume, versioned on GitHub since 2013, is built with Eleventy and deployed automatically with GitHub Actions (semantic versioning, PDF generation with Playwright, FR/EN versions). <a href='https://github.com/nighcrawl/cv'>Source on GitHub</a>."
   - date: "2012-02"
     title: "2-pages Interview and publication of a tutorial on designing the layout of an asian restaurant themed website in Webdesign Magazine Hors Série #13"
   - date: "2010-07"

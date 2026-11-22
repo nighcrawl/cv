@@ -1,3 +1,99 @@
+# [3.19.0](https://github.com/nighcrawl/cv/compare/v3.18.0...v3.19.0) (2026-11-20)
+
+
+### Features
+
+* **data:** add Renovate and mark Bedrock as in testing ([29d52da](https://github.com/nighcrawl/cv/commit/29d52da954f9e93e6a4368835c50b17e2aae2589))
+* **data:** add Renovate and mark Bedrock as in testing ([#95](https://github.com/nighcrawl/cv/issues/95)) ([2d4abcd](https://github.com/nighcrawl/cv/commit/2d4abcd1ed5cc714b810853709fadcfd3a3469be))
+
+# [3.18.0](https://github.com/nighcrawl/cv/compare/v3.17.0...v3.18.0) (2026-11-20)
+
+
+### Bug Fixes
+
+* **scripts:** validate experience description and extras end date ([f3a6303](https://github.com/nighcrawl/cv/commit/f3a6303db55d9c6a9a6e3219430fade7663c45f3))
+
+
+### Features
+
+* **data:** add CV as code entry and fix validator ([#93](https://github.com/nighcrawl/cv/issues/93)) ([1910aed](https://github.com/nighcrawl/cv/commit/1910aedf1a272b127d24d6c02f12e9ab65db3a67))
+* **data:** add CV as code entry to extras ([10837da](https://github.com/nighcrawl/cv/commit/10837da3d9f9add2f0097fbf7e859f1b568b8e8f))
+
+# [3.17.0](https://github.com/nighcrawl/cv/compare/v3.16.0...v3.17.0) (2026-11-20)
+
+
+### Features
+
+* **data:** shorten summary ([9d04299](https://github.com/nighcrawl/cv/commit/9d042992b300871a8784b448037cb87166d13492))
+* **data:** shorten summary ([#91](https://github.com/nighcrawl/cv/issues/91)) ([9f19c79](https://github.com/nighcrawl/cv/commit/9f19c79b0dabc1bb2231fb225f8f120714cef136))
+
+# [3.16.0](https://github.com/nighcrawl/cv/compare/v3.15.0...v3.16.0) (2026-11-20)
+
+
+### Features
+
+* **data:** tighten CBC Informatique experience ([f95a3f7](https://github.com/nighcrawl/cv/commit/f95a3f789bcc242faf60401a50436fe16abd0519))
+* **data:** tighten CBC Informatique experience ([#89](https://github.com/nighcrawl/cv/issues/89)) ([7717a56](https://github.com/nighcrawl/cv/commit/7717a5685bae1f7d7dd2afe7911a09ca851b32df))
+
+# [3.15.0](https://github.com/nighcrawl/cv/compare/v3.14.0...v3.15.0) (2026-11-20)
+
+
+### Features
+
+* **data:** rewrite Ibakus experience and mention Symfony ([3ae8abb](https://github.com/nighcrawl/cv/commit/3ae8abbcb6a58a10db7737d295732362f7c6266d))
+* **data:** rewrite Ibakus experience and mention Symfony ([#87](https://github.com/nighcrawl/cv/issues/87)) ([8af6349](https://github.com/nighcrawl/cv/commit/8af63493cb2433de2d0477c48dc7cc008356de27))
+
+# [3.14.0](https://github.com/nighcrawl/cv/compare/v3.13.1...v3.14.0) (2026-11-20)
+
+
+### Features
+
+* **data:** list Foyer Group assignments as separate experiences ([5644ff1](https://github.com/nighcrawl/cv/commit/5644ff176426e0a409b127870f9f74188c7ab1dd))
+* **data:** list Foyer Group assignments as separate experiences ([#85](https://github.com/nighcrawl/cv/issues/85)) ([96105e0](https://github.com/nighcrawl/cv/commit/96105e0f7d35e5786ece7d37e7c94266a9e3917e))
+
+## [3.13.1](https://github.com/nighcrawl/cv/compare/v3.13.0...v3.13.1) (2026-11-19)
+
+
+### Bug Fixes
+
+* **data:** remove client project count from CI description ([2f55cae](https://github.com/nighcrawl/cv/commit/2f55cae56f24a4c60cc3b1c6dc1408ea3ea02e6d))
+* **data:** remove client project count from CI description ([#83](https://github.com/nighcrawl/cv/issues/83)) ([d2cc2c0](https://github.com/nighcrawl/cv/commit/d2cc2c066ff52b59809b6a7b20f86271ec6c8f36))
+
+# [3.13.0](https://github.com/nighcrawl/cv/compare/v3.12.0...v3.13.0) (2026-11-19)
+
+
+### Bug Fixes
+
+* **data:** rename FR tooling skills group to Outillage & DevOps ([9db20c1](https://github.com/nighcrawl/cv/commit/9db20c1a6a170e8b71d3dc117b03e499ec14d719))
+* **data:** simplify job title to Gutenberg & front-end ([459ef46](https://github.com/nighcrawl/cv/commit/459ef4629c3a2fa76fe333f73f9eab7e8cff5841))
+* **scripts:** compute job durations with calendar months ([042072b](https://github.com/nighcrawl/cv/commit/042072b3b4c331f117d17e9739e219f1856b1138))
+
+
+### Features
+
+* **data:** add deployment metrics and Blockshifter details ([30ea70f](https://github.com/nighcrawl/cv/commit/30ea70f406a6969f534157d2a4e6dc2092c674dd))
+* **data:** reposition CV as senior WordPress developer ([f0e6a16](https://github.com/nighcrawl/cv/commit/f0e6a168a4bb94f3e9771500c7cca03f73573b69))
+* **data:** repositionnement en développeur WordPress senior ([#80](https://github.com/nighcrawl/cv/issues/80)) ([f998934](https://github.com/nighcrawl/cv/commit/f998934a6b652a2934eba50bc37e715ec7c4fe57))
+
+# [3.12.0](https://github.com/nighcrawl/cv/compare/v3.11.0...v3.12.0) (2026-11-14)
+
+
+### Features
+
+* **data:** add GitLab CI in skills ([37dcda6](https://github.com/nighcrawl/cv/commit/37dcda6f2bca4a472e735c9e5b79b318d78a4a2a))
+
+# [3.11.0](https://github.com/nighcrawl/cv/compare/v3.10.3...v3.11.0) (2026-11-14)
+
+
+### Bug Fixes
+
+* **data:** add link to Blockshifter plugin page on WordPress.org ([a79a107](https://github.com/nighcrawl/cv/commit/a79a10755606c5e4fe9a7d4a9e898644ed5da493))
+
+
+### Features
+
+* **data:** add new project for Concept Factory ([2716b28](https://github.com/nighcrawl/cv/commit/2716b2869f6d9c647471f0290ce2d9a280b132f9))
+
 ## [3.10.3](https://github.com/nighcrawl/cv/compare/v3.10.2...v3.10.3) (2026-09-20)
 
 

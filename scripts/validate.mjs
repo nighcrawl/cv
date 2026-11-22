@@ -7,10 +7,11 @@ const siteSchema = z.object({
   identity: z.object({
     name: z.string(),
     title: z.string(),
+    summary: z.string().optional(),
     location: z.string().optional(),
     email: z.string().optional(),
     website: z.string().url().optional(),
-    socials: z.array(z.object({ name: z.string(), url: z.string().url() })).optional()
+    socials: z.array(z.object({ name: z.string(), url: z.string().url(), handle: z.string().optional() })).optional()
   }),
   skills: z.array(z.object({ group: z.string(), items: z.array(z.string()) })).optional(),
   experience: z.array(z.object({
@@ -19,7 +20,7 @@ const siteSchema = z.object({
     start: z.string(),                 // "YYYY-MM" ou "YYYY-MM-DD"
     end: z.string().nullable().optional(),
     location: z.string().optional(),
-    highlights: z.array(z.string()).optional(),
+    description: z.array(z.string()).optional(),
     projects: z.array(z.object({ name: z.string(), url: z.string().url() })).optional(),
     url: z.string().url().optional()
   })).optional(),
@@ -34,6 +35,7 @@ const siteSchema = z.object({
   })).optional(),
   extras: z.array(z.object({
     date: z.string().optional(),
+    end: z.string().optional(),
     title: z.string(),
     collaborators: z.array(z.string()).optional(),
     links: z.array(z.object({ name: z.string(), url: z.string().url() })).optional()
